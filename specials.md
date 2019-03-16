@@ -28,8 +28,12 @@ After you win a roll, you choose where the damage is distributed.
 After you win a roll, you heal equal to the damage you inflict.
 Healing may be distributed among different attributes, but only those corresponding to this type of conflict.
 
-## Foresight
+## Premonition
 Before rolling, prevent your opponent from using the specified type of die.
+
+## Insight
+Before rolling, learn the current values of your opponent's attributes and which specials they have available.
+Applies to any type of dice, but different types of conflict still require gaining different versions of Insight.
 
 ## Martyr
 Before rolling, choose an amount of damage to suffer, then heal anyone an equivalent amount.
@@ -49,3 +53,5 @@ Lasts until the end of the conflict, at which point you die irrevocably.
 Until then, you have full health for purposes of inflicting damage and cannot be killed.
 May be used even if you have already used a special this round.
 Applies to all types of conflicts and dice, you only need to gain Last Stand once.
+
+

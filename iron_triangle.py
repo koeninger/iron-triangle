@@ -53,28 +53,34 @@ def round_up(numerator, denominator):
 def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None):
     """net damage done by player 1 to player 2"""
     assert p1_disadvantage is None or p2_disadvantage is None
+
     p1_risk = p1_action[p2_action.type]
     p2_risk = p2_action[p1_action.type]
-    # if you lose, you lose your stance energy
+
+    # if you play stance and lose, you lose your stance energy
     p1_stance_loss = bonus(p1_stance, p1_action)
     p2_stance_loss = bonus(p2_stance, p2_action)
-    # if you win, you add your stance energy plus your base action damage
+    # if you play stance and win, you add your stance energy plus your base action damage
     p1_stance_gain = p1_stance_loss + p1_action.amount if p1_stance_loss > 0 else 0
     p2_stance_gain = p2_stance_loss + p2_action.amount if p2_stance_loss > 0 else 0
     
+    p1_win_amt = p1_action.amount + p1_stance_gain + p2_stance_loss + bonus(p2_disadvantage, p2_action)
+    p2_win_amt = p2_action.amount + p2_stance_gain + p1_stance_loss + bonus(p1_disadvantage, p1_action)
+
     if better_risk(p1_risk, p2_risk):
-        return p1_action.amount + p1_stance_gain + p2_stance_loss + bonus(p2_disadvantage, p2_action)
+        return p1_win_amt
     elif better_risk(p2_risk, p1_risk):
-        return -1 * (p2_action.amount + p2_stance_gain + p1_stance_loss + bonus(p1_disadvantage, p1_action))
+        return -1 * p2_win_amt
     elif better_type(p1_action, p2_action):
-        return p1_action.amount + p1_stance_gain + p2_stance_loss + bonus(p2_disadvantage, p2_action)
+        return p1_win_amt
     elif better_type(p2_action, p1_action):
-        return -1 * (p2_action.amount + p2_stance_gain + p1_stance_loss + bonus(p1_disadvantage, p1_action))
+        return -1 * p2_win_amt
     # disadvantage loses ties
     elif same_type(p2_disadvantage, p2_action):
-        return p1_action.amount + p1_stance_gain + p2_stance_loss + bonus(p2_disadvantage, p2_action)
+        return p1_win_amt
     elif same_type(p1_disadvantage, p1_action):
-        return -1 * (p2_action.amount + p2_stance_gain + p1_stance_loss + bonus(p1_disadvantage, p1_action))
+        return -1 * p2_win_amt
+    # real ties are just neutral, no stance, disad or combo damage, reset to neutral
     else:
         return p1_action.amount - p2_action.amount
 

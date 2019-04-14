@@ -55,8 +55,10 @@ def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvan
     assert p1_disadvantage is None or p2_disadvantage is None
     p1_risk = p1_action[p2_action.type]
     p2_risk = p2_action[p1_action.type]
+    # if you lose, you lose your stance energy
     p1_stance_loss = bonus(p1_stance, p1_action)
     p2_stance_loss = bonus(p2_stance, p2_action)
+    # if you win, you add your stance energy plus your base action damage
     p1_stance_gain = p1_stance_loss + p1_action.amount if p1_stance_loss > 0 else 0
     p2_stance_gain = p2_stance_loss + p2_action.amount if p2_stance_loss > 0 else 0
     
@@ -103,7 +105,7 @@ def evaluate(matrix):
     return (eqls, [round(p1val, 2), round(p2val, 2)])
 
 def stance_matrix(amount, p2_disadvantage = None):
-    return [[(equilibrium_value(p1_stance = Stance(p1[1], amount), p2_stance = Stance(p2[1], amount), p2_disadvantage = p2_disadvantage)[1][0]) for p2 in all_action_types] for p1 in all_action_types]
+    return [[(payoff_eval(p1_stance = Stance(p1[1], amount), p2_stance = Stance(p2[1], amount), p2_disadvantage = p2_disadvantage)[1][0]) for p2 in all_action_types] for p1 in all_action_types]
 
 def print_stance_matrix(amount, p2_disadvantage = None):
     print([n for (n, i) in all_action_types])

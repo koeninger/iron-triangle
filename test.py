@@ -54,6 +54,21 @@ class TestIronTriangle(unittest.TestCase):
                         # stances should hurt if you're wrong
                         self.assertTrue(pay_stance < pay)
 
-                    
+    def testSanityCheck(self):
+        for (name, typ) in it.all_action_types:
+            for amt in range(1,3):
+                print(
+                    it.payoff_eval(p2_disadvantage = it.Disadvantage(typ, amt))[1][0],
+                    name, "disad", amt)
+                for amt2 in range(1,5):
+                    for (name2, typ2) in it.all_action_types:
+                        print(
+                            it.payoff_eval(p2_disadvantage = it.Disadvantage(typ, amt), p1_stance = it.Stance(typ2, amt2))[1][0],
+                            name, "disad", amt, name2, "stance", amt2)
+            for amt in range(1,5):
+                print(it.payoff_eval(p1_stance = it.Stance(typ, amt))[1][0], name, "stance", amt)
+        for amt in range(1,5):
+            print("overall stance ", amt, "\n", it.evaluate(it.stance_matrix(amt)))
+                
 if __name__ == '__main__':
     unittest.main()

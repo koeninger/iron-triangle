@@ -57,12 +57,12 @@ def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvan
     p1_risk = p1_action[p2_action.type]
     p2_risk = p2_action[p1_action.type]
 
-    # if you play stance and lose, you lose your stance energy
+    # if you play action matching your stance and lose, you lose your stance energy
     p1_stance_loss = bonus(p1_stance, p1_action)
     p2_stance_loss = bonus(p2_stance, p2_action)
-    # if you play stance and win, you add your stance energy plus your base action damage
-    p1_stance_gain = p1_stance_loss + p1_action.amount if p1_stance_loss > 0 else 0
-    p2_stance_gain = p2_stance_loss + p2_action.amount if p2_stance_loss > 0 else 0
+    # if you play stance and win, add your stance energy plus up to your base action damage
+    p1_stance_gain = p1_stance_loss + min(p1_action.amount, p1_stance_loss)
+    p2_stance_gain = p2_stance_loss + min(p2_action.amount, p2_stance_loss)
     
     p1_win_amt = p1_action.amount + p1_stance_gain + p2_stance_loss + bonus(p2_disadvantage, p2_action)
     p2_win_amt = p2_action.amount + p2_stance_gain + p1_stance_loss + bonus(p1_disadvantage, p1_action)

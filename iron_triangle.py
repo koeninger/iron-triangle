@@ -46,27 +46,44 @@ def same_type(a, b):
 def bonus(stance_or_disadvantage, action):
     return stance_or_disadvantage.amount if same_type(stance_or_disadvantage, action) else 0
 
-def payoff(p1_action, p2_action, p1_disadvantage = None, p2_disadvantage = None, p1_stance = None, p2_stance = None):
+def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None):
     """net damage done by player 1 to player 2"""
     assert p1_disadvantage is None or p2_disadvantage is None
     p1_risk = p1_action[p2_action.type]
     p2_risk = p2_action[p1_action.type]
     p1_win_damage = p1_action.amount + bonus(p1_stance, p1_action) + bonus(p2_stance, p2_action) + bonus(p2_disadvantage, p2_action)
     p2_win_damage = p2_action.amount + bonus(p2_stance, p2_action) + bonus(p1_stance, p1_action) + bonus(p1_disadvantage, p1_action)
-
-    if (better_risk(p1_risk, p2_risk ) or better_type(p1_action, p2_action) or same_type(p2_disadvantage, p2_action)):
+    
+    if better_risk(p1_risk, p2_risk):
         return p1_win_damage
-    elif (better_risk(p2_risk, p1_risk) or better_type(p2_action, p1_action) or same_type(p1_disadvantage, p1_action)):
+    elif better_risk(p2_risk, p1_risk):
+        return -1 * p2_win_damage
+    elif better_type(p1_action, p2_action):
+        return p1_win_damage
+    elif better_type(p2_action, p1_action):
+        return -1 * p2_win_damage
+    elif same_type(p2_disadvantage, p2_action):
+        return p1_win_damage
+    elif same_type(p1_disadvantage, p1_action):
         return -1 * p2_win_damage
     else:
         return p1_win_damage - p2_win_damage
 
-def payoff_matrix(p1_disadvantage = None, p1_stance = None, p2_disadvantage = None, p2_stance = None):
-#    print([[(a.name, b.name) for b in all_actions] for a in all_actions])
-    return [[payoff(p1_action, p2_action, p1_stance, p2_stance, p1_disadvantage, p2_disadvantage) for p2_action in all_actions] for p1_action in all_actions]
+def payoff_matrix(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None):
+    return [[payoff(p1_action = p1_action, p2_action = p2_action,
+                    p1_stance = p1_stance, p2_stance = p2_stance,
+                    p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage)
+             for p2_action in all_actions] for p1_action in all_actions]
 
-def equilibrium_value():
-    matrix = payoff_matrix()
+def print_payoff_matrix(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None):
+    print([a.name for a in all_actions])
+    for i in payoff_matrix(p1_stance = p1_stance, p2_stance = p2_stance,
+                           p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage):
+        print(i)
+        
+def equilibrium_value(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None):
+    matrix = payoff_matrix(p1_stance = p1_stance, p2_stance = p2_stance,
+                           p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage)
     game = nash.Game(np.array(matrix))
     eqls = list(game.support_enumeration())
     (p1val, p2val) = game[eqls[0][0], eqls[0][1]]

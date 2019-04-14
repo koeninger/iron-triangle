@@ -4,7 +4,7 @@ import iron_triangle as it
 
 class TestIronTriangle(unittest.TestCase):
     def testBasicActions(self):
-        """basic triangle of attack is beaten by defense is beaten by grapple is beaten by attack"""
+        """basic triangle of defense beats attack beats grapple beats defense"""
         atk = it.attacks[0]
         dfn = it.defenses[0]
         grp = it.grapples[0]
@@ -20,7 +20,7 @@ class TestIronTriangle(unittest.TestCase):
         
     def testEquilibrium(self):
         """at neutral there should be equal value for both players, and no dominated strategies"""
-        eql, val = it.equilibrium_value()
+        eql, val = it.payoff_eval()
         self.assertEqual(val[0], 0)
         self.assertEqual(val[1], 0)
         dominated = [p for p in eql if p == 0]
@@ -28,11 +28,11 @@ class TestIronTriangle(unittest.TestCase):
 
     def testDisadvantage(self):
         """disadvantage should make things worse for you"""
-        p2 = [it.equilibrium_value(p2_disadvantage = it.Disadvantage(act, 1)) for act in [it.ATTACK, it.DEFEND, it.GRAPPLE]]
+        p2 = [it.payoff_eval(p2_disadvantage = it.Disadvantage(act, 1)) for act in [it.ATTACK, it.DEFEND, it.GRAPPLE]]
         for (e, v) in p2:
             self.assertTrue(v[0] > 0)
             self.assertTrue(v[1] < 0)
-        p1 = [it.equilibrium_value(p1_disadvantage = it.Disadvantage(act, 1)) for act in [it.ATTACK, it.DEFEND, it.GRAPPLE]]
+        p1 = [it.payoff_eval(p1_disadvantage = it.Disadvantage(act, 1)) for act in [it.ATTACK, it.DEFEND, it.GRAPPLE]]
         for (e, v) in p1:
             self.assertTrue(v[0] < 0)
             self.assertTrue(v[1] > 0)

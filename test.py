@@ -3,6 +3,8 @@ import unittest
 import iron_triangle as it
 
 class TestIronTriangle(unittest.TestCase):
+    # use basic actions only for test cases
+    actions = [it.attacks[0], it.defenses[0], it.grapples[0]]
     def testBasicActions(self):
         """basic triangle of defense beats attack beats grapple beats defense"""
         atk = it.attacks[0]
@@ -20,7 +22,7 @@ class TestIronTriangle(unittest.TestCase):
         
     def testEquilibrium(self):
         """at neutral there should be equal value for both players, and no dominated strategies"""
-        eql, val = it.payoff_eval()
+        eql, val = it.payoff_eval(actions=actions)
         self.assertEqual(val[0], 0)
         self.assertEqual(val[1], 0)
         dominated = [p for p in eql if p == 0]
@@ -40,8 +42,8 @@ class TestIronTriangle(unittest.TestCase):
     def testStance(self):
         for typ in [it.ATTACK, it.DEFEND, it.GRAPPLE]:
             stance = it.Stance(typ, 1)
-            for p1 in it.all_actions:
-                for p2 in it.all_actions:
+            for p1 in actions:
+                for p2 in actions:
                     pay = it.payoff(p1, p2)
                     pay_stance = it.payoff(p1, p2, p1_stance = stance)
                     if stance.type != p1.type or p1 == p2:
@@ -61,7 +63,7 @@ class TestIronTriangle(unittest.TestCase):
                     it.payoff_eval(p2_disadvantage = it.Disadvantage(typ, amt))[1][0],
                     name, "disad", amt)
                 for amt2 in range(1,5):
-                    for (name2, typ2) in it.all_action_types:
+                    for (name2, typ2) in actions:
                         print(
                             it.payoff_eval(p2_disadvantage = it.Disadvantage(typ, amt), p1_stance = it.Stance(typ2, amt2))[1][0],
                             name, "disad", amt, name2, "stance", amt2)

@@ -22,15 +22,24 @@ Action = namedtuple('Action', ['name','vs_attack', 'vs_defend', 'vs_grapple', 't
 Disadvantage = namedtuple('Disadvantage', ['type', 'amount'])
 
 attacks = [
-    Action("basic attack", FIRE, WATER, HEAVEN, ATTACK, 3)
+    Action("basic attack", FIRE, WATER, HEAVEN, ATTACK, 3),
+    Action("counter", HEAVEN, WATER, WATER, ATTACK, 1),
+    Action("low blow", FIRE, EARTH, FIRE, ATTACK, 1),
+    Action("uppercut", WATER, WATER, FIRE, ATTACK, 4)
 ]
 
 defenses = [
-    Action("basic defend", HEAVEN, FIRE, WATER, DEFEND, 2)
+    Action("basic defend", HEAVEN, FIRE, WATER, DEFEND, 2),
+   Action("dodge", FIRE, WATER, WATER, DEFEND, 3),
+    Action("dash", WATER, HEAVEN, WATER, DEFEND, 1),
+    Action("sprawl", FIRE, FIRE, EARTH, DEFEND, 0.1)
 ]
 
 grapples = [
-    Action("basic grapple", WATER, HEAVEN, FIRE, GRAPPLE, 4)
+    Action("basic grapple", WATER, HEAVEN, FIRE, GRAPPLE, 4),
+    Action("clinch", EARTH, FIRE, FIRE, GRAPPLE, 1),
+    Action("choke", WATER, FIRE, WATER, GRAPPLE, 5),
+    Action("sweep", WATER, WATER, HEAVEN, GRAPPLE, 1)
 ]
 
 all_actions = [*attacks, *defenses, *grapples]
@@ -80,24 +89,29 @@ def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvan
         return p1_win_amt
     elif same_type(p1_disadvantage, p1_action):
         return -1 * p2_win_amt
+#    # higher basic action damage wins
+#    elif p1_action.amount > p2_action.amount:
+#        return p1_win_amt
+#    elif p2_action.amount > p1_action.amount:
+#        return -1 * p2_win_amt
     # real ties are just neutral, no stance, disad or combo damage, reset to neutral
     else:
         return p1_action.amount - p2_action.amount
 
-def payoff_matrix(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None):
+def payoff_matrix(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, actions = all_actions):
     return [[payoff(p1_action = p1_action, p2_action = p2_action,
                     p1_stance = p1_stance, p2_stance = p2_stance,
                     p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage)
-             for p2_action in all_actions] for p1_action in all_actions]
+             for p2_action in actions] for p1_action in actions]
 
 def print_matrix(m):
     for line in m:
-        print(line)
+        print(" ".join(['{:>2}'.format(x) for x in line]))
 
-def print_payoff_matrix(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None):
-    print([a.name for a in all_actions])
+def print_payoff_matrix(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, actions = all_actions):
+    print([a.name for a in actions])
     print_matrix(payoff_matrix(p1_stance = p1_stance, p2_stance = p2_stance,
-                           p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage))
+                               p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage, actions = actions))
         
 def payoff_eval(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None):
     matrix = payoff_matrix(p1_stance = p1_stance, p2_stance = p2_stance,
@@ -110,9 +124,34 @@ def evaluate(matrix):
     (p1val, p2val) = game[eqls[0][0], eqls[0][1]]
     return (eqls, [round(p1val, 2), round(p2val, 2)])
 
+def evaluate_lh(matrix):
+    game = nash.Game(np.array(matrix))
+    eqls = game.lemke_howson(initial_dropped_label=0)
+    (p1val, p2val) = game[eqls[0], eqls[1]]
+    return (eqls, [round(p1val, 2), round(p2val, 2)])
+
+
 def stance_matrix(amount, p2_disadvantage = None):
     return [[(payoff_eval(p1_stance = Stance(p1[1], amount), p2_stance = Stance(p2[1], amount), p2_disadvantage = p2_disadvantage)[1][0]) for p2 in all_action_types] for p1 in all_action_types]
 
 def print_stance_matrix(amount, p2_disadvantage = None):
     print([n for (n, i) in all_action_types])
     print_matrix(stance_matrix(amount, p2_disadvantage))
+
+def print_nfg(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, actions = all_actions):
+    """format for gambit project files .nfg"""
+    payoffs = [[payoff(p1_action = p1_action, p2_action = p2_action,
+                    p1_stance = p1_stance, p2_stance = p2_stance,
+                    p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage)
+             for p1_action in actions] for p2_action in actions]
+    print("""NFG 1 R "iron triangle" """)
+    print("""{"Player 1" "Player 2" } { %s %s }""" %(len(actions), len(actions)))
+    for line in payoffs:
+        for p in line:
+            print(p, -p, end=" ")
+    print()
+
+                
+if __name__ == '__main__':
+    print_nfg()
+    

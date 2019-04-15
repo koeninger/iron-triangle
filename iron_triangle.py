@@ -21,28 +21,33 @@ Action = namedtuple('Action', ['name','vs_attack', 'vs_defend', 'vs_grapple', 't
 
 Disadvantage = namedtuple('Disadvantage', ['type', 'amount'])
 
+#                           ATTACK  DEFEND  GRAPPLE
 attacks = [
-    Action("basic attack", FIRE, WATER, HEAVEN, ATTACK, 3),
-    Action("counter", HEAVEN, WATER, WATER, ATTACK, 1),
-    Action("low blow", FIRE, EARTH, FIRE, ATTACK, 1),
-    Action("uppercut", WATER, WATER, FIRE, ATTACK, 4)
+    Action("basic attack",  FIRE,   WATER,  HEAVEN, ATTACK, 1),
+#    Action("counter",       HEAVEN, WATER,  FIRE, ATTACK, 1),
+    Action("low blow",      FIRE,   HEAVEN,  FIRE, ATTACK, 1),
+    Action("haymaker",      FIRE,   EARTH,  EARTH, ATTACK, 1),    
+#    Action("uppercut",      WATER,  EARTH,  HEAVEN, ATTACK, 4)
 ]
 
 defenses = [
-    Action("basic defend", HEAVEN, FIRE, WATER, DEFEND, 2),
-   Action("dodge", FIRE, WATER, WATER, DEFEND, 3),
-    Action("dash", WATER, HEAVEN, WATER, DEFEND, 1),
-    Action("sprawl", FIRE, FIRE, EARTH, DEFEND, 0.1)
+    Action("basic defend",  HEAVEN, FIRE,   WATER, DEFEND, 1),
+#    Action("dodge",         FIRE,   WATER,  WATER, DEFEND, 1),
+#    Action("dash",          WATER,  HEAVEN, WATER, DEFEND, 1),
+    Action("sprawl",        FIRE,   FIRE,  HEAVEN, DEFEND, 1)
 ]
 
 grapples = [
-    Action("basic grapple", WATER, HEAVEN, FIRE, GRAPPLE, 4),
-    Action("clinch", EARTH, FIRE, FIRE, GRAPPLE, 1),
-    Action("choke", WATER, FIRE, WATER, GRAPPLE, 5),
-    Action("sweep", WATER, WATER, HEAVEN, GRAPPLE, 1)
+    Action("basic grapple", WATER,  HEAVEN, FIRE, GRAPPLE, 1),
+    Action("takedown",      HEAVEN, FIRE,   FIRE, GRAPPLE, 1),
+#    Action("choke",         WATER,  HEAVEN, EARTH, GRAPPLE, 5),
+#    Action("sweep",         WATER,  WATER,  HEAVEN, GRAPPLE, 1)
 ]
 
 all_actions = [*attacks, *defenses, *grapples]
+
+test_p1_disadvantage = None #Disadvantage(DEFEND, 1)
+test_actions = all_actions #[attacks[1], defenses[1], grapples[1]]
 
 def better_type(p1, p2):
     return True if (p1.type == ATTACK and p2.type == GRAPPLE) else False if (p1.type == GRAPPLE and p2.type == ATTACK) else p1.type > p2.type
@@ -153,5 +158,5 @@ def print_nfg(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_dis
 
                 
 if __name__ == '__main__':
-    print_nfg()
+    print_nfg(p1_disadvantage = test_p1_disadvantage, actions = test_actions)
     

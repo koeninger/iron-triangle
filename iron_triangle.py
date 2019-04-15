@@ -23,24 +23,27 @@ Disadvantage = namedtuple('Disadvantage', ['type', 'amount'])
 
 #                           ATTACK  DEFEND  GRAPPLE
 attacks = [
-    Action("basic attack",  FIRE,   WATER,  HEAVEN, ATTACK, 1),
-    Action("haymaker",      FIRE,   HEAVEN, FIRE, ATTACK, 1),
-    Action("low blow",      FIRE,   EARTH,  EARTH, ATTACK, 1),
-#    Action("???",           FIRE,   FIRE,   WATER, ATTACK, 1)
+    Action("basic attack",  FIRE,   WATER,  HEAVEN, ATTACK, 4),
+    Action("haymaker",      WATER,  HEAVEN, FIRE, ATTACK, 3),
+    Action("???",           HEAVEN, FIRE,   WATER, ATTACK, 3),
+    Action("low blow",      EARTH,  EARTH,  EARTH, ATTACK, 3),
+    Action("???",           HEAVEN, HEAVEN, HEAVEN, ATTACK, 3)
 ]
 
 defenses = [
-    Action("basic defend",  HEAVEN, FIRE,   WATER, DEFEND, 1),
-    Action("sprawl",        FIRE,   FIRE,   HEAVEN, DEFEND, 1),
-    Action("duck  ",        EARTH,  FIRE,   EARTH, DEFEND, 1),
-#    Action("???",           WATER,  FIRE,   FIRE,  DEFEND, 1)
+    Action("basic defend",  HEAVEN, FIRE,   WATER, DEFEND, 2),
+    Action("sprawl",        FIRE,   WATER, HEAVEN, DEFEND, 3),
+    Action("???",           WATER,  HEAVEN,  FIRE,  DEFEND, 2),
+    Action("duck  ",        EARTH,  EARTH,  EARTH, DEFEND, 2),
+    Action("???",           HEAVEN, HEAVEN, HEAVEN, DEFEND, 2)
 ]
 
 grapples = [
-    Action("basic grapple", WATER,  HEAVEN, FIRE, GRAPPLE, 1),
-    Action("clinch",        HEAVEN, FIRE,   FIRE, GRAPPLE, 1),
-    Action("takedown",      EARTH,  EARTH,  FIRE, GRAPPLE, 1),
-#    Action("???",           FIRE,   WATER,  FIRE, GRAPPLE, 1) 
+    Action("basic grapple", WATER,  HEAVEN, FIRE, GRAPPLE, 4),
+    Action("clinch",        HEAVEN, FIRE,   WATER, GRAPPLE, 4),
+    Action("???",           FIRE,   WATER,  HEAVEN, GRAPPLE, 4),
+    Action("takedown",      EARTH,  EARTH,  EARTH, GRAPPLE, 4),
+    Action("???",           HEAVEN, HEAVEN, HEAVEN, GRAPPLE, 4)
 ]
 
 all_actions = [*attacks, *defenses, *grapples]

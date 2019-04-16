@@ -23,7 +23,7 @@ Disadvantage = namedtuple('Disadvantage', ['type', 'amount'])
 
 #                           ATTACK  DEFEND  GRAPPLE
 attacks = [
-    Action("basic attack",  FIRE,   WATER,  HEAVEN, ATTACK, 1),
+    Action("basic attack",  FIRE,   WATER,  HEAVEN, ATTACK, 3),
     Action("haymaker",      WATER,  HEAVEN, FIRE, ATTACK, 1),
     Action("???",           HEAVEN, FIRE,   WATER, ATTACK, 1),
     Action("low blow",      EARTH,  EARTH,  EARTH, ATTACK, 2),
@@ -31,7 +31,7 @@ attacks = [
 ]
 
 defenses = [
-    Action("basic defend",  HEAVEN, FIRE,   WATER, DEFEND, 1),
+    Action("basic defend",  HEAVEN, FIRE,   WATER, DEFEND, 2),
     Action("sprawl",        FIRE,   WATER, HEAVEN, DEFEND, 1),
     Action("???",           WATER,  HEAVEN,  FIRE,  DEFEND, 1),
     Action("duck  ",        EARTH,  EARTH,  EARTH, DEFEND, 2), 
@@ -39,7 +39,7 @@ defenses = [
 ]
 
 grapples = [
-    Action("basic grapple", WATER,  HEAVEN, FIRE, GRAPPLE, 1),
+    Action("basic grapple", WATER,  HEAVEN, FIRE, GRAPPLE, 4),
     Action("clinch",        HEAVEN, FIRE,   WATER, GRAPPLE, 1),
     Action("???",           FIRE,   WATER,  HEAVEN, GRAPPLE, 1),
     Action("takedown",      EARTH,  EARTH,  EARTH, GRAPPLE, 2),
@@ -48,8 +48,8 @@ grapples = [
 
 all_actions = [*attacks, *defenses, *grapples]
 
-test_p1_disadvantage =  None # Disadvantage(ATTACK, 1)
-test_actions = all_actions #[attacks[1], defenses[1], grapples[1]]
+test_p1_disadvantage = Disadvantage(GRAPPLE, 1)
+test_actions = all_actions #[attacks[0], defenses[0], grapples[0]]
 
 def better_type(p1, p2):
     return True if (p1.type == ATTACK and p2.type == GRAPPLE) else False if (p1.type == GRAPPLE and p2.type == ATTACK) else p1.type > p2.type

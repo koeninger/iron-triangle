@@ -27,33 +27,29 @@ Stance = namedtuple('Stance', ['type', 'amount'])
 
 Action = namedtuple('Action', ['type','element', 'amount'])
 
-Disadvantage = namedtuple('Disadvantage', ['type', 'amount'])
+Disadvantage = namedtuple('Disadvantage', ['type', 'element', 'amount'])
 
 attacks = [
-    Action(ATTACK, HORIZONTAL, 3),
-    Action(ATTACK, VERTICAL, 3),
-    Action(ATTACK, BALANCED, 3),
-    Action(ATTACK, CROUCHING, 3),
-    Action(ATTACK, JUMPING, 3),    
+    Action(ATTACK, EARTH, 3),
+    Action(ATTACK, WATER, 3),
+    Action(ATTACK, FIRE, 3),    
 ]
 
 defenses = [
-    Action(DEFEND, BALANCED, 2),
-    Action(DEFEND, CROUCHING, 2),
-    Action(DEFEND, JUMPING, 2),
+    Action(DEFEND, EARTH, 2),
+    Action(DEFEND, WATER, 2),
+    Action(DEFEND, FIRE, 2),
 ]
 
 grapples = [
-    Action(GRAPPLE, HORIZONTAL, 4),
-    Action(GRAPPLE, VERTICAL, 4),
-    Action(GRAPPLE, BALANCED, 4),
-    Action(GRAPPLE, CROUCHING, 4),
-    Action(GRAPPLE, JUMPING, 4),    
+    Action(GRAPPLE, EARTH, 4),
+    Action(GRAPPLE, WATER, 4),
+    Action(GRAPPLE, FIRE, 4),    
 ]
 
 all_actions = [*attacks, *defenses, *grapples]
 
-test_p1_disadvantage = None #Disadvantage(GRAPPLE, 1)
+test_p1_disadvantage = None #Disadvantage(DEFEND, BALANCED, 1)
 test_actions = all_actions #[attacks[0], defenses[0], grapples[0]]
 
 def better_type(p1, p2):
@@ -64,31 +60,40 @@ def better_type(p1, p2):
 
 def better_element(p1, p2):
     e1, e2 = (p1.element, p2.element)
-    return ((e1 == JUMPING and (e2 == CROUCHING or e2 == HORIZONTAL)) or
-            (e1 == CROUCHING and (e2 == BALANCED or e2 == HORIZONTAL)) or
-            (e1 == BALANCED and (e2 == JUMPING or e2 == VERTICAL)) or
-            (e1 == HORIZONTAL and (e2 == BALANCED or e2 == VERTICAL)) or
-            (e1 == VERTICAL and (e2 == CROUCHING or e2 == JUMPING)))
-    
+    return ((e1 == YINYANG and (e2 == WATER or e2 == HEAVEN)) or
+            (e1 == EARTH and (e2 == FIRE or e2 == YINYANG)) or
+            (e1 == WATER and (e2 == EARTH or e2 == HEAVEN)) or
+            (e1 == FIRE and (e2 == WATER or e2 == YINYANG)) or
+            (e1 == HEAVEN and (e2 == EARTH or e2 == FIRE)))
+
 def same_type(a, b):
     return a is not None and b is not None and a.type == b.type
 
-def bonus(stance_or_disadvantage, action):
-    return stance_or_disadvantage.amount if same_type(stance_or_disadvantage, action) else 0
+def same_element(a, b):
+    return a is not None and b is not None and a.element == b.element
+
+def stance_bonus(stance, action):
+    return stance.amount if same_type(stance, action) else 0
+
+def disad_bonus(disad, action):
+    return disad.amount if (same_type(disad, action) or same_element(disad, action)) else 0
 
 def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None):
     """net damage done by player 1 to player 2"""
     assert p1_disadvantage is None or p2_disadvantage is None
 
     # if you play action matching your stance and lose, you lose your stance energy
-    p1_stance_loss = bonus(p1_stance, p1_action)
-    p2_stance_loss = bonus(p2_stance, p2_action)
+    p1_stance_loss = stance_bonus(p1_stance, p1_action)
+    p2_stance_loss = stance_bonus(p2_stance, p2_action)
     # if you play stance and win, add your stance energy plus up to your base action damage
     p1_stance_gain = p1_stance_loss + min(p1_action.amount, p1_stance_loss)
     p2_stance_gain = p2_stance_loss + min(p2_action.amount, p2_stance_loss)
+
+    p1_disad_loss = disad_bonus(p1_disadvantage, p1_action)
+    p2_disad_loss = disad_bonus(p2_disadvantage, p2_action)
     
-    p1_win_amt = p1_action.amount + p1_stance_gain + p2_stance_loss + bonus(p2_disadvantage, p2_action)
-    p2_win_amt = p2_action.amount + p2_stance_gain + p1_stance_loss + bonus(p1_disadvantage, p1_action)
+    p1_win_amt = p1_action.amount + p1_stance_gain + p2_stance_loss + p2_disad_loss
+    p2_win_amt = p2_action.amount + p2_stance_gain + p1_stance_loss + p1_disad_loss
 
     if better_type(p1_action, p2_action):
         return p1_win_amt
@@ -99,9 +104,9 @@ def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvan
     elif better_element(p2_action, p1_action):
         return -1 * p2_win_amt
     # disadvantage loses ties
-    elif same_type(p2_disadvantage, p2_action):
+    elif p2_disad_loss > 0:
         return p1_win_amt
-    elif same_type(p1_disadvantage, p1_action):
+    elif p1_disad_loss > 0:
         return -1 * p2_win_amt
     # real ties are just neutral, no stance, disad or combo damage, reset to neutral
     else:
@@ -135,6 +140,12 @@ def evaluate(matrix):
 def evaluate_lh(matrix):
     game = nash.Game(np.array(matrix))
     eqls = game.lemke_howson(initial_dropped_label=0)
+    (p1val, p2val) = game[eqls[0], eqls[1]]
+    return (eqls, [round(p1val, 2), round(p2val, 2)])
+
+def evaluate_ve(matrix):
+    game = nash.Game(np.array(matrix))
+    eqls = next(game.vertex_enumeration())
     (p1val, p2val) = game[eqls[0], eqls[1]]
     return (eqls, [round(p1val, 2), round(p2val, 2)])
 

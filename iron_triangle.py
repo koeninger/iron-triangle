@@ -9,53 +9,50 @@ DEFEND = 2
 GRAPPLE = 3
 all_action_types = [('Attack', ATTACK), ('Defend', DEFEND), ('Grapple', GRAPPLE)]
 
-# risk types
-EARTH = 0
-WATER = 1
-FIRE = 2
-HEAVEN = 3
+# elements
+VOID = 0
+EARTH = 1
+WATER = 2
+FIRE = 3
+HEAVEN = 4
 
 Stance = namedtuple('Stance', ['type', 'amount'])
 
-Action = namedtuple('Action', ['name','vs_attack', 'vs_defend', 'vs_grapple', 'type', 'amount'])
+Action = namedtuple('Action', ['type','element', 'amount'])
 
 Disadvantage = namedtuple('Disadvantage', ['type', 'amount'])
 
-#                           ATTACK  DEFEND  GRAPPLE
 attacks = [
-    Action("basic attack",  FIRE,   WATER,  HEAVEN, ATTACK, 3),
-    Action("haymaker",      WATER,  HEAVEN, FIRE, ATTACK, 1),
-    Action("???",           HEAVEN, FIRE,   WATER, ATTACK, 1),
-    Action("low blow",      EARTH,  EARTH,  EARTH, ATTACK, 2),
-    Action("???",           HEAVEN, HEAVEN, HEAVEN, ATTACK, 1)
+    Action(ATTACK, EARTH, 3),
+    Action(ATTACK, WATER, 3),
+    Action(ATTACK, FIRE, 3),
+#    Action(ATTACK, HEAVEN, 3),
 ]
 
 defenses = [
-    Action("basic defend",  HEAVEN, FIRE,   WATER, DEFEND, 2),
-    Action("sprawl",        FIRE,   WATER, HEAVEN, DEFEND, 1),
-    Action("???",           WATER,  HEAVEN,  FIRE,  DEFEND, 1),
-    Action("duck  ",        EARTH,  EARTH,  EARTH, DEFEND, 2), 
-    Action("???",           HEAVEN, HEAVEN, HEAVEN, DEFEND, 1)
+    Action(DEFEND, EARTH, 2),
+    Action(DEFEND, WATER, 2),
+    Action(DEFEND, FIRE, 2),
 ]
 
 grapples = [
-    Action("basic grapple", WATER,  HEAVEN, FIRE, GRAPPLE, 4),
-    Action("clinch",        HEAVEN, FIRE,   WATER, GRAPPLE, 1),
-    Action("???",           FIRE,   WATER,  HEAVEN, GRAPPLE, 1),
-    Action("takedown",      EARTH,  EARTH,  EARTH, GRAPPLE, 2),
-    Action("???",           HEAVEN, HEAVEN, HEAVEN, GRAPPLE, 1)
+    Action(GRAPPLE, EARTH, 4),
+    Action(GRAPPLE, WATER, 4),
+    Action(GRAPPLE, FIRE, 4),
+#    Action(GRAPPLE, HEAVEN, 4),
 ]
 
 all_actions = [*attacks, *defenses, *grapples]
 
-test_p1_disadvantage = Disadvantage(GRAPPLE, 1)
+test_p1_disadvantage = None #Disadvantage(GRAPPLE, 1)
 test_actions = all_actions #[attacks[0], defenses[0], grapples[0]]
 
 def better_type(p1, p2):
     return True if (p1.type == ATTACK and p2.type == GRAPPLE) else False if (p1.type == GRAPPLE and p2.type == ATTACK) else p1.type > p2.type
     
-def better_risk(p1, p2):
-    return True if (p1 == EARTH and p2 == HEAVEN) else False if (p1 == HEAVEN and p2 == EARTH) else p1 > p2
+def better_element(p1, p2):
+    return True if (p1.element == EARTH and p2.element == FIRE) else False if (p1.element == FIRE and p2.element == EARTH) else p1.element > p2.element
+#    return True if (p1.element == EARTH and p2.element == HEAVEN) else False if (p1.element == HEAVEN and p2.element == EARTH) else p1.element > p2.element
     
 def same_type(a, b):
     return a is not None and b is not None and a.type == b.type
@@ -63,15 +60,9 @@ def same_type(a, b):
 def bonus(stance_or_disadvantage, action):
     return stance_or_disadvantage.amount if same_type(stance_or_disadvantage, action) else 0
 
-def round_up(numerator, denominator):
-    return  -(-numerator // denominator)
-
 def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None):
     """net damage done by player 1 to player 2"""
     assert p1_disadvantage is None or p2_disadvantage is None
-
-    p1_risk = p1_action[p2_action.type]
-    p2_risk = p2_action[p1_action.type]
 
     # if you play action matching your stance and lose, you lose your stance energy
     p1_stance_loss = bonus(p1_stance, p1_action)
@@ -83,24 +74,19 @@ def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvan
     p1_win_amt = p1_action.amount + p1_stance_gain + p2_stance_loss + bonus(p2_disadvantage, p2_action)
     p2_win_amt = p2_action.amount + p2_stance_gain + p1_stance_loss + bonus(p1_disadvantage, p1_action)
 
-    if better_risk(p1_risk, p2_risk):
-        return p1_win_amt
-    elif better_risk(p2_risk, p1_risk):
-        return -1 * p2_win_amt
-    elif better_type(p1_action, p2_action):
+    if better_type(p1_action, p2_action):
         return p1_win_amt
     elif better_type(p2_action, p1_action):
+        return -1 * p2_win_amt
+    elif better_element(p1_action, p2_action):
+        return p1_win_amt
+    elif better_element(p2_action, p1_action):
         return -1 * p2_win_amt
     # disadvantage loses ties
     elif same_type(p2_disadvantage, p2_action):
         return p1_win_amt
     elif same_type(p1_disadvantage, p1_action):
         return -1 * p2_win_amt
-#    # higher basic action damage wins
-#    elif p1_action.amount > p2_action.amount:
-#        return p1_win_amt
-#    elif p2_action.amount > p1_action.amount:
-#        return -1 * p2_win_amt
     # real ties are just neutral, no stance, disad or combo damage, reset to neutral
     else:
         return p1_action.amount - p2_action.amount
@@ -116,7 +102,6 @@ def print_matrix(m):
         print(" ".join(['{:>2}'.format(x) for x in line]))
 
 def print_payoff_matrix(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, actions = all_actions):
-    print([a.name for a in actions])
     print_matrix(payoff_matrix(p1_stance = p1_stance, p2_stance = p2_stance,
                                p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage, actions = actions))
         

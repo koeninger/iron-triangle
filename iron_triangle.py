@@ -32,7 +32,9 @@ Disadvantage = namedtuple('Disadvantage', ['type', 'element', 'amount'])
 attacks = [
     Action(ATTACK, EARTH, 3),
     Action(ATTACK, WATER, 3),
-    Action(ATTACK, FIRE, 3),    
+    Action(ATTACK, FIRE, 3),
+    Action(ATTACK, HEAVEN, 3),
+    Action(ATTACK, YINYANG, 3),
 ]
 
 defenses = [
@@ -44,13 +46,19 @@ defenses = [
 grapples = [
     Action(GRAPPLE, EARTH, 4),
     Action(GRAPPLE, WATER, 4),
-    Action(GRAPPLE, FIRE, 4),    
+    Action(GRAPPLE, FIRE, 4),
+    Action(GRAPPLE, HEAVEN, 4),
+    Action(GRAPPLE, YINYANG, 4),
 ]
 
+basic_actions = [*attacks[0:3], *defenses[0:3], *grapples[0:3]]
 all_actions = [*attacks, *defenses, *grapples]
 
-test_p1_disadvantage = None #Disadvantage(DEFEND, BALANCED, 1)
-test_actions = all_actions #[attacks[0], defenses[0], grapples[0]]
+#test_p1_disadvantage = Disadvantage(GRAPPLE, FIRE , 1)
+test_p1_disadvantage = None
+
+#test_actions = basic_actions
+test_actions = all_actions 
 
 def better_type(p1, p2):
     t1, t2 = (p1.type, p2.type)

@@ -10,11 +10,18 @@ GRAPPLE = 3
 all_action_types = [('Attack', ATTACK), ('Defend', DEFEND), ('Grapple', GRAPPLE)]
 
 # elements
-VOID = 0
+YINYANG = 0
 EARTH = 1
 WATER = 2
 FIRE = 3
 HEAVEN = 4
+
+#positional
+BALANCED = 0
+CROUCHING = 1
+VERTICAL = 2
+HORIZONTAL = 3
+JUMPING = 4
 
 Stance = namedtuple('Stance', ['type', 'amount'])
 
@@ -23,23 +30,25 @@ Action = namedtuple('Action', ['type','element', 'amount'])
 Disadvantage = namedtuple('Disadvantage', ['type', 'amount'])
 
 attacks = [
-    Action(ATTACK, EARTH, 3),
-    Action(ATTACK, WATER, 3),
-    Action(ATTACK, FIRE, 3),
-#    Action(ATTACK, HEAVEN, 3),
+    Action(ATTACK, HORIZONTAL, 3),
+    Action(ATTACK, VERTICAL, 3),
+    Action(ATTACK, BALANCED, 3),
+    Action(ATTACK, CROUCHING, 3),
+    Action(ATTACK, JUMPING, 3),    
 ]
 
 defenses = [
-    Action(DEFEND, EARTH, 2),
-    Action(DEFEND, WATER, 2),
-    Action(DEFEND, FIRE, 2),
+    Action(DEFEND, BALANCED, 2),
+    Action(DEFEND, CROUCHING, 2),
+    Action(DEFEND, JUMPING, 2),
 ]
 
 grapples = [
-    Action(GRAPPLE, EARTH, 4),
-    Action(GRAPPLE, WATER, 4),
-    Action(GRAPPLE, FIRE, 4),
-#    Action(GRAPPLE, HEAVEN, 4),
+    Action(GRAPPLE, HORIZONTAL, 4),
+    Action(GRAPPLE, VERTICAL, 4),
+    Action(GRAPPLE, BALANCED, 4),
+    Action(GRAPPLE, CROUCHING, 4),
+    Action(GRAPPLE, JUMPING, 4),    
 ]
 
 all_actions = [*attacks, *defenses, *grapples]
@@ -48,11 +57,18 @@ test_p1_disadvantage = None #Disadvantage(GRAPPLE, 1)
 test_actions = all_actions #[attacks[0], defenses[0], grapples[0]]
 
 def better_type(p1, p2):
-    return True if (p1.type == ATTACK and p2.type == GRAPPLE) else False if (p1.type == GRAPPLE and p2.type == ATTACK) else p1.type > p2.type
-    
+    t1, t2 = (p1.type, p2.type)
+    return ((t1 == ATTACK and t2 == GRAPPLE) or
+            (t1 == GRAPPLE and t2 == DEFEND) or
+            (t1 == DEFEND and t2 == ATTACK))
+
 def better_element(p1, p2):
-    return True if (p1.element == EARTH and p2.element == FIRE) else False if (p1.element == FIRE and p2.element == EARTH) else p1.element > p2.element
-#    return True if (p1.element == EARTH and p2.element == HEAVEN) else False if (p1.element == HEAVEN and p2.element == EARTH) else p1.element > p2.element
+    e1, e2 = (p1.element, p2.element)
+    return ((e1 == JUMPING and (e2 == CROUCHING or e2 == HORIZONTAL)) or
+            (e1 == CROUCHING and (e2 == BALANCED or e2 == HORIZONTAL)) or
+            (e1 == BALANCED and (e2 == JUMPING or e2 == VERTICAL)) or
+            (e1 == HORIZONTAL and (e2 == BALANCED or e2 == VERTICAL)) or
+            (e1 == VERTICAL and (e2 == CROUCHING or e2 == JUMPING)))
     
 def same_type(a, b):
     return a is not None and b is not None and a.type == b.type

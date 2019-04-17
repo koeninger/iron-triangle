@@ -1,7 +1,7 @@
+from __future__ import print_function
 from collections import namedtuple
-import nashpy as nash
 import numpy as np
-
+import gambit
 
 # action types
 ATTACK = 1
@@ -15,6 +15,7 @@ EARTH = 1
 WATER = 2
 FIRE = 3
 HEAVEN = 4
+all_elements = [('Yinyang', YINYANG), ('Earth', EARTH), ('Water', WATER), ('Fire', FIRE), ('Heaven', HEAVEN)]
 
 #positional
 BALANCED = 0
@@ -51,17 +52,18 @@ grapples = [
     Action(GRAPPLE, YINYANG, 4),
 ]
 
-basic_actions = [*attacks[0:3], *defenses[0:3], *grapples[0:3]]
-all_actions = [*attacks, *defenses, *grapples]
+beginner_actions = [attacks[0], defenses[0], grapples[0]]
+basic_actions = attacks[0:3] + defenses[0:3] + grapples[0:3]
+all_actions = attacks + defenses + grapples
 
-test_p2_disadvantage = Disadvantage(GRAPPLE, FIRE , 1)
-test_p2_disadvantage = None
+test_p2_disadvantage = Disadvantage(ATTACK, EARTH , 1)
+#test_p2_disadvantage = None
 
-test_p1_stance = Stance(ATTACK, 10)
+#test_p1_stance = Stance(ATTACK, 10)
 test_p1_stance = None
 
 test_actions = basic_actions
-test_actions = all_actions 
+#test_actions = all_actions 
 
 
 
@@ -86,17 +88,14 @@ def same_element(a, b):
     return a is not None and b is not None and a.element == b.element
 
 def stance_loss(stance, action):
-    """if you play action matching your stance and lose, you lose your stance energy"""
     return stance.amount if same_type(stance, action) else 0
 
 def is_enlightened(x):
     return x is not None and (x.element == HEAVEN or x.element == YINYANG)
 
 def stance_gain(stance, action):
-    """if you play stance and win, add your stance energy, capped at action amount for basic action elements"""
     loss = stance_loss(stance, action)
-    return loss if (is_enlightened(action)) else min(action.amount, loss)
-
+    return (2 * loss) if (is_enlightened(action)) else min(action.amount, loss)
 
 def disad_loss_act_elem(disad, action):
     return disad.amount if (same_type(disad, action) or same_element(disad, action)) else 0
@@ -153,43 +152,41 @@ def print_payoff_matrix(p1_stance = None, p2_stance = None, p1_disadvantage = No
     print_matrix(payoff_matrix(p1_stance = p1_stance, p2_stance = p2_stance,
                                p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage, actions = actions))
         
-def payoff_eval(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None):
+def payoff_eval(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, actions = all_actions):
     matrix = payoff_matrix(p1_stance = p1_stance, p2_stance = p2_stance,
-                           p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage)
+                           p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage, actions = actions)
     return evaluate(matrix)
     
 def evaluate(matrix):
-    game = nash.Game(np.array(matrix))
-    eqls = list(game.support_enumeration())
-    (p1val, p2val) = game[eqls[0][0], eqls[0][1]]
-    return (eqls, [round(p1val, 2), round(p2val, 2)])
-
-def evaluate_lh(matrix):
-    game = nash.Game(np.array(matrix))
-    eqls = game.lemke_howson(initial_dropped_label=0)
-    (p1val, p2val) = game[eqls[0], eqls[1]]
-    return (eqls, [round(p1val, 2), round(p2val, 2)])
-
-def evaluate_ve(matrix):
-    game = nash.Game(np.array(matrix))
-    eqls = next(game.vertex_enumeration())
-    (p1val, p2val) = game[eqls[0], eqls[1]]
-    return (eqls, [round(p1val, 2), round(p2val, 2)])
-
-
-def stance_matrix(amount, p2_disadvantage = None):
-    return [[(payoff_eval(p1_stance = Stance(p1[1], amount), p2_stance = Stance(p2[1], amount), p2_disadvantage = p2_disadvantage)[1][0]) for p2 in all_action_types] for p1 in all_action_types]
+    game = gambit.Game.new_table([len(matrix), len(matrix[0])])
+    for p1 in range(0, len(matrix)):
+        for p2 in range(0, len(matrix[0])) :
+            game[p1,p2][0] = gambit.Decimal(matrix[p1][p2])
+            game[p1,p2][1] = gambit.Decimal(-matrix[p1][p2])
+            
+    solver = gambit.nash.ExternalLCPSolver()
+    eqls = solver.solve(game, use_strategic = True)
+    #eqls = gambit.nash.lcp_solve(game, rational = False, use_strategic = True)
+    eql = eqls[0]
+    pay = eql.payoff()
+    return [list(eql), [round(pay[0], 2), round(pay[1], 2)]] 
+    
+def stance_matrix(amount, p2_disadvantage = None, actions = all_action_types):
+    return [[(payoff_eval(p1_stance = Stance(p1[1], amount), p2_stance = Stance(p2[1], amount), p2_disadvantage = p2_disadvantage)[1][0]) for p2 in actions] for p1 in actions]
 
 def print_stance_matrix(amount, p2_disadvantage = None):
     print([n for (n, i) in all_action_types])
     print_matrix(stance_matrix(amount, p2_disadvantage))
 
-def print_nfg(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, actions = all_actions):
-    """format for gambit project files .nfg"""
-    payoffs = [[payoff(p1_action = p1_action, p2_action = p2_action,
+def nfg_payoffs(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, actions = all_actions):
+    return [[payoff(p1_action = p1_action, p2_action = p2_action,
                     p1_stance = p1_stance, p2_stance = p2_stance,
                     p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage)
              for p1_action in actions] for p2_action in actions]
+    
+def print_nfg(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, actions = all_actions):
+    """format for gambit project files .nfg"""
+    payoffs = nfg_payoffs(p1_stance, p2_stance, p1_disadvantage, p2_disadvantage, actions)
     print("""NFG 1 R "iron triangle" """)
     print("""{"Player 1" "Player 2" } { %s %s }""" %(len(actions), len(actions)))
     for line in payoffs:

@@ -1,10 +1,7 @@
-#!./venv/bin/python
 import unittest
 import iron_triangle as it
 
 class TestIronTriangle(unittest.TestCase):
-    # use basic actions only for test cases
-    actions = [it.attacks[0], it.defenses[0], it.grapples[0]]
     def testBasicActions(self):
         """basic triangle of defense beats attack beats grapple beats defense"""
         atk = it.attacks[0]
@@ -22,7 +19,7 @@ class TestIronTriangle(unittest.TestCase):
         
     def testEquilibrium(self):
         """at neutral there should be equal value for both players, and no dominated strategies"""
-        eql, val = it.payoff_eval(actions=actions)
+        eql, val = it.payoff_eval()
         self.assertEqual(val[0], 0)
         self.assertEqual(val[1], 0)
         dominated = [p for p in eql if p == 0]
@@ -30,11 +27,11 @@ class TestIronTriangle(unittest.TestCase):
 
     def testDisadvantage(self):
         """disadvantage should make things worse for you"""
-        p2 = [it.payoff_eval(p2_disadvantage = it.Disadvantage(act, 1)) for act in [it.ATTACK, it.DEFEND, it.GRAPPLE]]
+        p2 = [it.payoff_eval(p2_disadvantage = it.Disadvantage(act, elem, 1)) for act in [it.ATTACK, it.DEFEND, it.GRAPPLE] for (n, elem) in it.all_elements]
         for (e, v) in p2:
             self.assertTrue(v[0] > 0)
             self.assertTrue(v[1] < 0)
-        p1 = [it.payoff_eval(p1_disadvantage = it.Disadvantage(act, 1)) for act in [it.ATTACK, it.DEFEND, it.GRAPPLE]]
+        p1 = [it.payoff_eval(p1_disadvantage = it.Disadvantage(act, elem, 1)) for act in [it.ATTACK, it.DEFEND, it.GRAPPLE] for (n, elem) in it.all_elements]
         for (e, v) in p1:
             self.assertTrue(v[0] < 0)
             self.assertTrue(v[1] > 0)
@@ -42,8 +39,8 @@ class TestIronTriangle(unittest.TestCase):
     def testStance(self):
         for typ in [it.ATTACK, it.DEFEND, it.GRAPPLE]:
             stance = it.Stance(typ, 1)
-            for p1 in actions:
-                for p2 in actions:
+            for p1 in it.all_actions:
+                for p2 in it.all_actions:
                     pay = it.payoff(p1, p2)
                     pay_stance = it.payoff(p1, p2, p1_stance = stance)
                     if stance.type != p1.type or p1 == p2:
@@ -57,20 +54,24 @@ class TestIronTriangle(unittest.TestCase):
                         self.assertTrue(pay_stance < pay)
 
     def testSanityCheck(self):
+        actions = it.all_actions
         for (name, typ) in it.all_action_types:
-            for amt in range(1,3):
-                print(
-                    it.payoff_eval(p2_disadvantage = it.Disadvantage(typ, amt))[1][0],
-                    name, "disad", amt)
-                for amt2 in range(1,5):
-                    for (name2, typ2) in actions:
-                        print(
-                            it.payoff_eval(p2_disadvantage = it.Disadvantage(typ, amt), p1_stance = it.Stance(typ2, amt2))[1][0],
-                            name, "disad", amt, name2, "stance", amt2)
-            for amt in range(1,5):
-                print(it.payoff_eval(p1_stance = it.Stance(typ, amt))[1][0], name, "stance", amt)
+            for (elem_name, elem) in it.all_elements:
+                for amt in range(1,3):
+                    print(
+                        it.payoff_eval(actions = actions, p2_disadvantage = it.Disadvantage(typ, elem, amt))[1][0],
+                        "disad", name, elem_name, amt)
+                    for amt2 in range(1,7):
+                        for (name2, typ2) in it.all_action_types:
+                            print(
+                                it.payoff_eval(actions = actions, p2_disadvantage = it.Disadvantage(typ, elem, amt), p1_stance = it.Stance(typ2, amt2))[1][0],
+                                "disad", name, elem_name, amt, "stance", name2, amt2)
+                        
+                for amt in range(1,5):
+                    print(it.payoff_eval(actions = actions, p1_stance = it.Stance(typ, amt))[1][0], "stance", name, amt)
+                
         for amt in range(1,5):
-            print("overall stance ", amt, "\n", it.evaluate(it.stance_matrix(amt)))
+            print("overall stance ", amt, "\n", it.evaluate(it.stance_matrix(amt, actions = actions)))
                 
 if __name__ == '__main__':
     unittest.main()

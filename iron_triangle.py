@@ -54,11 +54,16 @@ grapples = [
 basic_actions = [*attacks[0:3], *defenses[0:3], *grapples[0:3]]
 all_actions = [*attacks, *defenses, *grapples]
 
-#test_p1_disadvantage = Disadvantage(GRAPPLE, FIRE , 1)
-test_p1_disadvantage = None
+test_p2_disadvantage = Disadvantage(GRAPPLE, FIRE , 1)
+test_p2_disadvantage = None
 
-#test_actions = basic_actions
+test_p1_stance = Stance(ATTACK, 10)
+test_p1_stance = None
+
+test_actions = basic_actions
 test_actions = all_actions 
+
+
 
 def better_type(p1, p2):
     t1, t2 = (p1.type, p2.type)
@@ -80,25 +85,39 @@ def same_type(a, b):
 def same_element(a, b):
     return a is not None and b is not None and a.element == b.element
 
-def stance_bonus(stance, action):
+def stance_loss(stance, action):
+    """if you play action matching your stance and lose, you lose your stance energy"""
     return stance.amount if same_type(stance, action) else 0
 
-def disad_bonus(disad, action):
+def is_enlightened(x):
+    return x is not None and (x.element == HEAVEN or x.element == YINYANG)
+
+def stance_gain(stance, action):
+    """if you play stance and win, add your stance energy, capped at action amount for basic action elements"""
+    loss = stance_loss(stance, action)
+    return loss if (is_enlightened(action)) else min(action.amount, loss)
+
+
+def disad_loss_act_elem(disad, action):
     return disad.amount if (same_type(disad, action) or same_element(disad, action)) else 0
+
+def disad_loss_act(disad, action):
+    return disad.amount if same_type(disad, action) else 0
+
+disad_loss = disad_loss_act_elem
 
 def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None):
     """net damage done by player 1 to player 2"""
     assert p1_disadvantage is None or p2_disadvantage is None
 
-    # if you play action matching your stance and lose, you lose your stance energy
-    p1_stance_loss = stance_bonus(p1_stance, p1_action)
-    p2_stance_loss = stance_bonus(p2_stance, p2_action)
-    # if you play stance and win, add your stance energy plus up to your base action damage
-    p1_stance_gain = p1_stance_loss + min(p1_action.amount, p1_stance_loss)
-    p2_stance_gain = p2_stance_loss + min(p2_action.amount, p2_stance_loss)
+    p1_stance_loss = stance_loss(p1_stance, p1_action)
+    p2_stance_loss = stance_loss(p2_stance, p2_action)
 
-    p1_disad_loss = disad_bonus(p1_disadvantage, p1_action)
-    p2_disad_loss = disad_bonus(p2_disadvantage, p2_action)
+    p1_stance_gain = stance_gain(p1_stance, p1_action)
+    p2_stance_gain = stance_gain(p2_stance, p2_action)
+
+    p1_disad_loss = disad_loss(p1_disadvantage, p1_action)
+    p2_disad_loss = disad_loss(p2_disadvantage, p2_action)
     
     p1_win_amt = p1_action.amount + p1_stance_gain + p2_stance_loss + p2_disad_loss
     p2_win_amt = p2_action.amount + p2_stance_gain + p1_stance_loss + p1_disad_loss
@@ -180,5 +199,5 @@ def print_nfg(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_dis
 
                 
 if __name__ == '__main__':
-    print_nfg(p1_disadvantage = test_p1_disadvantage, actions = test_actions)
+    print_nfg(p1_stance = test_p1_stance, p2_disadvantage = test_p2_disadvantage, actions = test_actions)
     

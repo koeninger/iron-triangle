@@ -26,30 +26,32 @@ JUMPING = 4
 
 Stance = namedtuple('Stance', ['type', 'amount'])
 
-Action = namedtuple('Action', ['type','element', 'amount'])
+Action = namedtuple('Action', ['type','element', 'amount', 'multiplier'])
 
 Disadvantage = namedtuple('Disadvantage', ['type', 'element', 'amount'])
 
+Combo = namedtuple('Combo', ['amount', 'action1', 'action2'])
+
 attacks = [
-    Action(ATTACK, EARTH, 3),
-    Action(ATTACK, WATER, 3),
-    Action(ATTACK, FIRE, 3),
-    Action(ATTACK, HEAVEN, 3),
-    Action(ATTACK, YINYANG, 3),
+    Action(ATTACK, EARTH, 3, 2),
+    Action(ATTACK, WATER, 3, 2),
+    Action(ATTACK, FIRE, 3, 2),
+    Action(ATTACK, HEAVEN, 3, 3),
+    Action(ATTACK, YINYANG, 3, 3),
 ]
 
 defenses = [
-    Action(DEFEND, EARTH, 2),
-    Action(DEFEND, WATER, 2),
-    Action(DEFEND, FIRE, 2),
+    Action(DEFEND, EARTH, 2, 1),
+    Action(DEFEND, WATER, 2, 1),
+    Action(DEFEND, FIRE, 2, 1),
 ]
 
 grapples = [
-    Action(GRAPPLE, EARTH, 4),
-    Action(GRAPPLE, WATER, 4),
-    Action(GRAPPLE, FIRE, 4),
-    Action(GRAPPLE, HEAVEN, 4),
-    Action(GRAPPLE, YINYANG, 4),
+    Action(GRAPPLE, EARTH, 4, 3),
+    Action(GRAPPLE, WATER, 4, 3),
+    Action(GRAPPLE, FIRE, 4, 3),
+    Action(GRAPPLE, HEAVEN, 4, 4),
+    Action(GRAPPLE, YINYANG, 4, 4),
 ]
 
 beginner_actions = [attacks[0], defenses[0], grapples[0]]
@@ -93,9 +95,10 @@ def stance_loss(stance, action):
 def is_enlightened(x):
     return x is not None and (x.element == HEAVEN or x.element == YINYANG)
 
-def stance_gain(stance, action):
-    loss = stance_loss(stance, action)
-    return (2 * loss) if (is_enlightened(action)) else min(action.amount, loss)
+def stance_gain(stance, action, combo = None):
+    combo_bonus = combo.amount if combo is not None and (combo.action1 == action or combo.action2 == action) else 0
+    energy = combo_bonus + stance_loss(stance, action)
+    return energy * action.multiplier
 
 def disad_loss_act_elem(disad, action):
     return disad.amount if (same_type(disad, action) or same_element(disad, action)) else 0
@@ -105,14 +108,14 @@ def disad_loss_act(disad, action):
 
 disad_loss = disad_loss_act_elem
 
-def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None):
+def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, p1_combo = None):
     """net damage done by player 1 to player 2"""
     assert p1_disadvantage is None or p2_disadvantage is None
 
     p1_stance_loss = stance_loss(p1_stance, p1_action)
     p2_stance_loss = stance_loss(p2_stance, p2_action)
 
-    p1_stance_gain = stance_gain(p1_stance, p1_action)
+    p1_stance_gain = stance_gain(p1_stance, p1_action, p1_combo)
     p2_stance_gain = stance_gain(p2_stance, p2_action)
 
     p1_disad_loss = disad_loss(p1_disadvantage, p1_action)
@@ -138,23 +141,24 @@ def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvan
     else:
         return p1_action.amount - p2_action.amount
 
-def payoff_matrix(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, actions = all_actions):
+def payoff_matrix(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, p1_combo = None, actions = all_actions):
     return [[payoff(p1_action = p1_action, p2_action = p2_action,
                     p1_stance = p1_stance, p2_stance = p2_stance,
-                    p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage)
+                    p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage,
+                    p1_combo = p1_combo)
              for p2_action in actions] for p1_action in actions]
 
 def print_matrix(m):
     for line in m:
         print(" ".join(['{:>2}'.format(x) for x in line]))
 
-def print_payoff_matrix(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, actions = all_actions):
+def print_payoff_matrix(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, p1_combo = None, actions = all_actions):
     print_matrix(payoff_matrix(p1_stance = p1_stance, p2_stance = p2_stance,
-                               p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage, actions = actions))
+                               p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage, p1_combo = p1_combo, actions = actions))
         
-def payoff_eval(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, actions = all_actions):
+def payoff_eval(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, p1_combo = None, actions = all_actions):
     matrix = payoff_matrix(p1_stance = p1_stance, p2_stance = p2_stance,
-                           p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage, actions = actions)
+                           p1_disadvantage = p1_disadvantage, p2_disadvantage = p2_disadvantage, p1_combo = p1_combo, actions = actions)
     return evaluate(matrix)
     
 def evaluate(matrix):

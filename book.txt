@@ -1,0 +1,52 @@
+== Intro
+see <<Conflict>>
+
+blah a paragraph
+
+* some
+* unordered
+* list
+
+
+.some sidebar
+****
+this thing in a sidebar
+****
+
+[NOTE]
+====
+be aware of this
+====
+
+[quote]
+____
+some quote
+____
+
+
+
+== Conflict
+
+. do
+. these
+. steps
+. in
+. order
+
+.Actions
+|===
+|Symbol |Meaning |Beats
+|◯ | Defend | ⬟
+|▧ | Grapple | ◯
+|⬟ | Attack | ▧
+|===
+
+.Elements
+|===
+|Symbol
+|☷
+|☵
+|☲
+|☰
+|☯
+|===

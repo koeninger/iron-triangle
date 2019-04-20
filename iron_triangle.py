@@ -10,19 +10,19 @@ GRAPPLE = 3
 all_action_types = [('Attack', ATTACK), ('Defend', DEFEND), ('Grapple', GRAPPLE)]
 
 # elements
-YINYANG = 0
 EARTH = 1
 WATER = 2
 FIRE = 3
 HEAVEN = 4
+YINYANG = 5
 all_elements = [('Yinyang', YINYANG), ('Earth', EARTH), ('Water', WATER), ('Fire', FIRE), ('Heaven', HEAVEN)]
 
 #positional
-BALANCED = 0
-CROUCHING = 1
-VERTICAL = 2
-HORIZONTAL = 3
-JUMPING = 4
+LOW = 1
+MID = 2
+HIGH = 3
+JUMP = 4
+DASH = 5
 
 Stance = namedtuple('Stance', ['type', 'amount'])
 
@@ -51,7 +51,7 @@ grapples = [
     Action(GRAPPLE, WATER, 4, 2),
     Action(GRAPPLE, FIRE, 4, 2),
     Action(GRAPPLE, HEAVEN, 4, 3),
-    Action(GRAPPLE, YINYANG, 4, 3),
+    Action(GRAPPLE, YINYANG, 4, 4),
 ]
 
 beginner_actions = [attacks[0], defenses[0], grapples[0]]
@@ -77,11 +77,11 @@ def better_type(p1, p2):
 
 def better_element(p1, p2):
     e1, e2 = (p1.element, p2.element)
-    return ((e1 == YINYANG and (e2 == WATER or e2 == HEAVEN)) or
-            (e1 == EARTH and (e2 == FIRE or e2 == YINYANG)) or
-            (e1 == WATER and (e2 == EARTH or e2 == HEAVEN)) or
-            (e1 == FIRE and (e2 == WATER or e2 == YINYANG)) or
-            (e1 == HEAVEN and (e2 == EARTH or e2 == FIRE)))
+    return ((e1 == LOW and (e2 == HIGH or e2 == DASH)) or
+            (e1 == MID and (e2 == LOW or e2 == JUMP)) or
+            (e1 == HIGH and (e2 == MID or e2 == JUMP)) or
+            (e1 == JUMP and (e2 == LOW or e2 == DASH)) or
+            (e1 == DASH and (e2 == HIGH or e2 == MID)))
 
 def same_type(a, b):
     return a is not None and b is not None and a.type == b.type
@@ -92,26 +92,14 @@ def same_element(a, b):
 def stance_loss(stance, action):
     return stance.amount if same_type(stance, action) else 0
 
-def is_enlightened(x):
-    return x is not None and (x.element == HEAVEN or x.element == YINYANG)
-
 def bonus(stance, action, combo = None):
     combo_bonus = combo.amount if combo is not None and (combo.action1 == action or combo.action2 == action) else 0
     stance_bonus = stance_loss(stance, action)
     
-    return combo_bonus + (stance_bonus * action.multiplier)
+    return combo_bonus + round(stance_bonus * action.multiplier)
 
-def disad_loss_act_elem(disad, action):
+def disad_loss(disad, action):
     return disad.amount if (same_type(disad, action) or same_element(disad, action)) else 0
-
-def disad_loss_act(disad, action):
-    return disad.amount if same_type(disad, action) else 0
-
-def disad_loss_none(disad, action):
-    return 0
-
-# disad based on both seems best
-disad_loss = disad_loss_act_elem
 
 def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, p1_combo = None):
     """net damage done by player 1 to player 2"""

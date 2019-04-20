@@ -1,4 +1,5 @@
 #!/bin/bash
 
-asciidoctor book.txt
-asciidoctor-pdf -a pdf-style=theme.yml -a pdf-fontsdir=fonts book.txt
+asciidoctor iron_triangle.adoc
+asciidoctor-pdf -a pdf-style=theme.yml -a pdf-fontsdir=fonts iron_triangle.adoc
+asciidoctor-epub3 iron_triangle.adoc

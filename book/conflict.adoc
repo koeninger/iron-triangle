@@ -1,5 +1,7 @@
-== Intro
-see <<Conflict>>
+[#conflict]
+= Conflict
+
+see <<specials>>
 
 blah a paragraph
 
@@ -24,8 +26,6 @@ some quote
 ____
 
 
-
-== Conflict
 
 . do
 . these

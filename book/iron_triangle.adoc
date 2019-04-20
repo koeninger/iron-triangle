@@ -1,0 +1,11 @@
+= Iron Triangle
+Cody Koeninger
+:doctype: book
+:imagesdir: images
+:fontsdir: fonts
+:pdf-fontsdir: fonts
+ifndef::ebook-format[:leveloffset: 1]
+
+include::conflict.adoc[]
+
+include::specials.adoc[]

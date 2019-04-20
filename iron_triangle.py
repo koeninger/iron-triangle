@@ -47,11 +47,11 @@ defenses = [
 ]
 
 grapples = [
-    Action(GRAPPLE, EARTH, 4, 3),
-    Action(GRAPPLE, WATER, 4, 3),
-    Action(GRAPPLE, FIRE, 4, 3),
-    Action(GRAPPLE, HEAVEN, 4, 4),
-    Action(GRAPPLE, YINYANG, 4, 4),
+    Action(GRAPPLE, EARTH, 4, 2),
+    Action(GRAPPLE, WATER, 4, 2),
+    Action(GRAPPLE, FIRE, 4, 2),
+    Action(GRAPPLE, HEAVEN, 4, 3),
+    Action(GRAPPLE, YINYANG, 4, 3),
 ]
 
 beginner_actions = [attacks[0], defenses[0], grapples[0]]
@@ -95,10 +95,11 @@ def stance_loss(stance, action):
 def is_enlightened(x):
     return x is not None and (x.element == HEAVEN or x.element == YINYANG)
 
-def stance_gain(stance, action, combo = None):
+def bonus(stance, action, combo = None):
     combo_bonus = combo.amount if combo is not None and (combo.action1 == action or combo.action2 == action) else 0
-    energy = combo_bonus + stance_loss(stance, action)
-    return energy * action.multiplier
+    stance_bonus = stance_loss(stance, action)
+    
+    return combo_bonus + (stance_bonus * action.multiplier)
 
 def disad_loss_act_elem(disad, action):
     return disad.amount if (same_type(disad, action) or same_element(disad, action)) else 0
@@ -106,6 +107,10 @@ def disad_loss_act_elem(disad, action):
 def disad_loss_act(disad, action):
     return disad.amount if same_type(disad, action) else 0
 
+def disad_loss_none(disad, action):
+    return 0
+
+# disad based on both seems best
 disad_loss = disad_loss_act_elem
 
 def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, p1_combo = None):
@@ -115,14 +120,14 @@ def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvan
     p1_stance_loss = stance_loss(p1_stance, p1_action)
     p2_stance_loss = stance_loss(p2_stance, p2_action)
 
-    p1_stance_gain = stance_gain(p1_stance, p1_action, p1_combo)
-    p2_stance_gain = stance_gain(p2_stance, p2_action)
+    p1_bonus = bonus(p1_stance, p1_action, p1_combo)
+    p2_bonus = bonus(p2_stance, p2_action)
 
     p1_disad_loss = disad_loss(p1_disadvantage, p1_action)
     p2_disad_loss = disad_loss(p2_disadvantage, p2_action)
     
-    p1_win_amt = p1_action.amount + p1_stance_gain + p2_stance_loss + p2_disad_loss
-    p2_win_amt = p2_action.amount + p2_stance_gain + p1_stance_loss + p1_disad_loss
+    p1_win_amt = p1_action.amount + p1_bonus + p2_stance_loss + p2_disad_loss
+    p2_win_amt = p2_action.amount + p2_bonus + p1_stance_loss + p1_disad_loss
 
     if better_type(p1_action, p2_action):
         return p1_win_amt

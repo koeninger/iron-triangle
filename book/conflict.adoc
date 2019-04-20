@@ -1,37 +1,7 @@
 [#conflict]
 = Conflict
 
-see <<specials>>
 
-blah a paragraph
-
-* some
-* unordered
-* list
-
-
-.some sidebar
-****
-this thing in a sidebar
-****
-
-[NOTE]
-====
-be aware of this
-====
-
-[quote]
-____
-some quote
-____
-
-
-
-. do
-. these
-. steps
-. in
-. order
 
 .Actions
 |===
@@ -41,12 +11,13 @@ ____
 |⬟ | Attack | ▧
 |===
 
+
 .Elements
 |===
-|Symbol
-|☷
-|☵
-|☲
-|☰
-|☯
+|Symbol |Meaning |Beats
+|☷ |Earth, Low   |☲ ☯
+|☵ |Water, Mid   |☷ ☰
+|☲ |Fire, High   |☵ ☰
+|☰ |Heaven, Jump |☷ ☯
+|☯ |Balance, Dash|☲ ☵
 |===

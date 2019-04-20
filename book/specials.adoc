@@ -1,63 +1,94 @@
 [#specials]
 = Specials
 
+Specials can be used to modify the rules in different ways.
+Once a special is used, it cannot be used again until after resting.
+Each character can use at most one special per turn.
 
-== Parry
-After you lose a roll, you ignore the damage.
+The description of a special identifies at what time in a turn it can be used.
+To use a special, play its card face down at the appropriate time.
+Before revealing it, give your opponent an opportunity to play a special of their own.
+If a special should be revealed at a time different from when it is used, the description will say so.
 
-== Reflect
-After you lose a roll, you inflict damage equal to the damage you suffered.
+Some specials have requirements that must be met before learning, either in terms of character level reached, or specials learned first. 
 
-== Double
-After you win a roll, you inflict twice the damage (three times the damage on a critical).
+Some specials have multiple variations, each specific to a particular action type.
+For instance, Parry ⬟ is different from Parry ◯ .
+Each variation must be learned separately and counts as a separate special.
 
-== Precise
-After you win a roll, you choose where the damage is distributed.
+If specials conflict in regards to timing or effect, the player of the special closer to the bottom on the list below decides the outcome.
+If identical specials conflict, neither takes effect.
+If there is still a question, the GM decides.
 
-== Sadistic
-After you win a roll, you heal equal to the damage you inflict.
-Healing may be distributed among different attributes, but only those corresponding to this type of conflict.
+[NOTE]
+====
+You are welcome to re-theme specials to be more appropriate for your character. For instance, if your character suffering from a hangover isn't funny to you, Drunken Monkey could just as easily be a helpful but capricious spirit.
+====
 
-== Premonition
-Before rolling, prevent your opponent from using the specified type of die.
 
 == Insight
-Before rolling, learn the current values of a single opponent's attributes and which specials they have available.
-Applies to any type of die, but different types of conflict still require gaining different versions of Insight.
+* Use before choosing an opponent, or before choosing a stance.
+* Learn the moves, combos, and specials available to your opponent.
 
-== Martyr
-Before rolling, choose an amount of damage to suffer, then heal anyone an equivalent amount.
-Applies to any type of die, but different types of conflict still require gaining different versions of Martyr.
+== Showdown
+* Use before choosing an opponent, or before choosing a stance.
+* Choose a character. You and that character must choose each other as opponents until one of you is out of the conflict.
+* Either of you can respond to opponents choosing you as normal.
 
-== Relentless
-Before rolling, choose two of the specified dice.  Roll both, and use the highest result.
+== Precise
+* Use before choosing a move.
+* Reveal before resolving the turn.
+* You choose where your opponents losses are distributed this turn.
 
-== Flexible
-Before rolling, choose two different dice.  Roll both, and choose which result you want to apply (doesn't have to be the highest).
-Must be gained for each combination of dice, e.g. Flexible Physical Attack & Defend is distinct from Flexible Physical Attack & Trick.
+== Parry ◯  / ▧  / ⬟
+* Use before choosing a move.
+* Reveal before resolving the turn.
+* If the type of your opponent's action matches this special, you lose no energy this turn.
+
+== Vampire  ◯  / ▧  / ⬟
+* Requires: Level 5
+* Use before choosing a move.
+* Reveal before resolving the turn
+* If the type of your action matches this special, regain energy equal to the amount your opponent loses this turn.
+* You choose where to distribute the gain, but you cannot regain more than your maximum.
+
+== Dig Two Graves ◯  / ▧  / ⬟
+* Requires: Level 5 and Parry of the matching type.
+* Use before choosing a move.
+* Reveal before resolving the turn.
+* If the type of your opponent's action matches this special, they lose energy equal to the amount you lose this turn.
+
+== Premonition ◯  / ▧  / ⬟
+* Requires: Level 10
+* Use before choosing a stance.
+* For this turn your opponent may not choose a move with an action matching this special.
 
 == Bodyguard
-After anyone loses a roll, suffer the damage instead of them.
-Applies to any type of die, but different types of conflict still require gaining different versions of Bodyguard.
-
-== Resourceful
-Before rolling in the first round of a conflict, you may choose to use a different set of attributes for inflicting and suffering damage.
-This does not change the type of conflict.
-Lasts until the end of the conflict, and you may not change back to the original attributes.
-Applies to any type of die, but may only be gained once, for a particular combination of attributes and conflict.
-For example, you may have Resourceful Physical for Social conflict (e.g. you're intimidating), or Resourceful Mental for Physical conflict (e.g. you're a wizard), but not both.
+* Requires: Level 5
+* Use before resolving a different character's turn.
+* Does not count against your limit of one special per turn.
+* Choose a character. This turn you lose energy equal to the amount they would have lost, while they lose zero.
 
 == Mimic
-Duplicate the effect of a special that has been used by someone other than you in this conflict.
-Must be used with the corresponding timing and dice if applicable. 
-Cannot duplicate Last Stand.
+* Requires: Level 10
+* Duplicate the effect of a special that has been used by a different character in this conflict.
+* Use and reveal at the time appropriate for the mimicked special.
+* Cannot duplicate specials after it on the list.
+
+== Drunken Monkey
+* Requires: Level 10
+* Use before choosing a move.
+* Until this conflict ends, once per turn after revealing a move, you can replace your move with one chosen randomly by your opponent from your remaining moves.
+* You may not participate in the next conflict, even if you rest first. 
 
 == Last Stand
-Only once in your lifetime, in a conflict where death is at stake, after anyone rolls but before damage is inflicted.
-Lasts until the end of the conflict, at which point you die irrevocably.
-Until then, you have full health for purposes of inflicting damage and cannot be killed.
-May be used even if you have already used a special this round.
-Cannot be used by the GM or in player vs player conflicts.
-Applies to all types of conflicts and dice, you only need to gain Last Stand once.
-
-
+* Requires: Level 10
+* Use before choosing a stance.
+* Regain energy up to your maximum.
+* You cannot be removed from this conflict until it ends, even if you reach zero total energy.
+* At the end of the conflict, you die irrevocably.
+* Play out the conflict; even if the outcome is inevitable, the fate of your allies is not.
+[NOTE]
+====
+NPCs cannot use Last Stand, for obvious reasons.
+====

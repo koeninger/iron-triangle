@@ -5,7 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.7">
-<title>Intro</title>
+<meta name="author" content="Cody Koeninger">
+<title>Iron Triangle</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -435,15 +436,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 </head>
-<body class="article">
+<body class="book">
 <div id="header">
+<h1>Iron Triangle</h1>
+<div class="details">
+<span id="author" class="author">Cody Koeninger</span><br>
+</div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_intro">Intro</h2>
+<h2 id="conflict">Conflict</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>see <a href="#_conflict">Conflict</a></p>
+<p>see <a href="#specials">Specials</a></p>
 </div>
 <div class="paragraph">
 <p>blah a paragraph</p>
@@ -490,11 +495,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </blockquote>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_conflict">Conflict</h2>
-<div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -572,10 +572,115 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </table>
 </div>
 </div>
+<div class="sect1">
+<h2 id="specials">Specials</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_parry">Parry</h3>
+<div class="paragraph">
+<p>After you lose a roll, you ignore the damage.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_reflect">Reflect</h3>
+<div class="paragraph">
+<p>After you lose a roll, you inflict damage equal to the damage you suffered.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_double">Double</h3>
+<div class="paragraph">
+<p>After you win a roll, you inflict twice the damage (three times the damage on a critical).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_precise">Precise</h3>
+<div class="paragraph">
+<p>After you win a roll, you choose where the damage is distributed.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sadistic">Sadistic</h3>
+<div class="paragraph">
+<p>After you win a roll, you heal equal to the damage you inflict.
+Healing may be distributed among different attributes, but only those corresponding to this type of conflict.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_premonition">Premonition</h3>
+<div class="paragraph">
+<p>Before rolling, prevent your opponent from using the specified type of die.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_insight">Insight</h3>
+<div class="paragraph">
+<p>Before rolling, learn the current values of a single opponent&#8217;s attributes and which specials they have available.
+Applies to any type of die, but different types of conflict still require gaining different versions of Insight.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_martyr">Martyr</h3>
+<div class="paragraph">
+<p>Before rolling, choose an amount of damage to suffer, then heal anyone an equivalent amount.
+Applies to any type of die, but different types of conflict still require gaining different versions of Martyr.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_relentless">Relentless</h3>
+<div class="paragraph">
+<p>Before rolling, choose two of the specified dice.  Roll both, and use the highest result.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_flexible">Flexible</h3>
+<div class="paragraph">
+<p>Before rolling, choose two different dice.  Roll both, and choose which result you want to apply (doesn&#8217;t have to be the highest).
+Must be gained for each combination of dice, e.g. Flexible Physical Attack &amp; Defend is distinct from Flexible Physical Attack &amp; Trick.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_bodyguard">Bodyguard</h3>
+<div class="paragraph">
+<p>After anyone loses a roll, suffer the damage instead of them.
+Applies to any type of die, but different types of conflict still require gaining different versions of Bodyguard.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_resourceful">Resourceful</h3>
+<div class="paragraph">
+<p>Before rolling in the first round of a conflict, you may choose to use a different set of attributes for inflicting and suffering damage.
+This does not change the type of conflict.
+Lasts until the end of the conflict, and you may not change back to the original attributes.
+Applies to any type of die, but may only be gained once, for a particular combination of attributes and conflict.
+For example, you may have Resourceful Physical for Social conflict (e.g. you&#8217;re intimidating), or Resourceful Mental for Physical conflict (e.g. you&#8217;re a wizard), but not both.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mimic">Mimic</h3>
+<div class="paragraph">
+<p>Duplicate the effect of a special that has been used by someone other than you in this conflict.
+Must be used with the corresponding timing and dice if applicable.
+Cannot duplicate Last Stand.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_last_stand">Last Stand</h3>
+<div class="paragraph">
+<p>Only once in your lifetime, in a conflict where death is at stake, after anyone rolls but before damage is inflicted.
+Lasts until the end of the conflict, at which point you die irrevocably.
+Until then, you have full health for purposes of inflicting damage and cannot be killed.
+May be used even if you have already used a special this round.
+Cannot be used by the GM or in player vs player conflicts.
+Applies to all types of conflicts and dice, you only need to gain Last Stand once.</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-04-20 11:20:30 -0500
+Last updated 2019-04-20 12:16:32 -0500
 </div>
 </div>
 </body>

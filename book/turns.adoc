@@ -47,6 +47,7 @@ include::5elements.adoc[]
 
 Jump beats low and dash, and so on.  Note that there still isn't a "best" element, both jump and dash can be beaten by low, mid, or high.
 
+<<<
 == Choose an opponent
 
 If it's your turn, choose any character on the opposing side. If it's not your turn and the opposing side chooses you, the rest of the rules for this turn apply symmetrically to you. Being able to choose an opponent is a tactical advantage, but it doesn't determine whether you win or lose the turn.
@@ -67,7 +68,7 @@ To feint, use an empty fist.
 
 For remote games, or if you prefer cards, use a card indicating the type and amount.  Use a zero card to feint.
 
-
+<<<
 == Choose a move
 
 Your most important move is surrender. If you play surrender, you are out of the conflict, and will take your side's consequences of winning or losing the overall conflict, but do not suffer any energy losses for this turn.  If for some reason you have no other remaining cards, you must play surrender.

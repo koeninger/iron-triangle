@@ -1,0 +1,43 @@
+[#levelup]
+= Leveling up
+
+At the end of a session, ask the following questions for each player:
+
+* Did you make a hard decision or suffer a consequence based on your belief or flaw? Players decide.
+* Did you accomplish your goal? The GM decides.
+* Did you reach zero energy for one type of action in a conflict? Hopefully this is clear from the rules, but if there's a disagreement, the GM decides.
+
+Two yes answers mean you can level up.  Choose one of:
+
+* Learn a move. See <<five elements>> below for restrictions.
+* Learn one option in a combo.
+* Add one to your maximum energy for one type of action.
+
+Three yes answers mean you can level up, and can learn a special *instead* of one of the above choices.
+
+Make sure to choose a name for any moves you learn.
+
+You can save yes marks for the next session only if you do not level up.
+Once you level up, erase all yes marks.
+
+Choose a new goal, either now, or before the beginning of the next session.
+If there's a disagreement, GM decides.
+
+If you think that your character's beliefs or flaws have meaningfully changed, you may rewrite them.
+If there's a disagreement, players decide.
+
+== Five elements
+After you have learned all the moves using the three elements ☷ ☵ ☲ , you can learn moves using the fourth and fifth elements ☰ ☯:
+
+include::5elements.adoc[]
+
+include::moves.adoc[]
+
+[#replacement characters]
+== Replacement characters
+
+If the replacement for a dead character continues the deceased's fighting tradition, they can start at a level up to 5 or the deceased's level, whichever is lower.
+
+Choose energy and starting moves as for a level 0 character, then make decisions for each level up.
+The level ups can involve learning a move or combo known by the deceased, but not a special.
+

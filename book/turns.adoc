@@ -1,0 +1,137 @@
+[#turns]
+= Conflict Turns
+
+Rather than using dice or other sources of randomness to determine a winner, this game uses simultaneous choice from a clear ranking of actions and elements.
+
+To play out a conflict turn:
+
+. Choose an opponent.
+. Choose a stance, then reveal.
+. Choose a move, then reveal.
+. Identify the winner based on move and disadvantage.
+. Resolve the consequences based on move, stance, disadvantage, and combos
+
+== Simultaneous choice
+
+Choose an option in secret, indicate that you are ready, then reveal once your opponent is ready.
+
+Cards work well for this by playing a card face down to indicate readiness, then flipping to reveal.
+For remote games, hold up the card with the back facing the camera, then turn to reveal.
+
+If you don't have the preprinted cards for this game, write on index cards; just make sure the cards are not distinguishable from the back.
+
+== Ranking of actions
+Actions represent the basic objective of a move or stance. Defend blocks attacks; grapple grabs defenders; attack hurts attempts to grapple.  There is no "best" action, each of them can be beaten.
+
+include::actions.adoc[]
+
+[NOTE]
+====
+For a mnemonic, the number of sides ◯ 1 < ▧ 4 < ⬟ 5.  AttACK rhymes with blACK, defend is round like a shield.
+====
+
+
+== Ranking of elements
+Elements represent the nuance of a move. Low ducks high, mid crushes low, high outranges mid.
+
+include::3elements.adoc[]
+[NOTE]
+====
+For a mnemonic, the number of unbroken lines ☷ 0 < ☵ 1 < ☲ 2.
+If you don't want to play with elements for your first couple of games, that's fine. Ignore any mention of them and the basic mechanics will still work.
+====
+
+Once your character has leveled up and learned all of the 3-element moves, 2 more elements are available.  Their ranking is:
+
+include::5elements.adoc[]
+
+Jump beats low and dash, and so on.  Note that there still isn't a "best" element, both jump and dash can be beaten by low, mid, or high.
+
+== Choose an opponent
+
+If it's your turn, choose any character on the opposing side. If it's not your turn and the opposing side chooses you, the rest of the rules for this turn apply symmetrically to you. Being able to choose an opponent is a tactical advantage, but it doesn't determine whether you win or lose the turn.
+
+== Choose a stance
+
+To choose a stance, select a number between 0 and your current energy corresponding to one type of action.
+Stances represent an outward impression of commitment to a particular action.
+
+* If you choose a move corresponding to your stance and lose, you will lose the energy you committed.
+* If you choose a move corresponding to your stance and win, you keep the energy you committed. Your opponent will lose an amount equal to the energy you committed times a multiplier associated with your move.
+* If you choose a different move, the stance was a feint, and you keep the energy you committed. It has no effect on either side's losses.
+
+For local games, small wooden cubes in 3 colors work well for choosing stances - light for defend, dark for attack, and contrasting for grapple.
+Remaining energy is ordinarily public knowledge, so conceal your total amount with one hand while selecting cubes with the other.
+Hold out an unambiguous selected fist containing cubes, then open your hand once both sides are ready to reveal.
+To feint, use an empty fist.
+
+For remote games, or if you prefer cards, use a card indicating the type and amount.  Use a zero card to feint.
+
+
+== Choose a move
+
+Your most important move is surrender. If you play surrender, you are out of the conflict, and will take your side's consequences of winning or losing the overall conflict, but do not suffer any energy losses for this turn.  If for some reason you have no other remaining cards, you must play surrender.
+
+Other moves are defined by the name you gave them, an action, an element, a base energy loss your opponent will suffer if you win, and a multiplier applied to the amount of stance energy you committed.
+
+include::moves.adoc[]
+
+When choosing a move, it is important to consider your potential disadvantage and combos.
+
+== Disadvantage
+
+If you lost your most recent turn, and play a move that matches the action *or* the element of your prior move, it is disadvantaged.
+If you lose, you will lose additional energy, and you will also lose what otherwise would have been a tie.
+
+Disadvantage losses are cumulative with consecutive disadvantaged losses, at one point of energy per prior loss.
+Disadvantage ends once you end a turn without losing, play a move that doesn't match, or at the end of the conflict.
+It does not end once someone else is selected as an opponent, so leave your played move cards out face up to indicate disadvantage.
+This does restrict your available moves.
+
+
+== Combos
+
+Combos are relationships between moves, that are learned separately from moves.
+Combos consist of a starting move and up to two options for following moves.
+If the immediately prior turn was a loss for your opponent, you can play a combo that follows from the move that won, if you know it.
+Combos do not affect ties, but if you play a move that combos and win, your opponent will lose additional energy.
+
+Combos bonuses are cumulative with consecutive combo wins, at one point of energy per prior combo win.
+Leave your played cards out face up to indicate a combo.
+This does restrict your available moves.
+A player can voluntarily end the combo before choosing a move in order to return all the moves to availability.
+Combos end once you lose a turn, play a move that doesn't combo, choose a different opponent, or at the end of the conflict.
+
+You can play up to 3 consecutive winning turns to continue a combo, then must pass.
+This counts as one turn for purposes of equal number of turns.
+The character you pass to can continue the combo against the same opponent if possible.
+
+
+== Identify the winner
+
+Check in order:
+
+. If a move's action beats the other move's action, it wins.
+. If a move's element beats the other move's action, it wins.
+. If a move is disadvantaged, it loses.
+. Otherwise it's a tie.
+
+== Resolve the consequences
+
+In a tie, each character loses energy equal to the base amount for the other character's move, but no additional losses.
+Ties end combos and disadvantage.
+
+If you played the winning move, the opponent loses energy equal to:
+
+* (your committed stance energy times the multiplier of your move) plus
+* their committed stance energy plus
+* the base amount of your move, plus
+* one point per prior win in your successful combo plus
+* one point per prior loss in their disadvantage
+
+Players decide which action types to distribute losses among.
+
+If you reach zero energy for one action type, mark yes next to conflict for purposes of <<levelup>>.
+
+If you reach zero energy in all action types, you are out of the conflict, and suffer the specified consequence.
+In particular, if it is a conflict to the death, your character is dead, even if your side wins the overall conflict.

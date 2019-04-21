@@ -16,7 +16,7 @@ Some specials have multiple variations, each specific to a particular action typ
 For instance, Parry ⬟ is different from Parry ◯ .
 Each variation must be learned separately and counts as a separate special.
 
-If specials conflict in regards to timing or effect, the player of the special closer to the bottom on the list below decides the outcome.
+If specials conflict in regards to timing or effect, the player of the special closer to the bottom of the list below decides the outcome.
 If identical specials conflict, neither takes effect.
 If there is still a question, the GM decides.
 
@@ -88,7 +88,4 @@ You are welcome to re-theme specials to be more appropriate for your character. 
 * You cannot be removed from this conflict until it ends, even if you reach zero total energy.
 * At the end of the conflict, you die irrevocably.
 * Play out the conflict; even if the outcome is inevitable, the fate of your allies is not.
-[NOTE]
-====
-NPCs cannot use Last Stand, for obvious reasons.
-====
+* NPCs cannot use Last Stand, for obvious reasons.

@@ -1,0 +1,10 @@
+.Five Elements
+[%autowidth]
+|===
+|Meaning      |Symbol  |Beats
+|Earth, Low   |☷ |☲ ☯
+|Water, Mid   |☵ |☷ ☰
+|Fire, High   |☲ |☵ ☰
+|Heaven, Jump |☰ |☷ ☯
+|Balance, Dash|☯ |☲ ☵
+|===

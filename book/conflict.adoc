@@ -1,23 +1,66 @@
 [#conflict]
-= Conflict
+= Conflict Overview
 
+A scene with NPCs who are opposed to the PCs' goals may escalate to a conflict.
 
+Conflicts do not have to be violent, or even physical.
+The rules are the same for an alleyway chase, a samurai staredown to see who flinches first, or a bloody battle to the death.
 
-.Actions
-|===
-|Symbol |Meaning |Beats
-|◯ | Defend | ⬟
-|▧ | Grapple | ◯
-|⬟ | Attack | ▧
-|===
+To play out a conflict:
 
+. Establish the stakes.
+. Players decide who takes the first turn.
+. Play and pass turns.
+. Resolve the consequences.
 
-.Elements
-|===
-|Symbol |Meaning |Beats
-|☷ |Earth, Low   |☲ ☯
-|☵ |Water, Mid   |☷ ☰
-|☲ |Fire, High   |☵ ☰
-|☰ |Heaven, Jump |☷ ☯
-|☯ |Balance, Dash|☲ ☵
-|===
+== Establishing stakes
+
+The players decide the end and the means, i.e. what they want and how they're going to achieve it.
+The GM decides the consequences, which should be proportional to the players' decision.
+Adjust and repeat until the players agree with the potential consequences.
+
+If the players choose not to enter the conflict, the consequence should be at most a tick on a threat clock. 
+Specifically, players should not be forced to enter a conflict to the death against their will.
+
+.Example stakes
+****
+As you enter the library, you see two ninja grab the forbidden scroll and jump out the window. What do you do?::
+Kill 'em so we can take the scroll back!
+Ok, a loss means you die, and even if you win you won't know what their plan was::
+Maybe we chase them down and interrogate them?
+Then if you lose they get away and their masters will know you're after the scroll. If you win you'll get the scroll back and a chance to question them. Ready?::
+Yeah, let's go.
+****
+
+== First turn
+
+Players decide who takes the first turn. There are intentionally no rules for surprise or ambush.
+
+== Playing and passing turns
+
+See the rules for <<turns>> for determining the winner of a conflict turn.
+Once a turn is over, the winner decides who takes the next turn.
+In case of a tie, the GM decides.
+Players are required to pass to someone who has not yet had an equal number of turns if possible.
+
+== Resolving consequences
+
+Once all characters on one side are out of the conflict, it's over.
+The winning side gets to narrate the outcome, within the boundaries of the established stakes.
+If there is any question, the GM decides, including how it relates to the next problem or conflict.
+
+PCs can die only in conflicts.
+If a PC dies, the player may create another character. See <<replacement characters>>.
+The players decide how to introduce the new character to the story as soon as possible.
+
+== Minor conflicts
+
+For situations that are more than a problem but less than a full conflict, the GM can decide in advance that it's a minor conflict only worth playing a single turn.
+In that case the winner of the turn is the winner of the conflict.
+The consequences, win or lose, should be proportionally less than a full conflict.
+
+== Repeating conflicts
+
+Do not repeat a conflict, even a minor one, until the situation has meaningfully changed.
+Simply resting and trying again is not meaningful change.
+

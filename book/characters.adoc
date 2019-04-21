@@ -33,9 +33,9 @@ Backgrounds are used to overcome problems, and are up to you.
 Be as creative as you like, whether that's "former cop" or "calligraphy instructor to the Prince in Exile of Xaran".
 
 == Choose energy
-Distribute 10 points among Defense, ◯ ,  Grapple, ▧ , and an Attack, ⬟ .
+Distribute 10 points among Defense ◯ ,  Grapple ▧ , and Attack ⬟ .
 Don't worry about min-maxing, just go with what makes sense for your character concept.
-If you're really concerned about it, put 4 in Attack ⬟ , 3 in Defense ◯ , 2 in Grapple ▧ , and the last point wherever.
+If you're really concerned about it, put 4 in Attack ⬟, 3 in Defense ◯, 2 in Grapple ▧, and the last point wherever.
 
 == Choose moves
 You know a Defense, ◯ ☵, a Grapple, ▧ ☵, and an Attack, ⬟ ☵. Make up cool names for them.

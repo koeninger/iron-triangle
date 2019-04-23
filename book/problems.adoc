@@ -1,0 +1,50 @@
+[#problems]
+= Problems
+
+The GM can add problems to a scene, situations that stand between the PCs and their goals.
+
+Problems should have interesting potential consequences for both failure and success.
+Otherwise there's no point in playing to find out which happens, just continue the game.
+Problems typically involve inanimate circumstances or neutral NPCs; if an NPC is actively opposed to the PCs, it's a conflict.
+
+****
+"Your bedroom door is locked" probably isn't a problem; it's your house, you have the key or can get a locksmith or kick the door in and nothing will happen.
+"The door to the library is locked" might be a problem, if something interesting will happen if you ignore it or take too long.
+"The door to the libary containing the forbidden scroll is locked, and you heard that the Elbow Clan are going after it tonight" is definitely a problem.
+"The door to the library is blocked by the Elbow Clan who are out for blood" is a conflict.
+****
+
+To decide whether and how the players succeed at overcoming a problem, use any of the following:
+
+* Come up with a good idea
+* Spend a background point
+* Make a hard decision based on a belief
+* Suffer from a flaw
+* Escalate to a conflict
+* Use time or resources
+
+When deciding, remember to err on the side of "yes, and..."
+
+== A good idea
+If a player comes up with a good idea based on prior established facts of the story, the GM decides if it overcomes the problem.
+
+== Spend a background point
+If a player narrates a solution based on one of their backgrounds and is willing to spend the point, the players decide if it overcomes the problem.
+
+== Make a hard decision
+The GM can offer one or more players a choice that boils down to "play to your belief and fail, or compromise your belief and succeed".
+
+== Suffer from a flaw
+If a player narrates how their flaw results in an interesting failure, the GM decides if it makes sense.
+
+== Escalate to a conflict
+The GM can decide that NPCs take more of an interest in PC activities.
+
+== Use time or resources
+This could be loss of energy, or spending too much time resulting in a tick on a countdown clock.
+This is generally less interesting, so use it as a last resort.
+
+[NOTE]
+====
+Why should players decide to fail?  It can make for more interesting stories, and is one of the ways to level up.
+====

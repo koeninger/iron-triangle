@@ -8,6 +8,8 @@ ifndef::ebook-format[:leveloffset: 1]
 
 include::characters.adoc[]
 
+include::problems.adoc[]
+
 include::conflict.adoc[]
 
 include::turns.adoc[]

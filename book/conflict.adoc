@@ -1,7 +1,7 @@
 [#conflict]
 = Conflict Overview
 
-A scene with NPCs who are opposed to the PCs' goals may escalate to a conflict.
+When the NPCs in a scene are actively opposed to the PCs' goals, the GM may decide it can escalate to a conflict.
 
 Conflicts do not have to be violent, or even physical.
 The rules are the same for an alleyway chase, a samurai staredown to see who flinches first, or a bloody battle to the death.

@@ -13,7 +13,7 @@ If a special should be revealed at a time different from when it is used, the de
 Some specials have requirements that must be met before learning, either in terms of character level reached, or specials learned first. 
 
 Some specials have multiple variations, each specific to a particular action type.
-For instance, Parry ⬟ is different from Parry ◯ .
+For instance, Wax On ⬟ is different from Wax On ◯ .
 Each variation must be learned separately and counts as a separate special.
 
 If specials conflict in regards to timing or effect, the player of the special closer to the bottom of the list below decides the outcome.
@@ -26,66 +26,72 @@ You are welcome to re-theme specials to be more appropriate for your character. 
 ====
 
 
-== Insight
+== Scouter
 * Use before choosing an opponent, or before choosing a stance.
 * Learn the moves, combos, and specials available to your opponent.
 
-== Showdown
+== To Blave
+* Use at any time matching another special you know.
+* Can be used twice per conflict instead of once per rest.
+* Has no other effect.
+
+== There Can Be Only One
 * Use before choosing an opponent, or before choosing a stance.
-* Choose a character. You and that character must choose each other as opponents until one of you is out of the conflict.
+* Choose a character. You and that character cannot choose a different opponent until one of you is out of the conflict.
 * Either of you can respond to opponents choosing you as normal.
 
-== Precise
+== Pressure Point
 * Use before choosing a move.
 * Reveal before resolving the turn.
 * You choose where your opponents losses are distributed this turn.
 
-== Parry ◯  / ▧  / ⬟
+== Wax On ◯  / ▧  / ⬟
 * Use before choosing a move.
 * Reveal before resolving the turn.
-* If the type of your opponent's action matches this special, you lose no energy this turn.
+* If the type of your opponent's action matches this special, you lose no energy from their stance this turn.
 
-== Vampire  ◯  / ▧  / ⬟
+== Santa Carla  ◯  / ▧  / ⬟
 * Requires: Level 5
 * Use before choosing a move.
 * Reveal before resolving the turn
-* If the type of your action matches this special, regain energy equal to the amount your opponent loses this turn.
+* If the type of your stance and action matches this special, regain energy equal to the amount you committed to the stance this turn.
+* Do not multiply the gain by your move's stance multiplier.
 * You choose where to distribute the gain, but you cannot regain more than your maximum.
 
 == Dig Two Graves ◯  / ▧  / ⬟
-* Requires: Level 5 and Parry of the matching type.
+* Requires: Level 5 and Wax On of the matching type.
 * Use before choosing a move.
 * Reveal before resolving the turn.
 * If the type of your opponent's action matches this special, they lose energy equal to the amount you lose this turn.
 
-== Premonition ◯  / ▧  / ⬟
+== I Already Know ◯  / ▧  / ⬟
 * Requires: Level 10
 * Use before choosing a stance.
-* For this turn your opponent may not choose a move with an action matching this special.
+* For this turn your opponent cannot choose a move with an action matching this special.
 
-== Bodyguard
+== Yojimbo
 * Requires: Level 5
 * Use before resolving a different character's turn.
 * Does not count against your limit of one special per turn.
 * Choose a character. This turn you lose energy equal to the amount they would have lost, while they lose zero.
 
-== Mimic
+== Liquid Metal
 * Requires: Level 10
 * Duplicate the effect of a special that has been used by a different character in this conflict.
-* Use and reveal at the time appropriate for the mimicked special.
+* Use and reveal at the time appropriate for the duplicated special.
 * Cannot duplicate specials after it on the list.
 
 == Drunken Monkey
 * Requires: Level 10
 * Use before choosing a move.
 * Until this conflict ends, once per turn after revealing a move, you can replace your move with one chosen randomly by your opponent from your remaining moves.
-* You may not participate in the next conflict, even if you rest first. 
+* You cannot participate in the next conflict, even if you rest first. 
 
-== Last Stand
+== The Way of the Samurai
 * Requires: Level 10
 * Use before choosing a stance.
 * Regain energy up to your maximum.
 * You cannot be removed from this conflict until it ends, even if you reach zero total energy.
 * At the end of the conflict, you die irrevocably.
 * Play out the conflict; even if the outcome is inevitable, the fate of your allies is not.
-* NPCs cannot use Last Stand, for obvious reasons.
+* NPCs cannot use this special, for obvious reasons.

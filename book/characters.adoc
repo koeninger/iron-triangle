@@ -1,24 +1,28 @@
 [#characters]
 = Creating a character
+Write down your choices on paper using pencil, since your character will change over time.
 
 == Choose a name
 
 == Choose a fighting style
+Your fighting style is up to you, there are no rule benefits or restrictions.
+Unarmed, armed, multi-armed, as long as it fits the setting.
 
 == Choose a description
 I highly recommend you draw a picture, even if you think your drawing skills suck.
 
 == Choose a belief
-Should be something the GM can actively challenge with hard choices.
-Shouldn't completely piss off the other players, if there's disagreement, players decide.
+Your character's belief should be something the GM can actively challenge with hard choices.
+It shouldn't completely piss off the other players, if there's disagreement, players decide.
 
 == Choose a flaw
-Should be something you are actively interested in using to get your character into trouble.
-Shouldn't completely piss off the other players, if there's disagreement, players decide.
+Your character's flaw hould be something you are actively interested in portraying to get into trouble.
+It shouldn't completely piss off the other players, if there's disagreement, players decide.
 
 == Choose a goal
-Should be something potentially, but not trivially, achievable within one game session. If there's disagreement, GM decides.
-Can wait until the end of the first session.
+Your character's current goal hould be something potentially, but not trivially, achievable within one game session.
+If there's disagreement, GM decides.
+You can wait until the end of the first session.
 
 [NOTE]
 ====
@@ -26,19 +30,25 @@ Beliefs, flaws, and goals aren't just filler to be forgotten about. You cannot l
 ====
 
 == Choose backgrounds
-Distribute 3 points between backgrounds of your choice, no more than 2 in any one.
-Can wait until during play.
-
 Backgrounds are used to overcome problems, and are up to you.
-Be as creative as you like, whether that's "former cop" or "calligraphy instructor to the Prince in Exile of Xaran".
+Be as creative as you like, whether that's "former cop" or "calligraphy instructor to the Exiled Prince of Xaran".
+
+Distribute 3 points between backgrounds of your choice, no more than 2 in any one.
+You can wait until during play to decide on a background.
 
 == Choose energy
-Distribute 10 points among Defense ◯ ,  Grapple ▧ , and Attack ⬟ .
-Don't worry about min-maxing, just go with what makes sense for your character concept.
+Energy represents your mental and physical resources in a conflict.
+Distribute 10 points among the types Defense ◯ ,  Grapple ▧ , and Attack ⬟, with at least one point in each.
+
+Keep track of your maximum separate from your current energy for each type.
+As you approach zero for a particular type, you're much less effective, and once you reach zero overall you're out of the conflict.
+
+Don't worry about optimizing, just go with what makes sense for your character concept.
 If you're really concerned about it, put 4 in Attack ⬟, 3 in Defense ◯, 2 in Grapple ▧, and the last point wherever.
 
 == Choose moves
-You know a Defense, ◯ ☵, a Grapple, ▧ ☵, and an Attack, ⬟ ☵. Make up cool names for them.
-Don't worry too much about what the symbols mean.
+Moves are the main things you do in a conflict to reduce your opponent's energy.
+You know a Defense, ◯ ☵, a Grapple, ▧ ☷, and an Attack, ⬟ ☲. Make up cool names for them.
 
+Don't worry too much about what the symbols mean right now.
 If you're still concerned about it, read the <<conflict>> and <<turns>> chapter.

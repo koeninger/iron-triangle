@@ -20,6 +20,11 @@ For remote games, hold up the card with the back facing the camera, then turn to
 
 If you don't have the preprinted cards for this game, write on index cards; just make sure the cards are not distinguishable from the back.
 
+== Hidden information
+
+Once a conflict begins, remaining energy for NPCs and PCs is public information.
+NPC available moves and specials are not public information, but PC moves and specials are (since the GM could memorize them anyway).
+
 == Ranking of actions
 Actions represent the basic objective of a move or stance. Defend blocks attacks; grapple grabs defenders; attack hurts attempts to grapple.  There is no "best" action, each of them can be beaten.
 
@@ -38,7 +43,8 @@ include::3elements.adoc[]
 [NOTE]
 ====
 For a mnemonic, the number of unbroken lines ☷ 0 < ☵ 1 < ☲ 2.
-If you don't want to play with elements for your first couple of games, that's fine. Ignore any mention of them and the basic mechanics will still work.
+If you don't want to play with elements for your first couple of games, that's fine.
+Ignore any mention of them and the basic mechanics will still work.
 ====
 
 Once your character has leveled up and learned all of the 3-element moves, 2 more elements are available.  Their ranking is:
@@ -62,8 +68,8 @@ Stances represent an outward impression of commitment to a particular action.
 * If you choose a different move, the stance was a feint, and you keep the energy you committed. It has no effect on either side's losses.
 
 For local games, small wooden cubes in 3 colors work well for choosing stances - light for defend, dark for attack, and contrasting for grapple.
-Remaining energy is ordinarily public knowledge, so conceal your total amount with one hand while selecting cubes with the other.
-Hold out an unambiguous selected fist containing cubes, then open your hand once both sides are ready to reveal.
+Remaining energy is public information, but conceal your total amount while selecting cubes so that you do not give away your choice before revealing.
+Hold out an unambiguous fist containing selected cubes, then open your hand once both sides are ready to reveal.
 To feint, use an empty fist.
 
 For remote games, or if you prefer cards, use a card indicating the type and amount.  Use a zero card to feint.
@@ -84,7 +90,7 @@ When choosing a move, it is important to consider your potential disadvantage an
 If you lost your most recent turn, and play a move that matches the action *or* the element of your prior move, it is disadvantaged.
 If you lose, you will lose additional energy, and you will also lose what otherwise would have been a tie.
 
-Disadvantage losses are cumulative with consecutive disadvantaged losses, at one point of energy per prior loss.
+Disadvantage energy losses are cumulative with consecutive disadvantaged turns, at one point of energy per prior turn.
 Disadvantage ends once you end a turn without losing, play a move that doesn't match, or at the end of the conflict.
 It does not end once someone else is selected as an opponent, so leave your played move cards out face up to indicate disadvantage.
 This does restrict your available moves.
@@ -93,11 +99,11 @@ This does restrict your available moves.
 == Combos
 
 Combos are relationships between moves, that are learned separately from moves.
-Combos consist of a starting move and up to two options for following moves.
-If the immediately prior turn was a loss for your opponent, you can play a combo that follows from the move that won, if you know it.
+Combos consist of a starting move and up to two options for followup moves.
+If the immediately prior turn was a loss for your opponent, you can play any combo you know that follows from the move that won.
 Combos do not affect ties, but if you play a move that combos and win, your opponent will lose additional energy.
 
-Combos bonuses are cumulative with consecutive combo wins, at one point of energy per prior combo win.
+Combos bonuses are cumulative with consecutive combo turns, at one point of energy per prior combo turn.
 Leave your played cards out face up to indicate a combo.
 This does restrict your available moves.
 A player can voluntarily end the combo before choosing a move in order to return all the moves to availability.
@@ -113,7 +119,7 @@ The character you pass to can continue the combo against the same opponent if po
 Check in order:
 
 . If a move's action beats the other move's action, it wins.
-. If a move's element beats the other move's action, it wins.
+. If a move's element beats the other move's element, it wins.
 . If a move is disadvantaged, it loses.
 . Otherwise it's a tie.
 

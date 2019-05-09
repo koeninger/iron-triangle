@@ -9,25 +9,12 @@ Your fighting style is up to you, there are no rule benefits or restrictions.
 Unarmed, armed, multi-armed, as long as it fits the setting.
 
 == Choose a description
-I highly recommend you draw a picture, even if you think your drawing skills suck.
-
-== Choose a belief
-Your character's belief should be something the GM can actively challenge with hard choices.
-It shouldn't completely piss off the other players, if there's disagreement, players decide.
-
-== Choose a flaw
-Your character's flaw hould be something you are actively interested in portraying to get into trouble.
-It shouldn't completely piss off the other players, if there's disagreement, players decide.
+I highly recommend you draw a picture, even if you think your drawing skills are bad.
 
 == Choose a goal
-Your character's current goal hould be something potentially, but not trivially, achievable within one game session.
+Your character's current goal should be something potentially, but not trivially, achievable within one game session.
 If there's disagreement, GM decides.
-You can wait until the end of the first session.
-
-[NOTE]
-====
-Beliefs, flaws, and goals aren't just filler to be forgotten about. You cannot level up without playing them.
-====
+You can wait until the end of the first session to choose a goal.
 
 == Choose backgrounds
 Backgrounds are used to overcome problems, and are up to you.
@@ -35,6 +22,19 @@ Be as creative as you like, whether that's "former cop" or "calligraphy instruct
 
 Distribute 3 points between backgrounds of your choice, no more than 2 in any one.
 You can wait until during play to decide on a background.
+
+== Choose a belief
+Your character's belief should be something that can complicate problems and lead to hard choices.
+
+== Choose a flaw
+Your character's flaw should be something that can lead to failure to overcome problems.
+
+[NOTE]
+====
+Beliefs, flaws, and goals are just filler to be forgotten about. You cannot level up without playing them.
+A little friction with other players is good, but if you choose things they are adamantly opposed to, they can veto your approach to problems during play.
+It's in your best interests to talk things out with them in advance.
+====
 
 == Choose energy
 Energy represents your mental and physical resources in a conflict.
@@ -48,7 +48,11 @@ If you're really concerned about it, put 4 in Attack ⬟, 3 in Defense ◯, 2 in
 
 == Choose moves
 Moves are the main things you do in a conflict to reduce your opponent's energy.
-You know a Defense, ◯ ☵, a Grapple, ▧ ☷, and an Attack, ⬟ ☲. Make up cool names for them.
+You know a Defense, ◯ ☵, a Grapple, ▧ ☷, and an Attack, ⬟ ☲.
+Make up cool names for them.
 
 Don't worry too much about what the symbols mean right now.
 If you're still concerned about it, read the <<conflict>> and <<turns>> chapter.
+
+== Level
+You start at level zero. As you level up you can learn specials and combos, but you do not start with any at level zero.

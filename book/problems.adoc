@@ -1,50 +1,68 @@
 [#problems]
 = Problems
 
-The GM can add problems to a scene, situations that stand between the PCs and their goals.
+The GM can add problems to to the story that stand between the PCs and their goals.
 
 Problems should have interesting potential consequences for both failure and success.
-Otherwise there's no point in playing to find out which happens, just continue the game.
+Otherwise there's no point in playing to find out which happens, just continue the story.
 Problems typically involve inanimate circumstances or neutral NPCs; if an NPC is actively opposed to the PCs, it's a conflict.
 
 ****
 "Your bedroom door is locked" probably isn't a problem; it's your house, you have the key or can get a locksmith or kick the door in and nothing will happen.
-"The door to the library is locked" might be a problem, if something interesting will happen if you ignore it or take too long.
-"The door to the libary containing the forbidden scroll is locked, and you heard that the Elbow Clan are going after it tonight" is definitely a problem.
+"The door to the library is locked" might be a problem, if something interesting will happen if you ignore it or take too long opening it.
+"The door to the library containing the forbidden scroll is locked, and you heard that the Elbow Clan are going after it tonight" is definitely a problem.
 "The door to the library is blocked by the Elbow Clan who are out for blood" is a conflict.
 ****
 
-To decide whether and how the players succeed at overcoming a problem, use any of the following:
+To decide the outcome of a problem, any interested players each make a simultaneous choice from one of the following options:
 
-* Come up with a good idea
-* Spend a background point
-* Make a hard decision based on a belief
-* Suffer from a flaw
-* Escalate to a conflict
-* Use time or resources
+. Succeed with a good idea
+. Succeed by spending a background point
+. Succeed with a significant complication
+. Fail in an interesting way
 
-When deciding, remember to err on the side of "yes, and..."
+Choices closer to the bottom of the list beat those above.
+E.g. if one player chooses "Succeed with a significant complication" and the other chooses "Fail", the player choosing Fail gets to decide and narrate the outcome.  Ties are decided in favor of the player who 
 
-== A good idea
-If a player comes up with a good idea based on prior established facts of the story, the GM decides if it overcomes the problem.
+== Succeed with a good idea
+Describe a good idea for how you overcome the problem, based on the prior established facts of the story and setting.
 
-== Spend a background point
-If a player narrates a solution based on one of their backgrounds and is willing to spend the point, the players decide if it overcomes the problem.
+== Succeed by spending a background point
+Spend a background point in order to introduce new facts related to your background that help you overcome the problem.
+This could be physical items, knowledge, relationships to NPCs; it's up to you as long as it's plausibly related to the background.
+Any NPCs introduced are controlled by the GM after the current problem is resolved.
 
-== Make a hard decision
-The GM can offer one or more players a choice that boils down to "play to your belief and fail, or compromise your belief and succeed".
+== Succeed with a significant complication
+Describe how you succeed, but with a significant consequence or hard choice. This typically involves your belief, or sometimes flaw.
 
-== Suffer from a flaw
-If a player narrates how their flaw results in an interesting failure, the GM decides if it makes sense.
+== Fail in an interesting way
+Describe how you fail, and the interesting outcome that results. This typically involves your flaw, or sometimes belief.
 
-== Escalate to a conflict
-The GM can decide that NPCs take more of an interest in PC activities.
-
-== Use time or resources
-This could be loss of energy, or spending too much time resulting in a tick on a countdown clock.
-This is generally less interesting, so use it as a last resort.
 
 [NOTE]
 ====
-Why should players decide to fail?  It can make for more interesting stories, and is one of the ways to level up.
+Why should players decide to create complications or failure?  It makes for more interesting stories, and is required to level up.
 ====
+
+
+== GM Escalation
+As always, the GM can redirect players that are contradicting established fact or breaking the rules, e.g. choosing failure and then describing success.
+The GM cannot choose for the players, but if all of the players refuse make a choice for some reason, the GM decides the outcome of the problem.
+This can involve consequences such as loss of energy, escalation to a conflict, or a tick on a countdown.
+It cannot involve player character death, this isn't a game where "rocks fall, you die."
+
+
+== Don't repeat problems
+The story should be meaningfully different after a problem, succeed or fail, so it doesn't make sense to repeat an attempt at a problem.
+
+== Veto
+Each player has at most one veto at any given time.
+It is spent once used, and you have an option to regain it by leveling up.
+Vetos allow you to undo another player's choice regarding the outcome of a problem (not conflict), and substitute your own.
+
+You can use a veto after another player has narrated an outcome and before play has moved on.
+The vetoed choice doesn't take effect, i.e. the other player doesn't spend the background point or get credit towards leveling up for the failure.
+You cannot threaten to veto; if you say the word veto, you've used it.
+You cannot veto a veto.
+
+If vetos cause significant strife among players, talk it out and re-set expectations.

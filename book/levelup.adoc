@@ -3,20 +3,28 @@
 
 At the end of a session, ask the following questions for each player:
 
-* Did you make a hard decision or suffer a consequence based on your belief or flaw? Players decide.
-* Did you accomplish your goal? The GM decides.
-* Did you reach zero energy for one type of action in a conflict? Hopefully this is clear from the rules, but if there's a disagreement, the GM decides.
+* Did you play out a problem with complications or failure based on your belief or flaw?
+* Did you accomplish your goal?
+* Did you reach zero energy in at least one type of action in a conflict?
 
-Two yes answers mean you can level up.  Choose one of:
+The answers should have already been clearly marked during play, but if there is disagreement, the GM decides.
+
+Yes answers to all three questions mean you can level up. Increment your level by one.
+
+When you level up, choose one of:
 
 * Learn a move. See <<five elements>> below for restrictions.
 * Learn one combo followup move, or change an existing one. You're limited to two followups per starting move.
 * Add one to your maximum energy for one type of action.
+* Learn a special.
 
-Yes to all three questions mean you can level up, and can learn a special *instead* of one of the above choices.
+When you level up, also choose one of:
+
+* Refill up to 3 background points.
+* Refill up to 1 veto.
 
 Make sure to choose a name for any moves you learn.
-You cannot learn more than one copy of the same move or special; if you just want to change the name, feel free.
+You cannot learn more than one copy of the same move or special; if you just want to change the name, you can do so for free.
 
 If you do not level up, you can save yes marks for the next session, but can have a maximum of one per question.
 Once you level up, erase all yes marks.

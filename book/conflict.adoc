@@ -1,7 +1,7 @@
 [#conflict]
 = Conflict Overview
 
-When the NPCs in a scene are actively opposed to the PCs' goals, the GM may decide it can escalate to a conflict.
+When the NPCs in a scene are actively opposed to the PCs' goals, the GM can decide it escalates to a conflict.
 
 Conflicts do not have to be violent, or even physical.
 The rules are the same for an alleyway chase, a samurai staredown to see who flinches first, or a bloody battle to the death.
@@ -19,8 +19,8 @@ The players decide the end and the means, i.e. what they want and how they're go
 The GM decides the consequences, which should be proportional to the players' decision.
 Adjust and repeat until the players agree with the potential consequences.
 
-If the players choose not to enter the conflict, the consequence should be at most a tick on a threat clock. 
-Specifically, players should not be forced to enter a conflict to the death against their will.
+If the players choose not to enter the conflict, the consequence should be at most a significant setback to reaching their goal or tick on a countdown. 
+Specifically, players cannot be forced to enter a conflict to the death against their will.
 
 .Example stakes
 ****

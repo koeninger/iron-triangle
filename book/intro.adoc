@@ -1,0 +1,22 @@
+[#intro]
+= Intro
+
+== Why roleplaying games?
+
+Unlike almost any other activity, roleplaying games combine:
+
+* Playing a role, i.e. portraying someone other than yourself in a collaborative story with other people
+* Playing a game, i.e. making choices constrained by rules in pursuit of a goal
+
+If you're interested in a story, but not collaboration or choices, read or write a book.
+If you're interested in choices and collaboration, but not rules or goals, do improv.
+If you're interested in rules and goals, but not portraying someone other than yourself, play a boardgame.
+But if you're actually interested, roleplaying games allow you to do all of those things.
+
+== Why this game?
+
+Unlike most roleplaying games, this game puts player choice first.
+There are no dice; it uses cards for simultaneous choice, not randomization.
+But absence of randomization doesn't mean absence of uncertainty and tactics.
+For instance, it's possible to string together a combination of choices across all players to defeat the big bad evil genius before they have a chance to act, but it's extremely unlikely, much more so than rolling a 20 on a die.
+

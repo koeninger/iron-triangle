@@ -6,6 +6,10 @@ Cody Koeninger
 :pdf-fontsdir: fonts
 ifndef::ebook-format[:leveloffset: 1]
 
+include::intro.adoc[]
+
+include::setting.adoc[]
+
 include::characters.adoc[]
 
 include::problems.adoc[]

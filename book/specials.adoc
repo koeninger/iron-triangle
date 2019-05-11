@@ -44,7 +44,7 @@ You are welcome to re-theme specials to be more appropriate for your character. 
 == Pressure Point
 * Use before choosing a move.
 * Reveal before resolving the turn.
-* You choose where your opponents losses are distributed this turn.
+* You choose where your opponent's losses are distributed this turn.
 
 == Wax On ◯  / ▧  / ⬟
 * Use before choosing a move.

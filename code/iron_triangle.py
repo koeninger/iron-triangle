@@ -22,7 +22,7 @@ LOW = 1
 MID = 2
 HIGH = 3
 JUMP = 4
-DASH = 5
+SPIN = 5
 
 Stance = namedtuple('Stance', ['type', 'amount'])
 
@@ -77,11 +77,11 @@ def better_type(p1, p2):
 
 def better_element(p1, p2):
     e1, e2 = (p1.element, p2.element)
-    return ((e1 == LOW and (e2 == HIGH or e2 == DASH)) or
+    return ((e1 == LOW and (e2 == HIGH or e2 == SPIN)) or
             (e1 == MID and (e2 == LOW or e2 == JUMP)) or
             (e1 == HIGH and (e2 == MID or e2 == JUMP)) or
-            (e1 == JUMP and (e2 == LOW or e2 == DASH)) or
-            (e1 == DASH and (e2 == HIGH or e2 == MID)))
+            (e1 == JUMP and (e2 == LOW or e2 == SPIN)) or
+            (e1 == SPIN and (e2 == HIGH or e2 == MID)))
 
 def same_type(a, b):
     return a is not None and b is not None and a.type == b.type

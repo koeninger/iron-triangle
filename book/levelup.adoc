@@ -3,37 +3,37 @@
 
 At the end of a session, ask the following questions for each player:
 
-* Did you play out a problem with complications or failure based on your belief or flaw?
-* Did you accomplish your goal?
-* Did you reach zero energy in at least one type of action in a conflict?
+* Did you play out a problem with complications or failure based on your *belief* or *flaw*?
+* Did you accomplish your *goal*?
+* Did you reach zero energy in at least one type of action during a *conflict*?
 
 The answers should have already been clearly marked during play, but if there is disagreement, the GM decides.
 
 Yes answers to all three questions mean you can level up. Increment your level by one.
 
-When you level up, choose one of:
+When you level up, choose *one* of:
 
 * Learn a move. See <<five elements>> below for restrictions.
 * Learn one combo followup move, or change an existing one. You're limited to two followups per starting move.
-* Add one to your maximum energy for one type of action.
+* Add one to your maximum energy for one type of action. It must be a type that reached zero during a conflict.
 * Learn a special.
 
-When you level up, also choose one of:
+When you level up, *also* choose *one* of:
 
-* Refill up to 3 background points.
-* Refill up to 1 veto.
+* Refill up to 3 background points. You can have at most 3 total.
+* Refill up to 1 veto. You can have at most 1 total.
 
 Make sure to choose a name for any moves you learn.
 You cannot learn more than one copy of the same move or special; if you just want to change the name, you can do so for free.
 
-If you do not level up, you can save yes marks for the next session, but can have a maximum of one per question.
+If you do not level up, you can save yes marks for the next session, but cannot have multiple marks per question.
 Once you level up, erase all yes marks.
 
 Choose a new goal, either now, or before the beginning of the next session.
-If there's a disagreement, GM decides.
 
 If you think that your character's beliefs or flaws have meaningfully changed, you may rewrite them.
-If there's a disagreement, players decide.
+
+The same caveats from character creation regarding goals, beliefs, and flaws apply.
 
 == Five elements
 After you have learned all the moves using the three elements ☷ ☵ ☲ , you can learn moves using the fourth and fifth elements ☰ ☯:

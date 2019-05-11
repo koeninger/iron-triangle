@@ -17,24 +17,27 @@ To play out a conflict:
 
 The players decide the end and the means, i.e. what they want and how they're going to achieve it.
 The GM decides the consequences, which should be proportional to the players' decision.
-Adjust and repeat until the players agree with the potential consequences.
+If the players intend to kill, it's a conflict to the death, and their characters can be killed.
+Entering a conflict to the death involves all player characters and requires consensus.
+In lesser conflicts, a player may sit out the conflict, but will suffer any consequences.
+Negotiate as necessary until the players agree with the potential consequences.
 
-If the players choose not to enter the conflict, the consequence should be at most a significant setback to reaching their goal or tick on a countdown. 
-Specifically, players cannot be forced to enter a conflict to the death against their will.
+If the players cannot make a choice in a reasonable time or choose not to enter the conflict, the GM decides the outcome.  In that case, the consequence should be limited to a significant setback to reaching their goal, or a tick on a countdown, not death.
+
 
 .Example stakes
 ****
-As you enter the library, you see two ninja grab the forbidden scroll and jump out the window. What do you do?::
-Kill 'em so we can take the scroll back!
-Ok, a loss means you die, and even if you win you won't know what their plan was::
-Maybe we chase them down and interrogate them?
-Then if you lose they get away and their masters will know you're after the scroll. If you win you'll get the scroll back and a chance to question them. Ready?::
-Yeah, let's go.
+GM: As you enter the library, you see two ninja grab the forbidden scroll and jump out the window. What do you do?::
+Players: Kill 'em so we can take the scroll back!
+GM: Ok, a loss means you die, and even if you win you won't know what their plan was.::
+Players: Maybe we chase them down and interrogate them?
+GM: Then if you lose they get away and their masters will know you're after the scroll. If you win you'll get the scroll back and a chance to question them. Ready?::
+Players: Yeah, let's go.
 ****
 
 == First turn
 
-Players decide who takes the first turn. There are intentionally no rules for surprise or ambush.
+Players decide who takes the first turn. There are no rules for surprise or ambush.
 
 == Playing and passing turns
 
@@ -47,7 +50,8 @@ Players should pass to someone on their side who has not yet had an equal number
 
 Once all characters on one side are out of the conflict, it's over.
 The winning side gets to narrate the outcome, within the boundaries of the established stakes.
-If there is any question, the GM decides, including how it relates to the next problem or conflict.
+In case of a tie due to the last characters being eliminated at the same time, the GM's side wins.
+In case of disagreement, the GM decides, including how the outcome relates to the next problem or conflict.
 
 PCs can die only in conflicts.
 If a PC dies, the player may create another character. See <<replacement characters>>.

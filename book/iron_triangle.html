@@ -4,18 +4,17 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.7">
+<meta name="generator" content="Asciidoctor 2.0.9">
 <meta name="author" content="Cody Koeninger">
 <title>Iron Triangle</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
-/* Uncomment @import statement when using as custom stylesheet */
+/* Uncomment @import statement to use as custom stylesheet */
 /*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
-audio,canvas,video{display:inline-block}
+audio,video{display:inline-block}
 audio:not([controls]){display:none;height:0}
-script{display:none!important}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 a{background:none}
 a:focus{outline:thin dotted}
@@ -220,8 +219,8 @@ table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font
 .literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
 .literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
-.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
 .listingblock>.content{position:relative}
 .listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
 .listingblock:hover code[data-lang]::before{display:block}
@@ -264,7 +263,8 @@ pre.pygments .lineno::before{content:"";margin-right:-.125em}
 .quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
 table.tableblock{max-width:100%;border-collapse:separate}
 p.tableblock:last-child{margin-bottom:0}
-td.tableblock>.content{margin-bottom:-1.25em}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+td.tableblock>.content>:last-child.sidebarblock{margin-bottom:0}
 table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
 table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
 table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
@@ -474,8 +474,8 @@ But if you&#8217;re actually interested, roleplaying games allow you to do all o
 <div class="paragraph">
 <p>Unlike most roleplaying games, this game puts player choice first.
 There are no dice; it uses cards for simultaneous choice, not randomization.
-But absence of randomization doesn&#8217;t mean absence of uncertainty and tactics.
-For instance, it&#8217;s possible to string together a combination of choices across all players to defeat the big bad evil genius before they have a chance to act, but it&#8217;s extremely unlikely, much more so than rolling a 20 on a die.</p>
+But as anyone who plays strategy or fighting games knows, absence of randomization doesn&#8217;t mean absence of uncertainty.
+In this game it&#8217;s possible for you and your allies to combine tactics to defeat your opponents before they can do any harm at all, but it&#8217;s extremely unlikely.</p>
 </div>
 </div>
 </div>
@@ -542,7 +542,7 @@ Unarmed, armed, multi-armed, as long as it fits the setting.</p>
 <h3 id="_choose_a_goal">Choose a goal</h3>
 <div class="paragraph">
 <p>Your character&#8217;s current goal should be something potentially, but not trivially, achievable within one game session.
-If there&#8217;s disagreement, GM decides.
+The GM can deny trivial goals, but cannot choose a goal for you.
 You can wait until the end of the first session to choose a goal.</p>
 </div>
 </div>
@@ -576,7 +576,7 @@ You can wait until during play to decide on a background.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Beliefs, flaws, and goals are just filler to be forgotten about. You cannot level up without playing them.
+<p>Beliefs, flaws, and goals are not just filler to be forgotten about. You cannot level up without playing them.
 A little friction with other players is good, but if you choose things they are adamantly opposed to, they can veto your approach to problems during play.
 It&#8217;s in your best interests to talk things out with them in advance.</p>
 </div>
@@ -595,9 +595,20 @@ Distribute 10 points among the types Defense ◯ ,  Grapple ▧ , and Attack ⬟
 <p>Keep track of your maximum separate from your current energy for each type.
 As you approach zero for a particular type, you&#8217;re much less effective, and once you reach zero overall you&#8217;re out of the conflict.</p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
 <div class="paragraph">
 <p>Don&#8217;t worry about optimizing, just go with what makes sense for your character concept.
 If you&#8217;re really concerned about it, put 4 in Attack ⬟, 3 in Defense ◯, 2 in Grapple ▧, and the last point wherever.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect2">
@@ -607,9 +618,20 @@ If you&#8217;re really concerned about it, put 4 in Attack ⬟, 3 in Defense ◯
 You know a Defense, ◯ ☵, a Grapple, ▧ ☷, and an Attack, ⬟ ☲.
 Make up cool names for them.</p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
 <div class="paragraph">
 <p>Don&#8217;t worry too much about what the symbols mean right now.
 If you&#8217;re still concerned about it, read the <a href="#conflict">Conflict Overview</a> and <a href="#turns">Conflict Turns</a> chapter.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect2">
@@ -628,21 +650,31 @@ If you&#8217;re still concerned about it, read the <a href="#conflict">Conflict 
 </div>
 <div class="paragraph">
 <p>Problems should have interesting potential consequences for both failure and success.
-Otherwise there&#8217;s no point in playing to find out which happens, just continue the story.
+Otherwise there&#8217;s no point in using rules to determine the outcome, just continue the story.
 Problems typically involve inanimate circumstances or neutral NPCs; if an NPC is actively opposed to the PCs, it&#8217;s a conflict.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
-<div class="paragraph">
-<p>"Your bedroom door is locked" probably isn&#8217;t a problem; it&#8217;s your house, you have the key or can get a locksmith or kick the door in and nothing will happen.
-"The door to the library is locked" might be a problem, if something interesting will happen if you ignore it or take too long opening it.
-"The door to the library containing the forbidden scroll is locked, and you heard that the Elbow Clan are going after it tonight" is definitely a problem.
-"The door to the library is blocked by the Elbow Clan who are out for blood" is a conflict.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>"Your bedroom door is locked" probably isn&#8217;t a problem; it&#8217;s your house, you have the key or can get a locksmith or kick the door in and nothing will happen.</p>
+</li>
+<li>
+<p>"The door to the library is locked" might be a problem, if something interesting will happen if you ignore it or take too long opening it.</p>
+</li>
+<li>
+<p>"The door to the library containing the forbidden scroll is locked, and you heard that the Elbow Clan are going after it tonight" is definitely a problem.</p>
+</li>
+<li>
+<p>"The door to the library is blocked by the Elbow Clan who are out for blood" is a conflict.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
 <div class="paragraph">
-<p>To decide the outcome of a problem, any interested players each make a simultaneous choice from one of the following options:</p>
+<p>To decide the outcome of a problem, any interested players simultaneously choose one of the following options:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -661,13 +693,25 @@ Problems typically involve inanimate circumstances or neutral NPCs; if an NPC is
 </ol>
 </div>
 <div class="paragraph">
-<p>Choices closer to the bottom of the list beat those above.
-E.g. if one player chooses "Succeed with a significant complication" and the other chooses "Fail", the player choosing Fail gets to decide and narrate the outcome.  Ties are decided in favor of the player who</p>
+<p>Higher numbered choices beat lower numbered choices.
+For instance, if one player chooses "Succeed with a significant complication" and the other chooses "Fail", the player choosing Fail gets to decide and narrate the outcome. Ties are broken in favor of the player who least recently decided the outcome of a problem, otherwise by the GM.</p>
 </div>
 <div class="sect2">
 <h3 id="_succeed_with_a_good_idea">Succeed with a good idea</h3>
 <div class="paragraph">
-<p>Describe a good idea for how you overcome the problem, based on the prior established facts of the story and setting.</p>
+<p>Describe a good idea for how you overcome the problem, building on the prior established facts of the story and setting.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Player: When we scoped this place out earlier, we saw the guard taking a break up on the roof. I bet there&#8217;s a door there, maybe they left it unlocked.</dt>
+<dd>
+<p>GM: So there&#8217;s an unlocked door up there, what do you see when you open it?</p>
+</dd>
+</dl>
+</div>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -677,17 +721,52 @@ E.g. if one player chooses "Succeed with a significant complication" and the oth
 This could be physical items, knowledge, relationships to NPCs; it&#8217;s up to you as long as it&#8217;s plausibly related to the background.
 Any NPCs introduced are controlled by the GM after the current problem is resolved.</p>
 </div>
+<div class="sidebarblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Player: Since I&#8217;m a detective, it makes sense that I&#8217;d have a lockpick gun, I can use that to open the door.</dt>
+<dd>
+<p>GM: Maybe something less high-tech for our setting?</p>
+</dd>
+<dt class="hdlist1">Player: Yeah, regular lockpicks make more sense.</dt>
+</dl>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_succeed_with_a_significant_complication">Succeed with a significant complication</h3>
 <div class="paragraph">
 <p>Describe how you succeed, but with a significant consequence or hard choice. This typically involves your belief, or sometimes flaw.</p>
 </div>
+<div class="sidebarblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Player: I believe innocents should be protected. This guard is going to be in trouble if the Elbow Clan shows up, I&#8217;m sure I can explain to him why he should let us in and get out of here.</dt>
+<dd>
+<p>GM: That doesn&#8217;t sound like a complication. How about a hard choice - "protect" him by knocking him out, or explain the situation and he&#8217;ll put himself in danger by looking for the ninjas.</p>
+</dd>
+<dt class="hdlist1">Player: Ugh, yeah, what would I do&#8230;&#8203; knocking him out is probably the lesser of two evils</dt>
+</dl>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_fail_in_an_interesting_way">Fail in an interesting way</h3>
 <div class="paragraph">
 <p>Describe how you fail, and the interesting outcome that results. This typically involves your flaw, or sometimes belief.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Player: So I&#8217;m haunted by ghosts, yeah? The ghosts at the library are telling me that scroll is bad news, like Raiders of the Lost Ark bad. No way I&#8217;m going to touch that thing, we&#8217;re just gonna wait for the ninjas to get their hands on it and see what happens.</dt>
+</dl>
+</div>
+</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -705,16 +784,21 @@ Any NPCs introduced are controlled by the GM after the current problem is resolv
 </div>
 </div>
 <div class="sect2">
-<h3 id="_gm_escalation">GM Escalation</h3>
+<h3 id="_consequences_of_problems">Consequences of problems</h3>
 <div class="paragraph">
-<p>As always, the GM can redirect players that are contradicting established fact or breaking the rules, e.g. choosing failure and then describing success.
-The GM cannot choose for the players, but if all of the players refuse make a choice for some reason, the GM decides the outcome of the problem.
-This can involve consequences such as loss of energy, escalation to a conflict, or a tick on a countdown.
-It cannot involve player character death, this isn&#8217;t a game where "rocks fall, you die."</p>
+<p>Failure can involve consequences such as setbacks towards reaching other goals, loss of energy, escalation to a conflict, or a tick on a countdown.
+Failure cannot involve player character death, this isn&#8217;t a game where "rocks fall, you die."</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_dont_repeat_problems">Don&#8217;t repeat problems</h3>
+<h3 id="_gm_escalation_of_problems">GM escalation of problems</h3>
+<div class="paragraph">
+<p>The GM can redirect players that are contradicting established fact or breaking the rules, for instance choosing failure but then describing success.
+The GM cannot choose for the players, but if all of the players refuse make a choice for some reason, the GM decides the outcome of the problem.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dont_repeat">Don&#8217;t repeat</h3>
 <div class="paragraph">
 <p>The story should be meaningfully different after a problem, succeed or fail, so it doesn&#8217;t make sense to repeat an attempt at a problem.</p>
 </div>
@@ -730,7 +814,7 @@ Vetos allow you to undo another player&#8217;s choice regarding the outcome of a
 <p>You can use a veto after another player has narrated an outcome and before play has moved on.
 The vetoed choice doesn&#8217;t take effect, i.e. the other player doesn&#8217;t spend the background point or get credit towards leveling up for the failure.
 You cannot threaten to veto; if you say the word veto, you&#8217;ve used it.
-You cannot veto a veto.</p>
+You cannot veto a veto; the first player to say veto wins. If there&#8217;s disagreement on a tie, the GM decides.</p>
 </div>
 <div class="paragraph">
 <p>If vetos cause significant strife among players, talk it out and re-set expectations.</p>
@@ -772,28 +856,30 @@ The rules are the same for an alleyway chase, a samurai staredown to see who fli
 <div class="paragraph">
 <p>The players decide the end and the means, i.e. what they want and how they&#8217;re going to achieve it.
 The GM decides the consequences, which should be proportional to the players' decision.
-Adjust and repeat until the players agree with the potential consequences.</p>
+If the players intend to kill, it&#8217;s a conflict to the death, and their characters can be killed.
+Entering a conflict to the death involves all player characters and requires consensus.
+In lesser conflicts, a player may sit out the conflict, but will suffer any consequences.
+Negotiate as necessary until the players agree with the potential consequences.</p>
 </div>
 <div class="paragraph">
-<p>If the players choose not to enter the conflict, the consequence should be at most a significant setback to reaching their goal or tick on a countdown.
-Specifically, players cannot be forced to enter a conflict to the death against their will.</p>
+<p>If the players cannot make a choice in a reasonable time or choose not to enter the conflict, the GM decides the outcome.  In that case, the consequence should be limited to a significant setback to reaching their goal, or a tick on a countdown, not death.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
 <div class="title">Example stakes</div>
 <div class="dlist">
 <dl>
-<dt class="hdlist1">As you enter the library, you see two ninja grab the forbidden scroll and jump out the window. What do you do?</dt>
+<dt class="hdlist1">GM: As you enter the library, you see two ninja grab the forbidden scroll and jump out the window. What do you do?</dt>
 <dd>
-<p>Kill 'em so we can take the scroll back!</p>
+<p>Players: Kill 'em so we can take the scroll back!</p>
 </dd>
-<dt class="hdlist1">Ok, a loss means you die, and even if you win you won&#8217;t know what their plan was</dt>
+<dt class="hdlist1">GM: Ok, a loss means you die, and even if you win you won&#8217;t know what their plan was.</dt>
 <dd>
-<p>Maybe we chase them down and interrogate them?</p>
+<p>Players: Maybe we chase them down and interrogate them?</p>
 </dd>
-<dt class="hdlist1">Then if you lose they get away and their masters will know you&#8217;re after the scroll. If you win you&#8217;ll get the scroll back and a chance to question them. Ready?</dt>
+<dt class="hdlist1">GM: Then if you lose they get away and their masters will know you&#8217;re after the scroll. If you win you&#8217;ll get the scroll back and a chance to question them. Ready?</dt>
 <dd>
-<p>Yeah, let&#8217;s go.</p>
+<p>Players: Yeah, let&#8217;s go.</p>
 </dd>
 </dl>
 </div>
@@ -803,7 +889,7 @@ Specifically, players cannot be forced to enter a conflict to the death against 
 <div class="sect2">
 <h3 id="_first_turn">First turn</h3>
 <div class="paragraph">
-<p>Players decide who takes the first turn. There are intentionally no rules for surprise or ambush.</p>
+<p>Players decide who takes the first turn. There are no rules for surprise or ambush.</p>
 </div>
 </div>
 <div class="sect2">
@@ -820,7 +906,8 @@ Players should pass to someone on their side who has not yet had an equal number
 <div class="paragraph">
 <p>Once all characters on one side are out of the conflict, it&#8217;s over.
 The winning side gets to narrate the outcome, within the boundaries of the established stakes.
-If there is any question, the GM decides, including how it relates to the next problem or conflict.</p>
+In case of a tie due to the last characters being eliminated at the same time, the GM&#8217;s side wins.
+In case of disagreement, the GM decides, including how the outcome relates to the next problem or conflict.</p>
 </div>
 <div class="paragraph">
 <p>PCs can die only in conflicts.
@@ -896,7 +983,7 @@ NPC available moves and specials are not public information, but PC moves and sp
 <div class="sect2">
 <h3 id="_ranking_of_actions">Ranking of actions</h3>
 <div class="paragraph">
-<p>Actions represent the basic objective of a move or stance. Defend blocks attacks; grapple grabs defenders; attack hurts attempts to grapple.  There is no "best" action, each of them can be beaten.</p>
+<p>Actions represent the basic objective of a move or stance. Defend blocks attacks; grapple grabs defenders; attack hurts attempts to grapple.  There is no "best" action, each of them can be beaten by the appropriate choice.</p>
 </div>
 <table class="tableblock frame-all grid-all fit-content">
 <caption class="title">Table 1. Actions</caption>
@@ -946,7 +1033,7 @@ NPC available moves and specials are not public information, but PC moves and sp
 <div class="sect2">
 <h3 id="_ranking_of_elements">Ranking of elements</h3>
 <div class="paragraph">
-<p>Elements represent the nuance of a move. Low ducks high, mid crushes low, high outranges mid.</p>
+<p>Elements represent additional detail of a move. Earth can&#8217;t be burned by fire, water floods earth, fire boils water.  Or if you prefer more mundane meanings, low ducks high, mid crushes low, high out-ranges mid.</p>
 </div>
 <table class="tableblock frame-all grid-all fit-content">
 <caption class="title">Table 2. Three Elements</caption>
@@ -1031,27 +1118,30 @@ Ignore any mention of them and the basic mechanics will still work.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">☷ ☯</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Balance, Dash</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Balance, Spin</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">☯</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">☲ ☵</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Jump beats low and dash, and so on.  Note that there still isn&#8217;t a "best" element, both jump and dash can be beaten by low, mid, or high.</p>
+<p>Jump beats low and spin, spin beats high and mid, etc.  Note that there still isn&#8217;t a "best" element, both jump and spin can be beaten by an appropriate choice from just low, mid, or high.</p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
 <h3 id="_choose_an_opponent">Choose an opponent</h3>
 <div class="paragraph">
-<p>If it&#8217;s your turn, choose any character on the opposing side. If it&#8217;s not your turn and the opposing side chooses you, the rest of the rules for this turn apply symmetrically to you. Being able to choose an opponent is a tactical advantage, but it doesn&#8217;t determine whether you win or lose the turn.</p>
+<p>If it&#8217;s your turn, choose any character on the opposing side. There are no rules for range or cover, assume you can get to any character in the conflict.</p>
+</div>
+<div class="paragraph">
+<p>If it&#8217;s not your turn and the opposing side chooses you, the rest of the rules for this turn apply symmetrically to you. Being able to choose an opponent is a tactical advantage, but it doesn&#8217;t determine whether you win or lose the turn.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_choose_a_stance">Choose a stance</h3>
 <div class="paragraph">
-<p>To choose a stance, select a number between 0 and your current energy corresponding to one type of action.
+<p>To choose a stance, select a number between zero and your current energy corresponding to one type of action.
 Stances represent an outward impression of commitment to a particular action.</p>
 </div>
 <div class="ulist">
@@ -1063,7 +1153,7 @@ Stances represent an outward impression of commitment to a particular action.</p
 <p>If you choose a move corresponding to your stance and win, you keep the energy you committed. Your opponent will lose an amount equal to the energy you committed times a multiplier associated with your move.</p>
 </li>
 <li>
-<p>If you choose a different move, the stance was a feint, and you keep the energy you committed. It has no effect on either side&#8217;s losses.</p>
+<p>If you choose a different move, the stance was a feint, you didn&#8217;t commit the energy, and you get to keep it. It has no effect on either side&#8217;s losses.</p>
 </li>
 </ul>
 </div>
@@ -1074,17 +1164,17 @@ Hold out an unambiguous fist containing selected cubes, then open your hand once
 To feint, use an empty fist.</p>
 </div>
 <div class="paragraph">
-<p>For remote games, or if you prefer cards, use a card indicating the type and amount.  Use a zero card to feint.</p>
+<p>For remote games, or if you prefer cards, use cards indicating the type and amount.  Use zero cards to feint.</p>
 </div>
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
 <h3 id="_choose_a_move">Choose a move</h3>
 <div class="paragraph">
-<p>Your most important move is surrender. If you play surrender, you are out of the conflict, and will take your side&#8217;s consequences of winning or losing the overall conflict, but do not suffer any energy losses for this turn.  If for some reason you have no other remaining cards, you must play surrender.</p>
+<p>Your most important move is surrender. If you play surrender, you are out of the conflict, and will eventually take your side&#8217;s consequences of winning or losing the overall conflict, but do not suffer any energy losses for this turn. Surrender is not retreat; if you surrender in a conflict to the death your opponent can choose to kill your character immediately. If for some reason you have no other remaining moves, you must play surrender.</p>
 </div>
 <div class="paragraph">
-<p>Other moves are defined by the name you gave them, an action, an element, a base energy loss your opponent will suffer if you win, and a multiplier applied to the amount of stance energy you committed.</p>
+<p>Other moves are defined by the name you chose, an action, an element, a base energy loss your opponent will suffer if you win, and a multiplier applied to the amount of stance energy you committed.</p>
 </div>
 <table class="tableblock frame-all grid-all fit-content">
 <caption class="title">Table 4. Moves</caption>
@@ -1177,7 +1267,7 @@ To feint, use an empty fist.</p>
 If you lose, you will lose additional energy, and you will also lose what otherwise would have been a tie.</p>
 </div>
 <div class="paragraph">
-<p>Disadvantage energy losses are cumulative with consecutive disadvantaged turns, at one point of energy per prior turn.
+<p>Energy losses from disadvantage are cumulative with consecutive disadvantaged turns, at one point of energy per prior turn.
 Disadvantage ends once you end a turn without losing, play a move that doesn&#8217;t match, or at the end of the conflict.
 It does not end once someone else is selected as an opponent, so leave your played move cards out face up to indicate disadvantage.
 This does restrict your available moves.</p>
@@ -1192,7 +1282,7 @@ If the immediately prior turn was a loss for your opponent, you can play any com
 Combos do not affect ties, but if you play a move that combos and win, your opponent will lose additional energy.</p>
 </div>
 <div class="paragraph">
-<p>Combos bonuses are cumulative with consecutive combo turns, at one point of energy per prior combo turn.
+<p>Combo bonuses are cumulative with consecutive combo turns, at one point of energy per prior combo turn.
 Leave your played cards out face up to indicate a combo.
 This does restrict your available moves.
 A player can voluntarily end the combo before choosing a move in order to return all the moves to availability.
@@ -1200,7 +1290,7 @@ Combos end once you lose a turn, play a move that doesn&#8217;t combo, choose a 
 </div>
 <div class="paragraph">
 <p>You can play up to 3 consecutive winning turns to continue a combo, then must pass.
-This counts as one turn for purposes of equal number of turns.
+This counts as one turn for purposes of players taking equal number of turns.
 The character you pass to can continue the combo against the same opponent if possible.</p>
 </div>
 </div>
@@ -1233,21 +1323,21 @@ The character you pass to can continue the combo against the same opponent if po
 Ties end combos and disadvantage.</p>
 </div>
 <div class="paragraph">
-<p>If you played the winning move, the opponent loses energy equal to:</p>
+<p>If you played the winning move, the opponent loses energy equal to the sum of:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>(your committed stance energy times the multiplier of your move) plus</p>
+<p>(your committed stance energy times the multiplier of your move)</p>
 </li>
 <li>
-<p>their committed stance energy plus</p>
+<p>their committed stance energy</p>
 </li>
 <li>
-<p>the base amount of your move, plus</p>
+<p>the base amount of your move</p>
 </li>
 <li>
-<p>one point per prior win in your successful combo plus</p>
+<p>one point per prior win in your successful combo</p>
 </li>
 <li>
 <p>one point per prior loss in their disadvantage</p>
@@ -1255,10 +1345,10 @@ Ties end combos and disadvantage.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Players decide which action types to distribute losses among.</p>
+<p>The person controlling the character that lost energy decides how to distribute the loss among the different action types.</p>
 </div>
 <div class="paragraph">
-<p>If you reach zero energy for one action type, mark yes next to conflict for purposes of <a href="#levelup">Leveling up</a>.</p>
+<p>If you reach zero energy for one action type, mark it for purposes of <a href="#levelup">Leveling up</a>.</p>
 </div>
 <div class="paragraph">
 <p>If you reach zero energy in all action types, you are out of the conflict, and suffer the specified consequence.
@@ -1276,8 +1366,10 @@ Once a special is used, it cannot be used again until after resting.
 Each character can use at most one special per turn.</p>
 </div>
 <div class="paragraph">
-<p>The description of a special identifies at what time in a turn it can be used.
-To use a special, play its card face down at the appropriate time.
+<p>The description of a special identifies at what time in a turn it can be used.</p>
+</div>
+<div class="paragraph">
+<p>To use a special, play its card face down at the appropriate time.
 Before revealing it, give your opponent an opportunity to play a special of their own.
 If a special should be revealed at a time different from when it is used, the description will say so.</p>
 </div>
@@ -1541,13 +1633,13 @@ If there is still a question, the GM decides.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Did you play out a problem with complications or failure based on your belief or flaw?</p>
+<p>Did you play out a problem with complications or failure based on your <strong>belief</strong> or <strong>flaw</strong>?</p>
 </li>
 <li>
-<p>Did you accomplish your goal?</p>
+<p>Did you accomplish your <strong>goal</strong>?</p>
 </li>
 <li>
-<p>Did you reach zero energy in at least one type of action in a conflict?</p>
+<p>Did you reach zero energy in at least one type of action during a <strong>conflict</strong>?</p>
 </li>
 </ul>
 </div>
@@ -1558,7 +1650,7 @@ If there is still a question, the GM decides.</p>
 <p>Yes answers to all three questions mean you can level up. Increment your level by one.</p>
 </div>
 <div class="paragraph">
-<p>When you level up, choose one of:</p>
+<p>When you level up, choose <strong>one</strong> of:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1569,7 +1661,7 @@ If there is still a question, the GM decides.</p>
 <p>Learn one combo followup move, or change an existing one. You&#8217;re limited to two followups per starting move.</p>
 </li>
 <li>
-<p>Add one to your maximum energy for one type of action.</p>
+<p>Add one to your maximum energy for one type of action. It must be a type that reached zero during a conflict.</p>
 </li>
 <li>
 <p>Learn a special.</p>
@@ -1577,15 +1669,15 @@ If there is still a question, the GM decides.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>When you level up, also choose one of:</p>
+<p>When you level up, <strong>also</strong> choose <strong>one</strong> of:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Refill up to 3 background points.</p>
+<p>Refill up to 3 background points. You can have at most 3 total.</p>
 </li>
 <li>
-<p>Refill up to 1 veto.</p>
+<p>Refill up to 1 veto. You can have at most 1 total.</p>
 </li>
 </ul>
 </div>
@@ -1594,16 +1686,17 @@ If there is still a question, the GM decides.</p>
 You cannot learn more than one copy of the same move or special; if you just want to change the name, you can do so for free.</p>
 </div>
 <div class="paragraph">
-<p>If you do not level up, you can save yes marks for the next session, but can have a maximum of one per question.
+<p>If you do not level up, you can save yes marks for the next session, but cannot have multiple marks per question.
 Once you level up, erase all yes marks.</p>
 </div>
 <div class="paragraph">
-<p>Choose a new goal, either now, or before the beginning of the next session.
-If there&#8217;s a disagreement, GM decides.</p>
+<p>Choose a new goal, either now, or before the beginning of the next session.</p>
 </div>
 <div class="paragraph">
-<p>If you think that your character&#8217;s beliefs or flaws have meaningfully changed, you may rewrite them.
-If there&#8217;s a disagreement, players decide.</p>
+<p>If you think that your character&#8217;s beliefs or flaws have meaningfully changed, you may rewrite them.</p>
+</div>
+<div class="paragraph">
+<p>The same caveats from character creation regarding goals, beliefs, and flaws apply.</p>
 </div>
 <div class="sect2">
 <h3 id="_five_elements">Five elements</h3>
@@ -1644,7 +1737,7 @@ If there&#8217;s a disagreement, players decide.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">☷ ☯</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Balance, Dash</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Balance, Spin</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">☯</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">☲ ☵</p></td>
 </tr>
@@ -1746,7 +1839,7 @@ The level ups can involve learning a move or combo known by the deceased, but no
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-05-08 22:50:45 -0500
+Last updated 2019-05-10 21:17:30 -0500
 </div>
 </div>
 </body>

@@ -13,7 +13,7 @@ I highly recommend you draw a picture, even if you think your drawing skills are
 
 == Choose a goal
 Your character's current goal should be something potentially, but not trivially, achievable within one game session.
-If there's disagreement, GM decides.
+The GM can deny trivial goals, but cannot choose a goal for you.
 You can wait until the end of the first session to choose a goal.
 
 == Choose backgrounds
@@ -31,7 +31,7 @@ Your character's flaw should be something that can lead to failure to overcome p
 
 [NOTE]
 ====
-Beliefs, flaws, and goals are just filler to be forgotten about. You cannot level up without playing them.
+Beliefs, flaws, and goals are not just filler to be forgotten about. You cannot level up without playing them.
 A little friction with other players is good, but if you choose things they are adamantly opposed to, they can veto your approach to problems during play.
 It's in your best interests to talk things out with them in advance.
 ====
@@ -43,16 +43,22 @@ Distribute 10 points among the types Defense ◯ ,  Grapple ▧ , and Attack ⬟
 Keep track of your maximum separate from your current energy for each type.
 As you approach zero for a particular type, you're much less effective, and once you reach zero overall you're out of the conflict.
 
+[NOTE]
+====
 Don't worry about optimizing, just go with what makes sense for your character concept.
 If you're really concerned about it, put 4 in Attack ⬟, 3 in Defense ◯, 2 in Grapple ▧, and the last point wherever.
+====
 
 == Choose moves
 Moves are the main things you do in a conflict to reduce your opponent's energy.
 You know a Defense, ◯ ☵, a Grapple, ▧ ☷, and an Attack, ⬟ ☲.
 Make up cool names for them.
 
+[NOTE]
+====
 Don't worry too much about what the symbols mean right now.
 If you're still concerned about it, read the <<conflict>> and <<turns>> chapter.
+====
 
 == Level
 You start at level zero. As you level up you can learn specials and combos, but you do not start with any at level zero.

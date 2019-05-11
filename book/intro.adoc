@@ -17,6 +17,6 @@ But if you're actually interested, roleplaying games allow you to do all of thos
 
 Unlike most roleplaying games, this game puts player choice first.
 There are no dice; it uses cards for simultaneous choice, not randomization.
-But absence of randomization doesn't mean absence of uncertainty and tactics.
-For instance, it's possible to string together a combination of choices across all players to defeat the big bad evil genius before they have a chance to act, but it's extremely unlikely, much more so than rolling a 20 on a die.
+But as anyone who plays strategy or fighting games knows, absence of randomization doesn't mean absence of uncertainty.
+In this game it's possible for you and your allies to combine tactics to defeat your opponents before they can do any harm at all, but it's extremely unlikely.
 

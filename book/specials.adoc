@@ -6,6 +6,7 @@ Once a special is used, it cannot be used again until after resting.
 Each character can use at most one special per turn.
 
 The description of a special identifies at what time in a turn it can be used.
+
 To use a special, play its card face down at the appropriate time.
 Before revealing it, give your opponent an opportunity to play a special of their own.
 If a special should be revealed at a time different from when it is used, the description will say so.

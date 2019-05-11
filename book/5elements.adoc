@@ -6,5 +6,5 @@
 |Water, Mid   |☵ |☷ ☰
 |Fire, High   |☲ |☵ ☰
 |Heaven, Jump |☰ |☷ ☯
-|Balance, Dash|☯ |☲ ☵
+|Balance, Spin|☯ |☲ ☵
 |===

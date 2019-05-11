@@ -29,10 +29,9 @@ You cannot learn more than one copy of the same move or special; if you just wan
 If you do not level up, you can save yes marks for the next session, but cannot have multiple marks per question.
 Once you level up, erase all yes marks.
 
+You can adjust goals, beliefs, and flaws at the end of a session even if you did not level up.
 Choose a new goal, either now, or before the beginning of the next session.
-
 If you think that your character's beliefs or flaws have meaningfully changed, you may rewrite them.
-
 The same caveats from character creation regarding goals, beliefs, and flaws apply.
 
 == Five elements

@@ -65,8 +65,8 @@ If it's not your turn and the opposing side chooses you, the rest of the rules f
 To choose a stance, select a number between zero and your current energy corresponding to one type of action.
 Stances represent an outward impression of commitment to a particular action.
 
-* If you choose a move corresponding to your stance and lose, you will lose the energy you committed.
 * If you choose a move corresponding to your stance and win, you keep the energy you committed. Your opponent will lose an amount equal to the energy you committed times a multiplier associated with your move.
+* If you choose a move corresponding to your stance and lose, you will lose the energy you committed, but it is not multiplied.
 * If you choose a different move, the stance was a feint, you didn't commit the energy, and you get to keep it. It has no effect on either side's losses.
 
 For local games, small wooden cubes in 3 colors work well for choosing stances - light for defend, dark for attack, and contrasting for grapple.
@@ -133,7 +133,7 @@ Ties end combos and disadvantage.
 If you played the winning move, the opponent loses energy equal to the sum of:
 
 * (your committed stance energy times the multiplier of your move)
-* their committed stance energy
+* their committed stance energy, without a multiplier
 * the base amount of your move
 * one point per prior win in your successful combo
 * one point per prior loss in their disadvantage

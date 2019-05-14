@@ -22,7 +22,9 @@ To decide the outcome of a problem, any interested players simultaneously choose
 . Fail in an interesting way
 
 Higher numbered choices beat lower numbered choices.
-For instance, if one player chooses "Succeed with a significant complication" and the other chooses "Fail", the player choosing Fail gets to decide and narrate the outcome. Ties are broken in favor of the player who least recently decided the outcome of a problem, otherwise by the GM.
+For instance, if one player chooses "Succeed with a significant complication" and the other chooses "Fail", the player choosing Fail gets to decide and narrate the outcome. Ties are broken in favor of the player who least recently decided the outcome of a problem, otherwise by the GM
+
+Rather than cards, another option is for players to hold up 1-4 fingers to indicate their choice. Just make sure they can be relied on to do it simultaneously.
 
 == Succeed with a good idea
 Describe a good idea for how you overcome the problem, building on the prior established facts of the story and setting.
@@ -35,7 +37,7 @@ GM: So there's an unlocked door up there, what do you see when you open it?
 == Succeed by spending a background point
 Spend a background point in order to introduce new facts related to your background that help you overcome the problem.
 This could be physical items, knowledge, relationships to NPCs; it's up to you as long as it's plausibly related to the background.
-Any NPCs introduced are controlled by the GM after the current problem is resolved.
+Any NPCs introduced are controlled by the GM after the current problem is resolved. You can't choose this option if you don't have the remaining background point.
 
 ****
 Player: Since I'm a detective, it makes sense that I'd have a lockpick gun, I can use that to open the door.::
@@ -44,7 +46,7 @@ Player: Yeah, regular lockpicks make more sense.::
 ****
 
 == Succeed with a significant complication
-Describe how you succeed, but with a significant consequence or hard choice. This typically involves your belief, or sometimes flaw.
+Describe how you succeed, but with a significant consequence or hard choice. This typically involves your belief, or sometimes flaw. Mark which one you used on your character sheet. You can't choose this option if it was already marked.
 
 ****
 Player: I believe innocents should be protected. This guard is going to be in trouble if the Elbow Clan shows up, I'm sure I can explain to him why he should let us in and get out of here.::
@@ -53,7 +55,7 @@ Player: Ugh, yeah, what would I do... knocking him out is probably the lesser of
 ****
 
 == Fail in an interesting way
-Describe how you fail, and the interesting outcome that results. This typically involves your flaw, or sometimes belief.
+Describe how you fail, and the interesting outcome that results. This typically involves your flaw, or sometimes belief. Mark which one you used on your character sheet. You can't choose this option if it was already marked.
 
 ****
 Player: So I'm haunted by ghosts, yeah? The ghosts at the library are telling me that scroll is bad news, like Raiders of the Lost Ark bad. No way I'm going to touch that thing, we're just gonna wait for the ninjas to get their hands on it and see what happens.::
@@ -65,24 +67,20 @@ Why should players decide to create complications or failure?  It makes for more
 ====
 
 == Consequences of problems
-Failure can involve consequences such as setbacks towards reaching other goals, loss of energy, escalation to a conflict, or a tick on a countdown.
+Failure can involve consequences such as setbacks towards reaching other goals, loss of energy, escalation to a conflict, or a mark on a countdown.
 Failure cannot involve player character death, this isn't a game where "rocks fall, you die."
 
 
 == GM escalation of problems
-The GM can redirect players that are contradicting established fact or breaking the rules, for instance choosing failure but then describing success.
-The GM cannot choose for the players, but if all of the players refuse make a choice for some reason, the GM decides the outcome of the problem.
+The GM can redirect players that are contradicting established fact or breaking the rules, for instance choosing failure but then describing success. If the player can't come up with a description within the bounds of the rules, move to the player with the next highest choice.
+The GM cannot choose for the players, but if all of the players refuse make a choice, the GM decides the outcome of the problem.
 
 == Don't repeat
 The story should be meaningfully different after a problem, succeed or fail, so it doesn't make sense to repeat an attempt at a problem.
 
-== Veto
-Each player has at most one veto at any given time.
-It is spent once used, and you have an option to regain it by leveling up.
-Vetos allow you to undo another player's choice regarding the outcome of a problem (not conflict), and substitute your own.
-
+== Using a Veto
 You can use a veto after another player has narrated an outcome and before play has moved on.
-The vetoed choice doesn't take effect, i.e. the other player doesn't spend the background point or get credit towards leveling up for the failure.
+The vetoed choice doesn't take effect, i.e. the other player doesn't spend the background point or mark the flaw.
 You cannot threaten to veto; if you say the word veto, you've used it.
 You cannot veto a veto; the first player to say veto wins. If there's disagreement on a tie, the GM decides.
 

@@ -12,6 +12,10 @@ include::setting.adoc[]
 
 include::characters.adoc[]
 
+include::story.adoc[]
+
+include::countdowns.adoc[]
+
 include::problems.adoc[]
 
 include::conflict.adoc[]

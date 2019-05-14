@@ -1,8 +1,6 @@
 [#turns]
 = Conflict Turns
 
-Rather than using dice or other sources of randomness to determine a winner, this game uses simultaneous choice from a clear ranking of actions and elements.
-
 To play out a conflict turn:
 
 . Choose an opponent.
@@ -10,20 +8,6 @@ To play out a conflict turn:
 . Choose a move, then reveal.
 . Identify the winner based on move and disadvantage.
 . Resolve the consequences based on move, stance, disadvantage, and combos
-
-== Simultaneous choice
-
-Choose an option in secret, indicate that you are ready, then reveal once your opponent is ready.
-
-Cards work well for this by playing a card face down to indicate readiness, then flipping to reveal.
-For remote games, hold up the card with the back facing the camera, then turn to reveal.
-
-If you don't have the preprinted cards for this game, write on index cards; just make sure the cards are not distinguishable from the back.
-
-== Hidden information
-
-Once a conflict begins, remaining energy for NPCs and PCs is public information.
-NPC available moves and specials are not public information, but PC moves and specials are (since the GM could memorize them anyway).
 
 == Ranking of actions
 Actions represent the basic objective of a move or stance. Defend blocks attacks; grapple grabs defenders; attack hurts attempts to grapple.  There is no "best" action, each of them can be beaten by the appropriate choice.
@@ -69,17 +53,17 @@ Stances represent an outward impression of commitment to a particular action.
 * If you choose a move corresponding to your stance and lose, you will lose the energy you committed, but it is not multiplied.
 * If you choose a different move, the stance was a feint, you didn't commit the energy, and you get to keep it. It has no effect on either side's losses.
 
-For local games, small wooden cubes in 3 colors work well for choosing stances - light for defend, dark for attack, and contrasting for grapple.
+For remote games, or if you prefer cards, use cards indicating the type and amount.  Use zero cards to feint.
+
+For local games, another option is to use small wooden cubes in 3 colors to track your energy, light for defend, dark for attack, and contrasting for grapple.
 Remaining energy is public information, but conceal your total amount while selecting cubes so that you do not give away your choice before revealing.
 Hold out an unambiguous fist containing selected cubes, then open your hand once both sides are ready to reveal.
 To feint, use an empty fist.
 
-For remote games, or if you prefer cards, use cards indicating the type and amount.  Use zero cards to feint.
-
 <<<
 == Choose a move
 
-Your most important move is surrender. If you play surrender, you are out of the conflict, and will eventually take your side's consequences of winning or losing the overall conflict, but do not suffer any energy losses for this turn. Surrender is not retreat; if you surrender in a conflict to the death your opponent can choose to kill your character immediately. If for some reason you have no other remaining moves, you must play surrender.
+Your most important move is surrender. If you play surrender, you are out of the conflict, and will eventually take your side's consequences of winning or losing the overall conflict, but do not suffer any energy losses for this turn. Surrender is not retreat; if you surrender in a lethal conflict your opponent can choose to kill your character immediately. If for some reason you have no other remaining moves, you must play surrender.
 
 Other moves are defined by the name you chose, an action, an element, a base energy loss your opponent will suffer if you win, and a multiplier applied to the amount of stance energy you committed.
 
@@ -143,4 +127,4 @@ The person controlling the character that lost energy decides how to distribute 
 If you reach zero energy for one action type, mark it for purposes of <<levelup>>.
 
 If you reach zero energy in all action types, you are out of the conflict, and suffer the specified consequence.
-In particular, if it is a conflict to the death, your character is dead, even if your side wins the overall conflict.
+In particular, if it is a lethal conflict, your character is dead, even if your side wins the overall conflict.

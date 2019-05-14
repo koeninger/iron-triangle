@@ -1,5 +1,5 @@
 [#levelup]
-= Leveling up
+= Level Up
 
 At the end of a session, ask the following questions for each player:
 
@@ -9,12 +9,12 @@ At the end of a session, ask the following questions for each player:
 
 The answers should have already been clearly marked during play, but if there is disagreement, the GM decides.
 
-Yes answers to all three questions mean you can level up. Increment your level by one.
+Yes marks in all three categories mean you can level up. Increment your level by one.
 
 When you level up, choose *one* of:
 
 * Learn a move. See <<five elements>> below for restrictions.
-* Learn one combo followup move, or change an existing one. You're limited to two followups per starting move.
+* Learn or make changes to two combo followup moves. You're limited to two followups per starting move.
 * Add one to your maximum energy for one type of action. It must be a type that reached zero during a conflict.
 * Learn a special.
 
@@ -23,16 +23,23 @@ When you level up, *also* choose *one* of:
 * Refill up to 3 background points. You can have at most 3 total.
 * Refill up to 1 veto. You can have at most 1 total.
 
+Once you level up, erase the following marks:
+
+* Erase your goal and its mark.
+* Erase all marks for reaching zero energy. This means you can't save the type you didn't use.
+* Erase marks for your belief and trait only if *both* are marked. This means you can't always use one of them to level up, you have to play them both.
+
 Make sure to choose a name for any moves you learn.
 You cannot learn more than one copy of the same move or special; if you just want to change the name, you can do so for free.
 
 If you do not level up, you can save yes marks for the next session, but cannot have multiple marks per question.
-Once you level up, erase all yes marks.
 
 You can adjust goals, beliefs, and flaws at the end of a session even if you did not level up.
 Choose a new goal, either now, or before the beginning of the next session.
 If you think that your character's beliefs or flaws have meaningfully changed, you may rewrite them.
 The same caveats from character creation regarding goals, beliefs, and flaws apply.
+
+You can change backgrounds with GM approval, but it should be rare.
 
 == Five elements
 After you have learned all the moves using the three elements ☷ ☵ ☲ , you can learn moves using the fourth and fifth elements ☰ ☯:

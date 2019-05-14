@@ -1,5 +1,5 @@
 [#conflict]
-= Conflict Overview
+= Conflicts
 
 When the NPCs in a scene are actively opposed to the PCs' goals, the GM can decide it escalates to a conflict.
 
@@ -9,6 +9,7 @@ The rules are the same for an alleyway chase, a samurai staredown to see who fli
 To play out a conflict:
 
 . Establish the stakes.
+. Reveal energy.
 . Players decide who takes the first turn.
 . Play and pass turns.
 . Resolve the consequences.
@@ -17,12 +18,15 @@ To play out a conflict:
 
 The players decide the end and the means, i.e. what they want and how they're going to achieve it.
 The GM decides the consequences, which should be proportional to the players' decision.
-If the players intend to kill, it's a conflict to the death, and their characters can be killed.
-Entering a conflict to the death involves all player characters and requires consensus.
-In lesser conflicts, a player may sit out the conflict, but will suffer any consequences.
+If the players intend to kill, it's a lethal conflict, and their characters can be killed.
 Negotiate as necessary until the players agree with the potential consequences.
 
-If the players cannot make a choice in a reasonable time or choose not to enter the conflict, the GM decides the outcome.  In that case, the consequence should be limited to a significant setback to reaching their goal, or a tick on a countdown, not death.
+Entering a lethal conflict requires consensus from all players, and involves all player characters.
+In lesser conflict, some PCs can sit it out, but will suffer any consequences.
+Characters with zero total energy cannot enter a conflict.
+The GM controls whether NPCs enter a conflict; this means players cannot force a conflict.
+
+If the players cannot make a choice in a reasonable time or choose not to enter the conflict, the GM decides the outcome. In that case, the consequence should be limited to a significant setback to reaching their goal, or a mark on a countdown, not death.
 
 
 .Example stakes
@@ -34,6 +38,16 @@ Players: Maybe we chase them down and interrogate them?
 GM: Then if you lose they get away and their masters will know you're after the scroll. If you win you'll get the scroll back and a chance to question them. Ready?::
 Players: Yeah, let's go.
 ****
+
+== Reveal energy
+
+Once a conflict begins, remaining energy for NPCs and PCs is public information.
+NPC available moves and specials are not usually public information, but PC moves and specials are (since the GM could memorize them anyway).
+
+[NOTE]
+====
+This means that unlike rolling dice behind a screen, the GM cannot fudge the numbers either for or against the players.
+====
 
 == First turn
 
@@ -53,7 +67,7 @@ The winning side gets to narrate the outcome, within the boundaries of the estab
 In case of a tie due to the last characters being eliminated at the same time, the GM's side wins.
 In case of disagreement, the GM decides, including how the outcome relates to the next problem or conflict.
 
-PCs can die only in conflicts.
+PCs can die only in lethal conflicts, not from problems or lesser conflicts.
 If a PC dies, the player may create another character. See <<replacement characters>>.
 The players decide how to introduce the new character to the story as soon as possible.
 
@@ -67,4 +81,12 @@ The consequences, win or lose, should be proportionally less than a full conflic
 
 Do not repeat a conflict, even a minor one, until the situation has meaningfully changed.
 Simply resting and trying again is not meaningful change.
+
+== Resting
+
+After a conflict, players can choose one of the following:
+
+* Take a breather to regain 1 point of energy. You cannot take a second breather until after a full rest.
+* Take a short rest to regain up to your maximum for the type with the *lowest* maximum (your choice if there's a tie). You cannot take a second short rest until after a full rest.
+* Take a full rest to regain all of your energy. The GM can mark a countdown.
 

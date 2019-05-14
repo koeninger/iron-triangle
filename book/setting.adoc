@@ -1,13 +1,49 @@
 [#setting]
 = Setting
 
-- what subjects are off-limits
-- genre
-- time
-- why are the characters together?
-- level of technology or magic?
-  if it's high, why is person to person conflict still relevant?
-  Gun-fu, personal forcefields
-- a place that's safe
-- a place that's dangerous
-- antagonists
+Before making characters, the players and the GM should agree on expectations and the setting for the story.
+This can be done collaboratively, taking turns to answer questions about the setting and asking others once you've added a detail.
+Or some of the work can be done by the GM in advance, with the players embellishing afterwards.
+This isn't a game where you just sit back and listen to the GM's story, so there does need to be player involvement.
+
+== Setting Expectations
+
+=== Off-limits topics
+
+If there's a topic a player doesn't want to be part of the game, better to know in advance.
+Politics, sex, religion, whatever it may be, don't ask prying questions, just note it and move on.
+
+=== Disruptions
+
+Don't want phones at the table?  Want regular snack / smoke / bathroom breaks, or keep playing when someone leaves? May seem trivial, but clarify up front.
+
+=== Resolving player disputes
+
+The rules specify who makes decisions in particular circumstances, but when players have disagreements of opinion outside of the rules, how do you want to handle it? By default, if the players get stuck arguing, the GM will move the story along by introducing new problems or consequences. If you want to agree on a different method (majority vote, draw straws, whatever) now's the time to do it.
+
+
+== Setting the Story
+
+=== Genre
+
+This game is inspired by kung-fu movies, 80's action flicks, samurai comics, fighting games, and the like.  It can handle other stories where person to person conflict is important. If you're trying to play romance or interstellar space opera, try it out, but you probably at least need to figure out what grappling translates to for a spaceship or a suitor.
+
+=== What brought you together?
+
+Don't have your first session start out with "so you all meet in a tavern". Are your characters part of the same gang, military unit, dojo, or secret government conspiracy? Do you have a shared enemy or past trauma? Are you seeking the same goal, perhaps even competing for it?
+
+=== Antagonists
+
+Who is out to stop you, who is trying to get to your goal before you do, who do you want revenge against?
+
+=== Level of technology or magic
+
+If it's a high-tech or high-magic setting, why is person to person conflict still relevant? Fights between element-bending wizards? Gun-fu? Personal forcefields that stop energy and ballistic weapons, making martial arts king?
+
+=== A safe place
+
+Where do you go when you rest? A superhero clubhouse, hidden lair in the sewers, dingy flophouse?
+
+=== A dangerous place
+
+Where does the music start getting ominous? The wrong side of the tracks, the haunted graveyard, the Triad terrority?

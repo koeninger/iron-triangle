@@ -5,7 +5,7 @@
 
 Unlike almost any other activity, roleplaying games combine:
 
-* Playing a role, i.e. portraying someone other than yourself in a collaborative story with other people
+* Playing a role, i.e. portraying a character in a collaborative story with other people
 * Playing a game, i.e. making choices constrained by rules in pursuit of a goal
 
 If you're interested in a story, but not collaboration or choices, read or write a book.
@@ -16,7 +16,23 @@ But if you're actually interested, roleplaying games allow you to do all of thos
 == Why this game?
 
 Unlike most roleplaying games, this game puts player choice first.
-There are no dice; it uses cards for simultaneous choice, not randomization.
+Success or failure is up to the choices you make during play, not the whims of one person or a "bad" choice during character creation.
+
+Instead of dice, it uses cards for simultaneous choice from a clear ranking of options, not for randomization.
 But as anyone who plays strategy or fighting games knows, absence of randomization doesn't mean absence of uncertainty.
 In this game it's possible for you and your allies to combine tactics to defeat your opponents before they can do any harm at all, but it's extremely unlikely.
 
+== Simultaneous choice
+
+This means choose an option in secret, indicate that you are ready, then reveal once other players are ready.
+
+Cards work well for this by playing a card face down to indicate readiness, then flipping to reveal.
+For remote games, hold up the card with the back facing the camera, then turn to reveal.
+
+If you don't have the preprinted cards for this game, write on index cards, just make sure the cards are not distinguishable from the back.
+
+== Participants
+
+You need 2-6 people. One person is the Game Moderator (GM), the other players create and control Player Characters (PCs).
+
+Players make decisions for the PCs. The GM is responsible for making decisions for all Non-Player Characters (NPCs). The GM isn't the author of the story, but they keep the story interesting by challenging the players with <<countdowns>>, <<problems>>, and <<conflict>>.

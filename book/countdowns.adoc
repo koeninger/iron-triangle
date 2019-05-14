@@ -1,0 +1,19 @@
+[#countdowns]
+= Countdowns
+
+Countdowns are a way for the GM to put pressure on players to keep the story moving, by reminding them that antagonists and other threats don't stop when they're offscreen.
+
+Keep track of countdowns in a player-visible location. A group of 4-8 boxes per countdown drawn on a piece of paper that the GM marks off one by one works well, If you have giant dice or a doomsday clock or something similarly ominous, go for that instead.
+
+Players should have a general idea of the threat or antagonist associated with a countdown, even if they don't know the exact details.
+You'll probably have multiple concurrent countdowns, so make sure they're named.
+
+****
+* "4 hours before the hostages are killed" is a short term countdown. They don't have to correspond to real world hours.
+* "8 pieces of the demon statue before Amakusa is resurrected" might be a story-long countdown.
+* A countdown with no information associated with it isn't threatening, it's frustrating. "The Elbow Clan's plan" is enough, even if players don't yet know exactly what it is.
+* "The rope is about to snap in 5..4..3.." isn't a countdown, it's an immediate problem.
+****
+
+If players stop the threat before the countdown finishes, erase it.
+If the countdown finishes, the GM decides how to narrate the consequences. They can be as bad as makes sense for the story, but shouldn't involve PC death.

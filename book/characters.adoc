@@ -11,29 +11,45 @@ Unarmed, armed, multi-armed, as long as it fits the setting.
 == Choose a description
 I highly recommend you draw a picture, even if you think your drawing skills are bad.
 
+== Level
+Level represents how much your character has learned and advanced.
+You start at level zero. As you <<levelup>> you can learn specials and combos, but you do not start with any at level zero.
+
 == Choose a goal
 Your character's current goal should be something potentially, but not trivially, achievable within one game session.
 The GM can deny trivial goals, but cannot choose a goal for you.
-You can wait until the end of the first session to choose a goal.
+Mark once your goal has been achieved.
 
 == Choose backgrounds
 Backgrounds are used to overcome problems, and are up to you.
 Be as creative as you like, whether that's "former cop" or "calligraphy instructor to the Exiled Prince of Xaran".
+You can wait until during play to decide on a background.
 
 Distribute 3 points between backgrounds of your choice, no more than 2 in any one.
-You can wait until during play to decide on a background.
+Keep track of your current and maximum points.
 
 == Choose a belief
 Your character's belief should be something that can complicate problems and lead to hard choices.
+You can use your belief for rules effect once, so mark once it's been used.
 
 == Choose a flaw
 Your character's flaw should be something that can lead to failure to overcome problems.
+You can use your flaw for rules effect once, so mark once it's been used.
 
 [NOTE]
 ====
-Beliefs, flaws, and goals are not just filler to be forgotten about. You cannot level up without playing them.
+Beliefs, flaws, and goals are not just filler to be forgotten about. You cannot level up without playing to them.
 A little friction with other players is good, but if you choose things they are adamantly opposed to, they can veto your approach to problems during play.
 It's in your best interests to talk things out with them in advance.
+====
+
+== Veto
+You start with one veto, mark once it's been used.
+<<Using a Veto>> allows you to undo another player's choice regarding the outcome of a problem (not a conflict), and substitute your own.
+
+[NOTE]
+====
+Just because there are resources attached to things like backgrounds and vetos doesn't mean you're not allowed to disagree with other players or portray your character once they're depleted. It's a limit on how much guaranteed effect you have on the story via the rules, to keep things fair and share the spotlight. You have options to regain them at level up, so don't be afraid to use them.  Well, maybe be careful about vetos, don't be a jerk.
 ====
 
 == Choose energy
@@ -41,7 +57,10 @@ Energy represents your mental and physical resources in a conflict.
 Distribute 10 points among the types Defense ◯ ,  Grapple ▧ , and Attack ⬟, with at least one point in each.
 
 Keep track of your maximum separate from your current energy for each type.
-As you approach zero for a particular type, you're much less effective, and once you reach zero overall you're out of the conflict.
+As you approach zero for a particular type, you're much less effective, but you can only level up by reaching zero in at least one type.
+Once you reach zero in all three types you're out of the conflict.
+
+Your maximum energy can be increased by leveling up, and your current energy can be regained by <<resting>>.
 
 [NOTE]
 ====
@@ -51,7 +70,7 @@ If you're really concerned about it, put 4 in Attack ⬟, 3 in Defense ◯, 2 in
 
 == Choose moves
 Moves are the main things you do in a conflict to reduce your opponent's energy.
-You know a Defense, ◯ ☵, a Grapple, ▧ ☷, and an Attack, ⬟ ☲.
+You'll learn more moves as you level up, but to start you know a Defense, ◯ ☵, a Grapple, ▧ ☷, and an Attack, ⬟ ☲.
 Make up cool names for them.
 
 [NOTE]
@@ -60,5 +79,4 @@ Don't worry too much about what the symbols mean right now.
 If you're still concerned about it, read the <<conflict>> and <<turns>> chapter.
 ====
 
-== Level
-You start at level zero. As you level up you can learn specials and combos, but you do not start with any at level zero.
+

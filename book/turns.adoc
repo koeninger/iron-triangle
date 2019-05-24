@@ -37,7 +37,6 @@ include::5elements.adoc[]
 
 Jump beats low and spin, spin beats high and mid, etc.  Note that there still isn't a "best" element, both jump and spin can be beaten by an appropriate choice from just low, mid, or high.
 
-<<<
 == Choose an opponent
 
 If it's your turn, choose any character on the opposing side. There are no rules for range or cover, assume you can reach any character in the conflict.
@@ -66,10 +65,9 @@ To feint, use an empty fist.
 You have 3 remaining energy in ⬟, and choose 2 ⬟ for your stance.
 If you play a ⬟ move and win, your opponent will lose energy equal to 2 times a multiplier.
 If you play a ⬟ move and lose, you will lose the 2 ⬟ energy.
-If you play a ◯ or ▧ move, your stance will not affect losses to either side. You have 3 remaining ⬟ energy, which may be reduced by other losses. 
+If you play a ◯ or ▧ move, your stance will not affect losses to either side, but your 3 remaining ⬟ energy may be reduced by other losses. 
 ****
 
-<<<
 == Choose a move
 
 Your most important move is surrender. If you play surrender, you are out of the conflict, and will eventually take your side's consequences of winning or losing the overall conflict, but do not suffer any energy losses for this turn. Surrender is not retreat; if you surrender in a lethal conflict your opponent can choose to kill your character immediately. If for some reason you have no other remaining moves, you must play surrender.

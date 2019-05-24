@@ -58,7 +58,7 @@ Players decide who takes the first turn. There are no rules for surprise or ambu
 See the rules for <<turns>> for determining the winner of a conflict turn.
 Once a turn is over, the winner decides who takes the next turn.
 In case of a tie, the GM decides.
-Players should pass to someone on their side who has not yet had an equal number of turns if possible.
+Players must pass to someone on their side who has not yet had an equal number of turns if possible, unless otherwise agreed.
 
 == Resolving consequences
 

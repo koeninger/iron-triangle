@@ -169,7 +169,7 @@ You won the prior turn, your opponent is at disadvantage with ⬟ ☷, and your 
 At least 1 point of those losses is applied to ◯ and the remainder according to your opponent's choice.
 ****
 
-If you reach zero energy for one action type, mark it for purposes of <<levelup>>.
+If you reach zero energy for one action type, mark it for purposes of <<levelup.adoc#levelup>>.
 
 If you reach zero energy in all action types, you are out of the conflict, and suffer the specified consequence.
 In particular, if it is a lethal conflict, your character is dead, even if your side wins the overall conflict.

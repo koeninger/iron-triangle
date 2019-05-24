@@ -13,7 +13,7 @@ I highly recommend you draw a picture, even if you think your drawing skills are
 
 == Level
 Level represents how much your character has learned and advanced.
-You start at level zero. As you <<levelup>> you can learn specials and combos, but you do not start with any at level zero.
+You start at level zero. As you <<levelup.adoc#levelup>> you can learn specials and combos, but you do not start with any at level zero.
 
 == Choose a goal
 Your character's current goal should be something potentially, but not trivially, achievable within one game session.
@@ -45,7 +45,7 @@ It's in your best interests to talk things out with them in advance.
 
 == Veto
 You start with one veto, mark once it's been used.
-<<Using a Veto>> allows you to undo another player's choice regarding the outcome of a problem (not a conflict), and substitute your own.
+<<problems.adoc#useveto, using a veto>> allows you to undo another player's choice regarding the outcome of a problem (not a conflict), and substitute your own.
 
 [NOTE]
 ====
@@ -60,7 +60,7 @@ Keep track of your maximum separate from your current energy for each type.
 As you approach zero for a particular type, you're much less effective, but you can only level up by reaching zero in at least one type.
 Once you reach zero in all three types you're out of the conflict.
 
-Your maximum energy can be increased by leveling up, and your current energy can be regained by <<resting>>.
+Your maximum energy can be increased by leveling up, and your current energy can be regained by <<conflict.adoc#Resting>>.
 
 [NOTE]
 ====
@@ -76,7 +76,7 @@ Make up cool names for them.
 [NOTE]
 ====
 Don't worry too much about what the symbols mean right now.
-If you're still concerned about it, read the <<conflict>> and <<turns>> chapter.
+If you're still concerned about it, read the <<conflict.adoc#conflict>> and <<turns.adoc#turns>> chapters.
 ====
 
 

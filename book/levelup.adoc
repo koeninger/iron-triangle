@@ -13,7 +13,7 @@ Yes marks in all three categories mean you can level up. Increment your level by
 
 When you level up, choose *one* of:
 
-* Learn a move. See <<five elements>> below for restrictions.
+* Learn a move. See <<_five_elements>> below for restrictions.
 * Learn or make changes to two combo followup moves. You're limited to two followups per starting move.
 * Add one to your maximum energy for one type of action. It must be a type that reached zero during a conflict.
 * Learn a special.
@@ -48,7 +48,6 @@ include::5elements.adoc[]
 
 include::moves.adoc[]
 
-[#replacement characters]
 == Replacement characters
 
 If the replacement for a dead character continues the deceased's fighting tradition, they can start at a level up to 5 or the deceased's level, whichever is lower.

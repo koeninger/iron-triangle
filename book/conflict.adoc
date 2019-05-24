@@ -55,7 +55,7 @@ Players decide who takes the first turn. There are no rules for surprise or ambu
 
 == Playing and passing turns
 
-See the rules for <<turns>> for determining the winner of a conflict turn.
+See the rules for <<turns.adoc#turns>> for determining the winner of a conflict turn.
 Once a turn is over, the winner decides who takes the next turn.
 In case of a tie, the GM decides.
 Players must pass to someone on their side who has not yet had an equal number of turns if possible, unless otherwise agreed.
@@ -68,7 +68,7 @@ In case of a tie due to the last characters being eliminated at the same time, t
 In case of disagreement, the GM decides, including how the outcome relates to the next problem or conflict.
 
 PCs can die only in lethal conflicts, not from problems or lesser conflicts.
-If a PC dies, the player may create another character. See <<replacement characters>>.
+If a PC dies, the player may create another character. See <<levelup.adoc#_replacement_characters>>.
 The players decide how to introduce the new character to the story as soon as possible.
 
 == Minor conflicts
@@ -82,6 +82,7 @@ The consequences, win or lose, should be proportionally less than a full conflic
 Do not repeat a conflict, even a minor one, until the situation has meaningfully changed.
 Simply resting and trying again is not meaningful change.
 
+[#resting]
 == Resting
 
 After a conflict, players can choose one of the following:

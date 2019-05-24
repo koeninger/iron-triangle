@@ -78,7 +78,8 @@ The GM cannot choose for the players, but if all of the players refuse make a ch
 == Don't repeat
 The story should be meaningfully different after a problem, succeed or fail, so it doesn't make sense to repeat an attempt at a problem.
 
-== Using a Veto
+
+== [#useveto] Using a veto
 You can use a veto after another player has narrated an outcome and before play has moved on.
 The vetoed choice doesn't take effect, i.e. the other player doesn't spend the background point or mark the flaw.
 You cannot threaten to veto; if you say the word veto, you've used it.

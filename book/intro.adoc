@@ -5,18 +5,18 @@
 
 Unlike almost any other activity, roleplaying games combine:
 
-* Playing a role, i.e. portraying a character in a collaborative story with other people
-* Playing a game, i.e. making choices constrained by rules in pursuit of a goal
+* Playing a role: portraying a character in a collaborative story with other people
+* Playing a game: making choices constrained by rules in pursuit of a goal
 
 If you're interested in a story, but not collaboration or choices, read or write a book.
 If you're interested in choices and collaboration, but not rules or goals, do improv.
 If you're interested in rules and goals, but not portraying someone other than yourself, play a boardgame.
-But if you're actually interested, roleplaying games allow you to do all of those things.
+But if you're actually interested, roleplaying games allow you to combine all of those things.
 
 == Why this game?
 
 Unlike most roleplaying games, this game puts player choice first.
-Success or failure is up to the choices you make during play, not the whims of one person or a "bad" choice during character creation.
+Success or failure is up to the choices players make during play, not the whims of a single person or a "bad" choice during character creation.
 
 Instead of dice, it uses cards for simultaneous choice from a clear ranking of options, not for randomization.
 But as anyone who plays strategy or fighting games knows, absence of randomization doesn't mean absence of uncertainty.
@@ -35,4 +35,4 @@ If you don't have the preprinted cards for this game, write on index cards, just
 
 You need 2-6 people. One person is the Game Moderator (GM), the other players create and control Player Characters (PCs).
 
-Players make decisions for the PCs. The GM is responsible for making decisions for all Non-Player Characters (NPCs). The GM isn't the author of the story, but they keep the story interesting by challenging the players with <<countdowns>>, <<problems>>, and <<conflict>>.
+Players make decisions for the PCs. The GM is responsible for making decisions for all Non-Player Characters (NPCs). The GM isn't the author of the story, but they keep the story interesting by challenging the players with <<countdowns.adoc#countdowns>>, <<problems.adoc#problems>>, and <<conflict.adoc#conflict>>.

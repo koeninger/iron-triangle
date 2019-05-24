@@ -3,7 +3,7 @@
 
 Storytelling plays out like improv.  The GM describes a situation, the players narrate what they do, the GM describes an outcome if necessary, other players build on that description. As long as the narration is in line with the established setting and describes actions that don't have uncertain consequences, the players can generally do what their characters want. You can talk in character or simply describe, whichever is comfortable for your group.
 
-Once there's some uncertainty about an outcome, play by the rules of <<problems>>, or <<conflict>> if it involves opposing NPCs. Player goals were already established to be non-trivial, so you're going to have to overcome some uncertainty before reaching your goal. You can't simply narrate "I got the gizmo I wanted" without any buildup. If on the other hand players aren't moving the story forward, the GM should remind them of their goals, then introduce more problems or threaten to mark <<countdowns>>.
+Once there's some uncertainty about an outcome, play by the rules of <<problems.adoc#problems>>, or <<conflict.adoc#conflict>> if it involves opposing NPCs. Player goals were already established to be non-trivial, so you're going to have to overcome some uncertainty before reaching your goal. You can't simply narrate "I got the gizmo I wanted" without any buildup. If on the other hand players aren't moving the story forward, the GM should remind them of their goals, then introduce more problems or threaten to mark <<countdowns.adoc#countdowns>>.
 
 If you're not familiar with improv, it's worth reading Play Unsafe by Graham Walmsley.  In the meantime, here are a few suggestions:
 

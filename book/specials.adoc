@@ -21,7 +21,7 @@ If specials clash in regards to timing or effect, the player of the special clos
 If identical specials clash, neither takes effect.
 If there is still a question, the GM decides.
 
-.Example
+.Example clash between specials
 ****
 You play Pressure Point, another player plays Yojimbo. There's a dispute about whether you get to choose where losses are distributed. Yojimbo is after Pressure Point on the list, so the player of Yojimbo decides that your choice of location takes effect on the original opponent, but not on the character that ends up taking the loss.
 
@@ -33,7 +33,7 @@ You play Scouter, your opponent plays Way of the Samurai. Even though Way of the
 You are welcome to re-theme specials to be more appropriate for your character. For instance, if your character suffering from a hangover isn't funny to you, Drunken Monkey could just as easily be a helpful but capricious spirit.
 ====
 
-
+<<<
 == Scouter
 * Use before choosing an opponent, or before choosing a stance.
 * Learn the moves, combos, and specials available to your opponent.

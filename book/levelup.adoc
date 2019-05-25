@@ -27,10 +27,10 @@ Once you level up, erase the following marks:
 
 * Erase your goal and its mark.
 * Erase all marks for reaching zero energy. This means you can't save the type you didn't use.
-* Erase marks for your belief and trait only if *both* are marked. This means you can't always use one of them to level up, you have to play them both.
+* Erase marks for your belief and trait only if *both* are marked. This means you can't always use one of them to level up, you have to play them equally.
 
 Make sure to choose a name for any moves you learn.
-You cannot learn more than one copy of the same move or special; if you just want to change the name, you can do so for free.
+You cannot learn more than one copy of the same move or special. If you just want to change a name, you can do so for free.
 
 If you do not level up, you can save yes marks for the next session, but cannot have multiple marks per question.
 

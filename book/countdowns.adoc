@@ -11,7 +11,7 @@ You'll probably have multiple concurrent countdowns, so make sure they're named.
 ****
 * "4 hours before the hostages are killed" is a short term countdown. They don't have to correspond to real world hours.
 * "8 pieces of the demon statue before Amakusa is resurrected" might be a story-long countdown.
-* A countdown with no information associated with it isn't threatening, it's frustrating. "The Elbow Clan's plan" is enough, even if players don't yet know exactly what it is.
+* Provide at least some information about a countdown, otherwise it isn't threatening, it's frustrating. "The Elbow Clan's plan" is good enough, even if players don't yet know exactly what it is.
 * "The rope is about to snap in 5..4..3.." isn't a countdown, it's an immediate problem.
 ****
 

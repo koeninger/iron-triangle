@@ -2,7 +2,7 @@
 = Specials
 
 Specials can be used to modify the rules in different ways.
-Once a special is used, it cannot be used again until after resting.
+Once a special is used, it cannot be used again until after a full rest.
 Each character can use at most one special per turn.
 
 The description of a special identifies at what time in a turn it can be used.
@@ -17,9 +17,16 @@ Some specials have multiple variations, each specific to a particular action typ
 For instance, Wax On ⬟ is different from Wax On ◯ .
 Each variation must be learned separately and counts as a separate special.
 
-If specials conflict in regards to timing or effect, the player of the special closer to the bottom of the list below decides the outcome.
-If identical specials conflict, neither takes effect.
+If specials clash in regards to timing or effect, the player of the special closer to the bottom of the list below decides the outcome.
+If identical specials clash, neither takes effect.
 If there is still a question, the GM decides.
+
+.Example
+****
+You play Pressure Point, another player plays Yojimbo. There's a dispute about whether you get to choose where losses are distributed. Yojimbo is after Pressure Point on the list, so the player of Yojimbo decides that your choice of location takes effect on the original opponent, but not on the character that ends up taking the loss.
+
+You play Scouter, your opponent plays Way of the Samurai. Even though Way of the Samurai is lower on the list, there is no interaction between the two specials, so your opponent cannot decide the outcome of Scouter. 
+****
 
 [NOTE]
 ====
@@ -33,7 +40,7 @@ You are welcome to re-theme specials to be more appropriate for your character. 
 
 == To Blave
 * Use at any time matching another special you know.
-* Can be used twice per conflict instead of once per rest.
+* Can be used twice per conflict instead of once per full rest.
 * Has no other effect.
 
 == There Can Be Only One
@@ -55,7 +62,7 @@ You are welcome to re-theme specials to be more appropriate for your character. 
 * Requires: Level 5
 * Use before choosing a move.
 * Reveal before resolving the turn
-* If the type of your stance and action matches this special, regain energy equal to the amount you committed to the stance this turn.
+* If the type of your stance and action matches this special and you win, regain energy equal to the amount you committed to the stance this turn.
 * Do not multiply the gain by your move's stance multiplier.
 * You choose where to distribute the gain, but you cannot regain more than your maximum.
 
@@ -91,7 +98,7 @@ You are welcome to re-theme specials to be more appropriate for your character. 
 == The Way of the Samurai
 * Requires: Level 10
 * Use before choosing a stance.
-* Regain energy up to your maximum.
+* Regain energy up to your maximum in all types.
 * You cannot be removed from this conflict until it ends, even if you reach zero total energy.
 * At the end of the conflict, you die irrevocably.
 * Play out the conflict; even if the outcome is inevitable, the fate of your allies is not.

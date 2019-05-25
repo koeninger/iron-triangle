@@ -53,19 +53,20 @@ To choose a stance, select a number between zero and your current energy corresp
 * If you choose a move corresponding to your stance and lose, you will lose the energy you committed, but it is not multiplied.
 * If you choose a different move, the stance was a feint, and has no effect on either side's losses. You did not commit the energy, you keep it, although it may still be reduced by other losses.
 
-For remote games, or if you prefer cards, use cards indicating the type and amount.  Use zero cards to choose no stance.
+For remote games, or if you prefer cards, use cards indicating the type and amount.  Use cards marked zero to indicate no stance.
 
 For local games, another option is to use small wooden cubes in 3 colors to track your energy, light for defend, dark for attack, and contrasting for grapple.
 Remaining energy is public information, but conceal your total amount while selecting cubes so that you do not give away your choice before revealing.
 Hold out an unambiguous fist containing selected cubes, then open your hand once both sides are ready to reveal.
-To feint, use an empty fist.
+Use an empty fist to indicate no stance.
 
 .Example of choosing a stance
 ****
 You have 3 remaining energy in ⬟, and choose 2 ⬟ for your stance.
-If you play a ⬟ move and win, your opponent will lose energy equal to 2 times a multiplier.
-If you play a ⬟ move and lose, you will lose the 2 ⬟ energy.
-If you play a ◯ or ▧ move, your stance will not affect losses to either side, but your 3 remaining ⬟ energy may be reduced by other losses. 
+
+* If you play a ⬟ move and win, your opponent will lose energy equal to 2 times a multiplier.
+* If you play a ⬟ move and lose, you will lose the 2 ⬟ energy.
+* If you play a ◯ or ▧ move, your stance will not affect losses to either side, but your 3 remaining ⬟ energy may be reduced by other losses. 
 ****
 
 == Choose a move
@@ -74,13 +75,14 @@ Your most important move is surrender. If you play surrender, you are out of the
 
 Other moves are defined by the name you chose, an action, an element, a base energy loss your opponent will suffer if you win, and a multiplier applied to the amount of stance energy you committed.
 
+<<<
 include::moves.adoc[]
 
 When choosing a move, it is important to consider your potential disadvantage and combos.
 
 == Disadvantage
 
-If you lost your most recent turn, you are at disadvantage.  If you play a move that matches the action *or* the element of your most recent prior move and lose, you will lose additional energy; you will also lose what otherwise would have been a tie.
+If you lost your prior turn, and then play a move that matches the action *or* the element of your most recent losing move, it is at a disadvantage. If you lose, you will lose additional energy; you will also lose what otherwise would have been a tie.
 
 Energy losses from disadvantage are cumulative with consecutive disadvantaged turns, at one point of energy per prior turn.
 Disadvantage ends once you end a turn without losing, play a move that doesn't match, or at the end of the conflict.
@@ -90,8 +92,9 @@ This does restrict your available moves.
 .Example disadvantage
 ****
 The prior turn you played ⬟ ☷ and lost, so that card is face up in front of you.
-You play ◯ ☷ and lose. ⬟ ☷ and ◯ ☷ both contain ☷, so you lose an additional point of energy. You keep ⬟ ☷ and ◯ ☷ face up in front of you.
-The next turn, you play ⬟ ☲ and lose. ⬟ ☲ does not match ◯ ☷, so you do not suffer addtional losses from disadvantage. You keep ⬟ ☲ face up in front of you, and return ⬟ ☷ and ◯ ☷ to your available moves.
+You play ◯ ☷, which contains ☷, so it is at disadvantage. You lose, and lose an additional point of energy. You keep ⬟ ☷ and ◯ ☷ face up in front of you.
+
+The next turn, you play ⬟ ☲, which does not match ◯ ☷, so it is not at disadvantage. You lose, but do not lose additional energy from disadvantage. You keep ⬟ ☲ face up in front of you, and return ⬟ ☷ and ◯ ☷ to your available moves.
 ****
 
 == Combos
@@ -118,26 +121,31 @@ Your possible combo followups from ▧ ☲ are ◯ ☲ or ⬟ ☲.  You play ⬟
 Leave ⬟ ☷, ▧ ☲ and ⬟ ☲  face up in front of your opponent. You have played 3 consecutive turns, so you pass to another player on your side. If they know a followup to ⬟ ☲, they can continue the combo.
 ****
 
+[NOTE]
+====
+Keep your face-up disadvantage cards closer to you than the cards for combos being played against you. Because combos end as soon as a different opponent is chosen but disadvantage does not, it should be clear from context which is which.
+====
+
 == Identify the winner
 
 Check in order:
 
 . If a move's action beats the other move's action, it wins.
 . If a move's element beats the other move's element, it wins.
-. If a move is disadvantaged, it loses.
+. If one move is disadvantaged, it loses.
 . Otherwise it's a tie.
 
 .Example winner
 ****
-You play ⬟ ☲, your opponent plays ▧ ☷. ⬟ beats ▧, you win.
-You play ⬟ ☲, your opponent plays ⬟ ☷. ☷ beats ☲, you lose.
-You lost your prior turn. You play ⬟ ☲, your opponent plays ⬟ ☲, you lose.
+* You play ⬟ ☲, your opponent plays ▧ ☷. ⬟ beats ▧, you win.
+* You play ⬟ ☲, your opponent plays ⬟ ☷. ☷ beats ☲, you lose.
+* You lost your prior turn with a ◯ ☲, your opponent won their prior turn. You play ⬟ ☲ at disadvantage, your opponent plays ⬟ ☲, you lose.
 ****
 
 == Resolve the consequences
 
 In a tie, each character loses energy equal to the base amount for the other character's move, but no additional losses.
-Ties end combos, and neither character is at disadvantage.
+Ties end combos and disadvantage.
 
 .Example consequences of tie
 ****

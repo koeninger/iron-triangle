@@ -38,14 +38,14 @@ You can use your flaw for rules effect once, so mark once it's been used.
 
 [NOTE]
 ====
-Beliefs, flaws, and goals are not just filler to be forgotten about. You cannot level up without playing to them.
+Beliefs, flaws, and goals are not just filler to be forgotten about. You cannot level up without playing them.
 A little friction with other players is good, but if you choose things they are adamantly opposed to, they can veto your approach to problems during play.
 It's in your best interests to talk things out with them in advance.
 ====
 
 == Veto
 You start with one veto, mark once it's been used.
-<<problems.adoc#useveto, using a veto>> allows you to undo another player's choice regarding the outcome of a problem (not a conflict), and substitute your own.
+<<problems.adoc#useveto, Using a veto>> allows you to undo another player's choice regarding the outcome of a problem (not a conflict), and substitute your own.
 
 [NOTE]
 ====

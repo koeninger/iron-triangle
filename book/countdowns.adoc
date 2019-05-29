@@ -3,7 +3,7 @@
 
 Countdowns are a way for the GM to put pressure on players to keep the story moving, by reminding them that antagonists and other threats don't stop when they're offscreen.
 
-Keep track of countdowns in a player-visible location. A group of 4-8 boxes per countdown drawn on a piece of paper that the GM marks off one by one works well, If you have giant dice or a doomsday clock or something similarly ominous, go for that instead.
+Keep track of countdowns in a player-visible location. A group of 4-8 boxes per countdown drawn on a piece of paper that the GM marks off one by one works well. If you have giant dice or a doomsday clock or something similarly ominous, go for that instead.
 
 Players should have a general idea of the threat or antagonist associated with a countdown, even if they don't know the exact details.
 You'll probably have multiple concurrent countdowns, so make sure they're named.

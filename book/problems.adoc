@@ -22,7 +22,7 @@ To decide the outcome of a problem, any interested players simultaneously choose
 . Fail in an interesting way
 
 Higher numbered choices beat lower numbered choices.
-For instance, if one player chooses "Succeed with a significant complication" and the other chooses "Fail", the player choosing Fail gets to decide and narrate the outcome. Ties are broken in favor of the player who least recently decided the outcome of a problem, otherwise by the GM
+For instance, if one player chooses "Succeed with a significant complication" and the other chooses "Fail", the player choosing Fail gets to decide and narrate the outcome. Ties are broken in favor of the player who least recently decided the outcome of a problem, otherwise by the GM.
 
 Rather than cards, another option is for players to hold up 1-4 fingers to indicate their choice. Just make sure they can be relied on to do it simultaneously.
 

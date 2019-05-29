@@ -14,19 +14,19 @@ Yes marks in all three categories mean you can level up. Increment your level by
 When you level up, choose *one* of:
 
 * Learn a move. See <<_five_elements>> below for restrictions.
-* Learn or make changes to two combo followup moves. You're limited to two followups per starting move.
+* Learn or make changes to two combo followup moves. You're limited to two followups per starting move. You must already know the followup moves. You don't need to know the starting move as long as one of your allies does.
 * Add one to your maximum energy for one type of action. It must be a type that reached zero during a conflict.
 * Learn a special.
 
 When you level up, *also* choose *one* of:
 
-* Refill up to 3 background points. You can have at most 3 total.
-* Refill up to 1 veto. You can have at most 1 total.
+* Regain up to 3 background points. You can have at most 3 total.
+* Regain up to 1 veto. You can have at most 1 total.
 
 Once you level up, erase the following marks:
 
 * Erase your goal and its mark.
-* Erase all marks for reaching zero energy. This means you can't save the type you didn't use.
+* Erase all marks for reaching zero energy. This means you can't save marks for types you didn't choose to increase.
 * Erase marks for your belief and flaw only if *both* are marked. This means you can't always use one of them to level up, you have to play them equally.
 
 Make sure to choose a name for any moves you learn.

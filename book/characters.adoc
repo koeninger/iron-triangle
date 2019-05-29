@@ -45,7 +45,7 @@ It's in your best interests to talk things out with them in advance.
 
 == Veto
 You start with one veto, mark once it's been used.
-<<problems.adoc#useveto, Using a veto>> allows you to undo another player's choice regarding the outcome of a problem (not a conflict), and substitute your own.
+<<problems.adoc#_using_a_veto, Using a veto>> allows you to undo another player's choice regarding the outcome of a problem (not a conflict), and substitute your own.
 
 [NOTE]
 ====
@@ -60,7 +60,7 @@ Keep track of your maximum separate from your current energy for each type.
 As you approach zero for a particular type, you're much less effective, but you can only level up by reaching zero in at least one type.
 Once you reach zero in all three types you're out of the conflict.
 
-Your maximum energy can be increased by leveling up, and your current energy can be regained by <<conflict.adoc#Resting>>.
+Your maximum energy can be increased by leveling up, and your current energy can be regained by <<conflict.adoc#_resting>>.
 
 [NOTE]
 ====

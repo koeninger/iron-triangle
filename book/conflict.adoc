@@ -22,7 +22,7 @@ If the players intend to kill, it's a lethal conflict, and their characters can 
 Negotiate as necessary until the players agree with the potential consequences.
 
 Entering a lethal conflict requires consensus from all players, and involves all player characters.
-In lesser conflict, some PCs can sit it out, but will suffer any consequences.
+In a lesser conflict, some PCs can sit it out, but will suffer any consequences.
 Characters with zero total energy cannot enter a conflict.
 The GM controls whether NPCs enter a conflict; this means players cannot force a conflict.
 
@@ -82,13 +82,12 @@ The consequences, win or lose, should be proportionally less than a full conflic
 Do not repeat a conflict, even a minor one, until the situation has meaningfully changed.
 Simply resting and trying again is not meaningful change.
 
-[#resting]
 == Resting
 
 After a conflict, players can collectively choose one of the following:
 
-* Take a breather to regain 1 point of energy. You cannot take a second breather until after a full rest.
-* Take a short rest to regain up to your maximum for the type with the *lowest* maximum (your choice if there's a tie). You cannot take a second short rest until after a full rest.
+* Take a breather to regain 1 point of energy. You cannot take another breather until after a full rest.
+* Take a short rest to regain up to your maximum for the type with the *lowest* maximum (your choice if there's a tie). You cannot take another short rest until after a full rest.
 * Take a full rest to regain all of your energy. The GM can mark a countdown.
 
 The effects apply to all players equally, it is not possible for some to take a full rest while others take a short rest or breather.

@@ -102,7 +102,8 @@ The next turn, you play ⬟ ☲, which does not match ◯ ☷, so it is not at d
 Combos are relationships between moves, that are learned separately from moves.
 Combos consist of a starting move and up to two options for followup moves.
 If the immediately prior turn was a loss for your opponent, you can play any combo you know that follows from the move that won.
-Combos do not affect ties, but if you play a move that combos and win, your opponent will lose additional energy.
+If you play a move that combos and win, your opponent will lose additional energy.
+Combos do not affect ties.
 
 Combo bonuses are cumulative with consecutive combo turns, at one point of energy per prior combo turn.
 Leave your played cards out face up in front of your opponent to indicate a combo.
@@ -123,7 +124,7 @@ Leave ⬟ ☷, ▧ ☲ and ⬟ ☲  face up in front of your opponent. You have 
 
 [NOTE]
 ====
-Keep your face-up disadvantage cards closer to you than the cards for combos being played against you. Because combos end as soon as a different opponent is chosen but disadvantage does not, it should be clear from context which is which.
+Keep your face-up disadvantage cards closer to you than the cards for combos being played against you. Because combos end as soon as a different opponent is chosen, unlike disadvantage, it should be clear from context which is which.
 ====
 
 == Identify the winner
@@ -175,7 +176,7 @@ You won the prior turn, your opponent is at disadvantage with ⬟ ☷, and your 
 At least 1 point of those losses is applied to ◯ and the remainder according to your opponent's choice.
 ****
 
-If you reach zero energy for one action type, mark it for purposes of <<levelup.adoc#levelup>>.
+If you reach zero energy for one action type, mark it for purposes of <<levelup.adoc#levelup>>. This does not restrict your ability to play moves of that type, only your ability to choose a stance of that type.
 
-If you reach zero energy in all action types, you are out of the conflict, and suffer the specified consequence.
+If you reach zero energy in all action types, you are out of the conflict, and suffer the consequence specified by the stakes.
 In particular, if it is a lethal conflict, your character is dead, even if your side wins the overall conflict.

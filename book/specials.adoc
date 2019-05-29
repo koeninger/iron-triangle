@@ -3,7 +3,7 @@
 
 Specials can be used to modify the rules in different ways.
 Once a special is used, it cannot be used again until after a full rest.
-Each character can use at most one special per turn.
+Each character can use at most one special per conflict turn.
 
 The description of a special identifies at what time in a turn it can be used.
 

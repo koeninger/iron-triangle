@@ -16,4 +16,4 @@ You'll probably have multiple concurrent countdowns, so make sure they're named.
 ****
 
 If players stop the threat before the countdown finishes, erase it.
-If the countdown finishes, the GM decides how to narrate the consequences. They can be as bad as makes sense for the story, but shouldn't involve PC death.
+If the countdown finishes, the GM decides how to narrate the consequences. They can be as bad as makes sense for the story, but cannot involve PC death.

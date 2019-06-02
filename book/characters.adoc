@@ -26,7 +26,7 @@ It's in your best interests to talk things out with them in advance.
 ====
 
 == Choose a belief
-Your character's belief should be something that can complicate problems and lead to hard choices. You'll mark once you've used it.
+Your character's belief should be something that can complicate <<problems.adoc#problems>> and lead to hard choices. You'll mark once you've used it.
 
 == Choose a flaw
 Your character's flaw should be something that can lead to failure to overcome problems. You'll mark once you've used it.

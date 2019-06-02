@@ -1,0 +1,35 @@
+[cols="10", stripes=none, options="noheader"]
+|===
+6+| Character Name: Ada          4.14+| Description:
+6+| Fighting Style: Dirty Boxing
+3+| ☐ Veto 3+| Level:  0
+6+| ☐ Belief: Innocents should be protected
+6+| ☐ Flaw: Haunted by ghosts
+6+| ☐ Goal: Discover Elbow Clan's plan
+6+^h|   Backgrounds 
+6+| ☐ Disgraced hockey player
+6+| ☐ Detective
+6+| ☐ 
+^h|Zero? ^h| Current ^h| Max 3+^h| Energy Type
+|☐ | | 3 3+| Defend ◯
+|☐ | | 2 3+| Grapple ▧  
+|☐ | | 5 3+| Attack ⬟
+^h|Move ^h|Base ^h|Stance 5+^h|Name ^h|Combo ^h|Combo  
+^|◯ ☷ ^|2 ^|x1 5+| | | 
+^|◯ ☵ ^|2 ^|x1 5+| Shoulder Roll | | 
+^|◯ ☲ ^|2 ^|x1 5+| | | 
+^|▧ ☷ ^|4 ^|x2 5+| Trip | | 
+^|▧ ☵ ^|4 ^|x2 5+|  | | 
+^|▧ ☲ ^|4 ^|x2 5+| | | 
+^|▧ ☰ ^|4 ^|x3 5+| | | 
+^|▧ ☯ ^|4 ^|x4 5+| | | 
+^|⬟ ☷ ^|3 ^|x2 5+| | | 
+^|⬟ ☵ ^|3 ^|x2 5+| Shovel Hook | | 
+^|⬟ ☲ ^|3 ^|x2 5+| | | 
+^|⬟ ☰ ^|3 ^|x3 5+| | | 
+^|⬟ ☯ ^|3 ^|x3 5+| | | 
+5+|☐ Special: 5+|☐
+5+|☐ 5+|☐
+5+|☐ 5+|☐ 
+5+|☐ 5+|☐
+|===

@@ -25,3 +25,8 @@ include::turns.adoc[]
 include::specials.adoc[]
 
 include::levelup.adoc[]
+
+<<<
+include::charactersheet.adoc[]
+<<<
+

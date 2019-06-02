@@ -1,6 +1,9 @@
 [#characters]
+
 = Creating a character
-Write down your choices on paper using pencil, since your character will change over time.
+Write down your choices on paper using pencil, since your character will change over time. There's a blank character sheet at the end of the book, and an example filled out sheet at the end of this chapter.
+
+Some of the sections of the character sheet have a blank checkbox ☐ next to them. During play you'll mark to indicate they've been used or achieved. These usage limits on things like backgrounds aren't a limit on how often you can portray your character. They are limits on how much guaranteed effect you have on the story via the rules, to keep things fair and share the spotlight. You'll have options to regain them, so don't be afraid to use them.
 
 == Choose a name
 
@@ -15,27 +18,6 @@ I highly recommend you draw a picture, even if you think your drawing skills are
 Level represents how much your character has learned and advanced.
 You start at level zero. As you <<levelup.adoc#levelup>> you can learn specials and combos, but you do not start with any at level zero.
 
-== Choose a goal
-Your character's current goal should be something potentially, but not trivially, achievable within one game session.
-The GM can deny trivial goals, but cannot choose a goal for you.
-Mark once your goal has been achieved.
-
-== Choose backgrounds
-Backgrounds are used to overcome problems, and are up to you.
-Be as creative as you like, whether that's "former cop" or "calligraphy instructor to the Exiled Prince of Xaran".
-You can wait until during play to decide on a background.
-
-Distribute 3 points between backgrounds of your choice, no more than 2 in any one.
-Keep track of your current and maximum points.
-
-== Choose a belief
-Your character's belief should be something that can complicate problems and lead to hard choices.
-You can use your belief for rules effect once, so mark once it's been used.
-
-== Choose a flaw
-Your character's flaw should be something that can lead to failure to overcome problems.
-You can use your flaw for rules effect once, so mark once it's been used.
-
 [NOTE]
 ====
 Beliefs, flaws, and goals are not just filler to be forgotten about. You cannot level up without playing them.
@@ -43,30 +25,46 @@ A little friction with other players is good, but if you choose things they are 
 It's in your best interests to talk things out with them in advance.
 ====
 
+== Choose a belief
+Your character's belief should be something that can complicate problems and lead to hard choices. You'll mark once you've used it.
+
+== Choose a flaw
+Your character's flaw should be something that can lead to failure to overcome problems. You'll mark once you've used it.
+
+== Choose a goal
+Your character's current goal should be something potentially, but not trivially, achievable within one game session.
+The GM can deny trivial goals, but cannot choose a goal for you.
+You'll mark once your goal has been achieved.
+
 == Veto
-You start with one veto, mark once it's been used.
+You start with one veto, and will mark once it's been used.
 <<problems.adoc#_using_a_veto, Using a veto>> allows you to undo another player's choice regarding the outcome of a problem (not a conflict), and substitute your own.
 
-[NOTE]
-====
-Just because there are resources attached to things like backgrounds and vetos doesn't mean you're not allowed to disagree with other players or portray your character once they're depleted. It's a limit on how much guaranteed effect you have on the story via the rules, to keep things fair and share the spotlight. You have options to regain them at level up, so don't be afraid to use them.
-====
+== Choose backgrounds
+Backgrounds are used to overcome problems, and are up to you.
+Be as creative as you like, whether that's "former cop" or "calligraphy instructor to the Exiled Prince of Xaran".
+You can choose up to 3 backgrounds.  You'll mark next to each as you use them.
+You can wait until during play to decide on a background.
 
 == Choose energy
 Energy represents your mental and physical resources in a conflict.
-Distribute 10 points among the types Defense ◯ ,  Grapple ▧ , and Attack ⬟, with at least one point in each.
-
-Keep track of your maximum separate from your current energy for each type.
-As you approach zero for a particular type, you're much less effective, but you can only level up by reaching zero in at least one type.
-Once you reach zero in all three types you're out of the conflict.
-
-Your maximum energy can be increased by leveling up, and your current energy can be regained by <<conflict.adoc#_resting>>.
+You start with a total maximum of 10 points of energy.
+Distribute them among the types Defense ◯ ,  Grapple ▧ , and Attack ⬟.
+Put at least one point in each.
 
 [NOTE]
 ====
-Don't worry about optimizing, just go with what makes sense for your character concept.
-If you're really concerned about it, put 4 in Attack ⬟, 3 in Defense ◯, 2 in Grapple ▧, and the last point wherever.
+Don't worry about optimizing, just go with what makes sense for your character's fighting style.
+If you want a balanced approach, put 4 in Attack ⬟, 3 in Defense ◯, 2 in Grapple ▧, and the last point wherever.
 ====
+
+You'll keep track of your maximum separate from your current energy for each type.
+Your current energy is reduced as you make losing choices in a conflict.
+As you approach zero for a particular type, you're much less effective.
+However, reaching zero in at least one type is required to level up, since you learn by pushing yourself. When that happens, you'll mark next to the type of energy that reached zero.
+
+Once your current energy is zero in all three types you're out of the conflict. Your current energy can be regained by <<conflict.adoc#_resting>>. Your maximum energy can be increased by leveling up. 
+
 
 == Choose moves
 Moves are the main things you do in a conflict to reduce your opponent's energy.
@@ -75,8 +73,13 @@ Make up cool names for them.
 
 [NOTE]
 ====
-Don't worry too much about what the symbols mean right now.
-If you're still concerned about it, read the <<conflict.adoc#conflict>> and <<turns.adoc#turns>> chapters.
+Don't worry too much about what the symbols mean right now. The <<conflict.adoc#conflict>> and <<turns.adoc#turns>> chapters will explain.
 ====
 
 
+== Example character
+See the next page for an example of a filled out character sheet
+
+<<<
+include::examplecharacter.adoc[]
+<<<

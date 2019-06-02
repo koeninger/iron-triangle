@@ -44,10 +44,6 @@ You can change backgrounds with GM approval, but it should be rare.
 == Five elements
 After you have learned all the moves using the three elements ☷ ☵ ☲ , you can learn moves using the fourth and fifth elements ☰ ☯:
 
-include::5elements.adoc[]
-
-include::moves.adoc[]
-
 == Replacement characters
 
 If the replacement for a dead character continues the deceased's fighting tradition, they can start at a level up to 5 or the deceased's level, whichever is lower.

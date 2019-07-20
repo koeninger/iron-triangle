@@ -9,64 +9,48 @@ DEFEND = 2
 GRAPPLE = 3
 all_action_types = [('Attack', ATTACK), ('Defend', DEFEND), ('Grapple', GRAPPLE)]
 
-# elements
-EARTH = 1
-WATER = 2
-FIRE = 3
-HEAVEN = 4
-YINYANG = 5
-all_elements = [('Yinyang', YINYANG), ('Earth', EARTH), ('Water', WATER), ('Fire', FIRE), ('Heaven', HEAVEN)]
-
-#positional
-LOW = 1
-MID = 2
-HIGH = 3
-JUMP = 4
-SPIN = 5
+# locations
+HIGH = 1
+LOW = 2
+MID = 3
+all_locations = [('High', HIGH), ('Low', LOW), ('Mid', MID)]
 
 Stance = namedtuple('Stance', ['type', 'amount'])
 
-Action = namedtuple('Action', ['type','element', 'amount', 'multiplier'])
+Action = namedtuple('Action', ['type','location', 'amount', 'multiplier'])
 
-Disadvantage = namedtuple('Disadvantage', ['type', 'element', 'amount'])
+Disadvantage = namedtuple('Disadvantage', ['type', 'location', 'amount'])
 
 Combo = namedtuple('Combo', ['amount', 'action1', 'action2'])
 
 attacks = [
-    Action(ATTACK, EARTH, 3, 2),
-    Action(ATTACK, WATER, 3, 2),
-    Action(ATTACK, FIRE, 3, 2),
-    Action(ATTACK, HEAVEN, 3, 3),
-    Action(ATTACK, YINYANG, 3, 3),
+    Action(ATTACK, HIGH, 3, 2),
+    Action(ATTACK, LOW, 3, 2),
+    Action(ATTACK, MID, 3, 2),
 ]
 
 defenses = [
-    Action(DEFEND, EARTH, 2, 1),
-    Action(DEFEND, WATER, 2, 1),
-    Action(DEFEND, FIRE, 2, 1),
+    Action(DEFEND, HIGH, 2, 1),
+    Action(DEFEND, LOW, 2, 1),
+    Action(DEFEND, MID, 2, 1),
 ]
 
 grapples = [
-    Action(GRAPPLE, EARTH, 4, 2),
-    Action(GRAPPLE, WATER, 4, 2),
-    Action(GRAPPLE, FIRE, 4, 2),
-    Action(GRAPPLE, HEAVEN, 4, 3),
-    Action(GRAPPLE, YINYANG, 4, 4),
+    Action(GRAPPLE, HIGH, 4, 2),
+    Action(GRAPPLE, LOW, 4, 2),
+    Action(GRAPPLE, MID, 4, 2),
 ]
 
-beginner_actions = [attacks[0], defenses[0], grapples[0]]
-basic_actions = attacks[0:3] + defenses[0:3] + grapples[0:3]
 all_actions = attacks + defenses + grapples
 
-test_p2_disadvantage = Disadvantage(ATTACK, EARTH , 1)
-#test_p2_disadvantage = None
+
+#test_p2_disadvantage = Disadvantage(ATTACK, HIGH , 1)
+test_p2_disadvantage = None
 
 #test_p1_stance = Stance(ATTACK, 10)
 test_p1_stance = None
 
-test_actions = basic_actions
-#test_actions = all_actions 
-
+test_actions = all_actions
 
 
 def better_type(p1, p2):
@@ -75,19 +59,17 @@ def better_type(p1, p2):
             (t1 == GRAPPLE and t2 == DEFEND) or
             (t1 == DEFEND and t2 == ATTACK))
 
-def better_element(p1, p2):
-    e1, e2 = (p1.element, p2.element)
-    return ((e1 == LOW and (e2 == HIGH or e2 == SPIN)) or
-            (e1 == MID and (e2 == LOW or e2 == JUMP)) or
-            (e1 == HIGH and (e2 == MID or e2 == JUMP)) or
-            (e1 == JUMP and (e2 == LOW or e2 == SPIN)) or
-            (e1 == SPIN and (e2 == HIGH or e2 == MID)))
+def better_location(p1, p2):
+    e1, e2 = (p1.location, p2.location)
+    return ((e1 == LOW and e2 == HIGH) or
+            (e1 == MID and e2 == LOW) or
+            (e1 == HIGH and e2 == MID))
 
 def same_type(a, b):
     return a is not None and b is not None and a.type == b.type
 
-def same_element(a, b):
-    return a is not None and b is not None and a.element == b.element
+def same_location(a, b):
+    return a is not None and b is not None and a.location == b.location
 
 def stance_loss(stance, action):
     return stance.amount if same_type(stance, action) else 0
@@ -99,7 +81,7 @@ def bonus(stance, action, combo = None):
     return combo_bonus + round(stance_bonus * action.multiplier)
 
 def disad_loss(disad, action):
-    return disad.amount if (same_type(disad, action) or same_element(disad, action)) else 0
+    return disad.amount if (same_type(disad, action) or same_location(disad, action)) else 0
 
 def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, p1_combo = None):
     """net damage done by player 1 to player 2"""
@@ -121,9 +103,9 @@ def payoff(p1_action, p2_action, p1_stance = None, p2_stance = None, p1_disadvan
         return p1_win_amt
     elif better_type(p2_action, p1_action):
         return -1 * p2_win_amt
-    elif better_element(p1_action, p2_action):
+    elif better_location(p1_action, p2_action):
         return p1_win_amt
-    elif better_element(p2_action, p1_action):
+    elif better_location(p2_action, p1_action):
         return -1 * p2_win_amt
     # disadvantage loses ties
     elif p2_disad_loss > 0:
@@ -143,7 +125,7 @@ def payoff_matrix(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2
 
 def print_matrix(m):
     for line in m:
-        print(" ".join(['{:>2}'.format(x) for x in line]))
+        print(" ".join(['{:+2}'.format(0.0 if x == 0 else x) for x in line]))
 
 def print_payoff_matrix(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, p1_combo = None, actions = all_actions):
     print_matrix(payoff_matrix(p1_stance = p1_stance, p2_stance = p2_stance,

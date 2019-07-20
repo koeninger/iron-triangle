@@ -22,16 +22,17 @@ class TestIronTriangle(unittest.TestCase):
         eql, val = payoff_eval()
         self.assertEqual(val[0], 0)
         self.assertEqual(val[1], 0)
+        print eql
         dominated = [p for p in eql if p == 0]
         self.assertEqual(len(dominated), 0)
 
     def testDisadvantage(self):
         """disadvantage should make things worse for you"""
-        p2 = [payoff_eval(p2_disadvantage = Disadvantage(act, elem, 1)) for act in [ATTACK, DEFEND, GRAPPLE] for (n, elem) in all_elements]
+        p2 = [payoff_eval(p2_disadvantage = Disadvantage(act, loc, 1)) for act in [ATTACK, DEFEND, GRAPPLE] for (n, loc) in all_locations]
         for (e, v) in p2:
             self.assertTrue(v[0] > 0)
             self.assertTrue(v[1] < 0)
-        p1 = [payoff_eval(p1_disadvantage = Disadvantage(act, elem, 1)) for act in [ATTACK, DEFEND, GRAPPLE] for (n, elem) in all_elements]
+        p1 = [payoff_eval(p1_disadvantage = Disadvantage(act, loc, 1)) for act in [ATTACK, DEFEND, GRAPPLE] for (n, loc) in all_locations]
         for (e, v) in p1:
             self.assertTrue(v[0] < 0)
             self.assertTrue(v[1] > 0)
@@ -55,13 +56,14 @@ class TestIronTriangle(unittest.TestCase):
 
     def testCombatExample(self):
         pay = payoff(
-            Action(GRAPPLE, HEAVEN, 4, 3),
-            Action(DEFEND, EARTH, 2, 1),
+            Action(GRAPPLE, HIGH, 4, 3),
+            Action(DEFEND, LOW, 1, 1),
             p1_stance = Stance(GRAPPLE, 2),
             p2_stance = Stance(DEFEND, 1),
-            p2_disadvantage = Disadvantage(ATTACK, EARTH, 1),
-            p1_combo = Combo(1, Action(GRAPPLE, HEAVEN, 4, 3), Action(GRAPPLE, YINYANG, 4, 3)))
+            p2_disadvantage = Disadvantage(ATTACK, LOW, 1),
+            p1_combo = Combo(1, Action(GRAPPLE, HIGH, 4, 3), Action(ATTACK, HIGH, 4, 2)))
         self.assertEqual(pay, 13) 
 
 if __name__ == '__main__':
+    print_payoff_matrix()
     unittest.main()

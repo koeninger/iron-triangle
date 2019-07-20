@@ -10,32 +10,19 @@ To play out a conflict turn:
 . Resolve the consequences based on move, stance, disadvantage, and combos
 
 == Ranking of actions
-Actions represent the basic objective of a move or stance. Defend blocks attacks; grapple grabs defenders; attack hurts attempts to grapple.  There is no "best" action, each of them can be beaten by the appropriate choice.
+Actions represent *how* a move tries to beat an opponent. Defend blocks Attack, Grapple grabs Defend, Attack hurts attempts to Grapple.  There is no "best" action, each of them can be beaten by the appropriate choice.
 
 include::actions.adoc[]
 
+== Ranking of locations
+Locations represent *where* on an opponent a move is aimed. Low ducks High, Mid crushes Low, High out-ranges Mid. Again, there is no "best" location, each of them can be beaten by the appropriate choice.
+
+include::3locations.adoc[]
+
 [NOTE]
 ====
-For a mnemonic, the number of sides ◯ 1 < ▧ 4 < ⬟ 5.  AttACK rhymes with blACK, defend is round like a shield.
+If you need a mnemonic, both actions and locations happen to be ranked in alphabetical order.  G beats D beats A.  H beats M beats L.
 ====
-
-
-== Ranking of elements
-Elements represent additional detail of a move. Earth can't be burned by fire, water floods earth, fire boils water.  Or if you prefer more mundane meanings, low ducks high, mid crushes low, high out-ranges mid.
-
-include::3elements.adoc[]
-[NOTE]
-====
-For a mnemonic, the number of unbroken lines ☷ 0 < ☵ 1 < ☲ 2.
-If you don't want to play with elements for your first couple of games, that's fine.
-Ignore any mention of them and the basic mechanics will still work.
-====
-
-Once your character has leveled up and learned all of the 3-element moves, 2 more elements are available.  Their ranking is:
-
-include::5elements.adoc[]
-
-Jump beats low and spin, spin beats high and mid, etc.  Note that there still isn't a "best" element, both jump and spin can be beaten by an appropriate choice from just low, mid, or high.
 
 == Choose an opponent
 
@@ -45,7 +32,8 @@ If it's not your turn and the opposing side chooses you, the rest of the rules f
 
 == Choose a stance
 
-Stances represent an outward impression of commitment to a particular action.
+Stances represent preparing to take a particular action.  They make your actions more effective, but your opponent can see your stance before you choose a move.
+
 To choose a stance, select a number between zero and your current energy corresponding to one type of action.
 
 
@@ -53,36 +41,34 @@ To choose a stance, select a number between zero and your current energy corresp
 * If you choose a move corresponding to your stance and lose, you will lose the energy you committed, but it is not multiplied.
 * If you choose a different move, the stance was a feint, and has no effect on either side's losses. You did not commit the energy, you keep it, although it may still be reduced by other losses.
 
-For remote games, or if you prefer cards, use cards indicating the type and amount.  Use cards marked zero to indicate no stance.
-
-For local games, another option is to use small wooden cubes in 3 colors to track your energy, light for defend, dark for attack, and contrasting for grapple.
-Remaining energy is public information, but conceal your total amount while selecting cubes so that you do not give away your choice before revealing.
-Hold out an unambiguous fist containing selected cubes, then open your hand once both sides are ready to reveal.
+Remaining energy is public information, but conceal your total amount while selecting a stance so that you do not give away your choice before revealing.
+Hold out an unambiguous fist containing the number of tokens corresponding to your choice of stance. Open your hand once both sides are ready to reveal.
 Use an empty fist to indicate no stance.
 
 .Example of choosing a stance
 ****
-You have 3 remaining energy in ⬟, and choose 2 ⬟ for your stance.
+You have 3 remaining energy in Attack, and choose 2 Attack for your stance.
 
-* If you play a ⬟ move and win, your opponent will lose energy equal to 2 times a multiplier.
-* If you play a ⬟ move and lose, you will lose the 2 ⬟ energy.
-* If you play a ◯ or ▧ move, your stance will not affect losses to either side, but your 3 remaining ⬟ energy may be reduced by other losses. 
+* If you play an Attack move and win, your opponent will lose energy equal to 2 times a multiplier.
+* If you play an Attack move and lose, you will lose the 2 Attack energy.
+* If you play a Defend or Grapple move, your stance will not affect losses to either side, but your 3 remaining Attack energy may be reduced by other losses. 
 ****
 
 == Choose a move
 
+Choose a move by playing the corresponding card face down, then flipping to reveal once both sides are ready.
+
 Your most important move is surrender. If you play surrender, you are out of the conflict, and will eventually take your side's consequences of winning or losing the overall conflict, but do not suffer any energy losses for this turn. Surrender is not retreat; if you surrender in a lethal conflict your opponent can choose to kill your character immediately. If for some reason you have no other remaining moves, you must play surrender.
 
-Other moves are defined by the name you chose, an action, an element, a base energy loss your opponent will suffer if you win, and a multiplier applied to the amount of stance energy you committed.
+Other moves are defined by the name you chose, an action, a location, a multiplier applied to the amount of stance energy you committed, and a base energy loss your opponent will suffer if you win.
 
-<<<
 include::moves.adoc[]
 
 When choosing a move, it is important to consider your potential disadvantage and combos.
 
 == Disadvantage
 
-If you lost your prior turn, and then play a move that matches the action *or* the element of your most recent losing move, it is at a disadvantage. If you lose, you will lose additional energy; you will also lose what otherwise would have been a tie.
+If you lost your prior turn, and then play a move that matches the action *or* the location of your most recent losing move, it is at a disadvantage. If you lose, you will lose additional energy; you will also lose what otherwise would have been a tie.
 
 Energy losses from disadvantage are cumulative with consecutive disadvantaged turns, at one point of energy per prior turn.
 Disadvantage ends once you end a turn without losing, play a move that doesn't match, or at the end of the conflict.
@@ -91,10 +77,10 @@ This does restrict your available moves.
 
 .Example disadvantage
 ****
-The prior turn you played ⬟ ☷ and lost, so that card is face up in front of you.
-You play ◯ ☷, which contains ☷, so it is at disadvantage. You lose, and lose an additional point of energy. You keep ⬟ ☷ and ◯ ☷ face up in front of you.
+The prior turn you played Attack Low and lost, so that card is face up in front of you.
+You play Defend Low, which contains Low, so it is at disadvantage. You lose, and lose an additional point of energy. You keep Attack Low and Defend Low face up in front of you.
 
-The next turn, you play ⬟ ☲, which does not match ◯ ☷, so it is not at disadvantage. You lose, but do not lose additional energy from disadvantage. You keep ⬟ ☲ face up in front of you, and return ⬟ ☷ and ◯ ☷ to your available moves.
+The next turn, you play Attack High, which does not match Defend Low, so it is not at disadvantage. You lose, but do not lose additional energy from disadvantage. You keep Attack High face up in front of you, and return Attack Low and Defend Low to your available moves.
 ****
 
 == Combos
@@ -105,7 +91,7 @@ If the immediately prior turn was a loss for your opponent, you can play any com
 If you play a move that combos and win, your opponent will lose additional energy.
 Combos do not affect ties.
 
-Combo bonuses are cumulative with consecutive combo turns, at one point of energy per prior combo turn.
+Combo bonuses are cumulative with consecutive combo turns, at one point of energy per prior turn.
 Leave your played cards out face up in front of your opponent to indicate a combo.
 This does restrict your available moves.
 A player can voluntarily end the combo before choosing a move in order to return all the moves to availability.
@@ -117,9 +103,9 @@ The character you pass to can continue the combo against the same opponent if po
 
 .Example combo
 ****
-You have played 2 consecutive winning turns, ⬟ ☷ then ▧ ☲.
-Your possible combo followups from ▧ ☲ are ◯ ☲ or ⬟ ☲.  You play ⬟ ☲ and win. Your opponent loses an additional 2 points of energy.
-Leave ⬟ ☷, ▧ ☲ and ⬟ ☲  face up in front of your opponent. You have played 3 consecutive turns, so you pass to another player on your side. If they know a followup to ⬟ ☲, they can continue the combo.
+You have played 2 consecutive winning turns, Attack Low then Grapple High.
+Your possible combo followups from Grapple High are Defend High or Attack High. You play Attack High and win. Your opponent loses an additional 2 points of energy.
+Leave Attack Low, Grapple High and Attack High face up in front of your opponent. You have played 3 consecutive turns, so you pass to another player on your side. If they know a followup to Attack High, they can continue the combo.
 ****
 
 [NOTE]
@@ -132,15 +118,15 @@ Keep your face-up disadvantage cards closer to you than the cards for combos bei
 Check in order:
 
 . If a move's action beats the other move's action, it wins.
-. If a move's element beats the other move's element, it wins.
+. If a move's location beats the other move's location, it wins.
 . If one move is disadvantaged, it loses.
 . Otherwise it's a tie.
 
 .Example winner
 ****
-* You play ⬟ ☲, your opponent plays ▧ ☷. ⬟ beats ▧, you win.
-* You play ⬟ ☲, your opponent plays ⬟ ☷. ☷ beats ☲, you lose.
-* You lost your prior turn with a ◯ ☲, your opponent won their prior turn. You play ⬟ ☲ at disadvantage, your opponent plays ⬟ ☲, you lose.
+* You play Attack High, your opponent plays Grapple Low . Attack beats Grapple, you win.
+* You play Attack High, your opponent plays Attack Low . Low beats High, you lose.
+* You lost your prior turn with Defend High, your opponent won their prior turn. You play Attack High at disadvantage, your opponent plays Attack High, you lose.
 ****
 
 == Resolve the consequences
@@ -150,7 +136,7 @@ Ties end combos and disadvantage.
 
 .Example consequences of tie
 ****
-You play ⬟ ☲, your opponent plays ⬟ ☲. Neither of you were at disadvantage, so it's a tie. You each lose 3 energy. No cards remain face up to indicate combo or disadvantage.
+You play Attack High, your opponent plays Attack High . Neither of you were at disadvantage, so it's a tie. You each lose 3 energy. No cards remain face up to indicate combo or disadvantage.
 ****
 
 If you played the winning move, the opponent loses energy equal to the sum of:
@@ -165,18 +151,26 @@ When you commit stance energy and lose, that portion of the loss comes from the 
 
 .Example consequences of a win
 ****
-You won the prior turn, your opponent is at disadvantage with ⬟ ☷, and your combo followups are ▧ ☰ and ▧ ☯. You choose 2 ▧ for your stance, your opponent chooses 1 ◯ . You choose ▧ ☰ for your move, your opponent chooses ◯ ☷. Since ▧ beats ◯, you win. Your opponent loses a total of 13 energy:
 
-* 2 times 3 from your stance
-* 1 from their stance
-* 4 from the base amount of your move
-* 1 from your combo
-* 1 from their disadvantage
+* The prior turn your opponent played Attack Low and lost.
+* This turn, your possible combo followups are Grapple High or Attack High.
+* You choose 3 Grapple for your stance, your opponent chooses 1 Defend.
+* You choose Grapple High for your move, your opponent chooses Defend Low.
 
-At least 1 point of those losses is applied to ◯ and the remainder according to your opponent's choice.
+Since Grapple beats Defend, you win. Your opponent loses a total of 13 energy:
+
+* 3 times 2 because your stance matched your action
+* 1 because their stance matched their action
+* 4 due to the base amount of your move
+* 1 due to your combo
+* 1 due to their disadvantage
+
+At least 1 point of those losses is applied to Defend and the remainder according to your opponent's choice.
 ****
 
-If you reach zero energy for one action type, mark it for purposes of <<levelup.adoc#levelup>>. This does not restrict your ability to play moves of that type, only your ability to choose a stance of that type.
+You can keep track of energy losses during a conflict by removing the corresponding tokens. Make sure to write down your current energy on your character sheet after the conflict ends.
+
+If you reach zero energy for one action type, mark it on your character sheet for purposes of <<levelup.adoc#levelup>>. This does not restrict your ability to play moves of that type, only your ability to choose a stance of that type.
 
 If you reach zero energy in all action types, you are out of the conflict, and suffer the consequence specified by the stakes.
 In particular, if it is a lethal conflict, your character is dead, even if your side wins the overall conflict.

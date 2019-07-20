@@ -16,7 +16,7 @@ I highly recommend you draw a picture, even if you think your drawing skills are
 
 == Level
 Level represents how much your character has learned and advanced.
-You start at level zero. As you <<levelup.adoc#levelup>> you can learn specials and combos, but you do not start with any at level zero.
+You start at level one. As you <<levelup.adoc#levelup>> you can learn specials and combos, but you do not start with any at level one.
 
 [NOTE]
 ====
@@ -49,13 +49,13 @@ You can wait until during play to decide on a background.
 == Choose energy
 Energy represents your mental and physical resources in a conflict.
 You start with a total maximum of 10 points of energy.
-Distribute them among the types Defense ◯ ,  Grapple ▧ , and Attack ⬟.
+Distribute them among the types Defend, Grapple, and Attack.
 Put at least one point in each.
 
 [NOTE]
 ====
-Don't worry about optimizing, just go with what makes sense for your character's fighting style.
-If you want a balanced approach, put 4 in Attack ⬟, 3 in Defense ◯, 2 in Grapple ▧, and the last point wherever.
+Don't worry about optimizing, just go with what fits your concept of your character's fighting style.
+If you want a balanced approach, put 4 in Attack, 3 in Defend, 2 in Grapple, and the last point wherever.
 ====
 
 You'll keep track of your maximum separate from your current energy for each type.
@@ -67,13 +67,13 @@ Once your current energy is zero in all three types you're out of the conflict. 
 
 
 == Choose moves
-Moves are the main things you do in a conflict to reduce your opponent's energy.
-You'll learn more moves as you level up, but to start you know a Defense, ◯ ☵, a Grapple, ▧ ☷, and an Attack, ⬟ ☲.
-Make up cool names for them.
+Moves (as in "kung fu moves") are the main things you do in a conflict to reduce your opponent's energy.
+You'll learn more moves as you level up, but to start you know 4 out of the 9 listed on the character sheet.
+Make up cool names and write them down next to the moves to indicate you know them.
 
 [NOTE]
 ====
-Don't worry too much about what the symbols mean right now. The <<conflict.adoc#conflict>> and <<turns.adoc#turns>> chapters will explain.
+Don't worry too much about what the difference between moves is, as long as you pick a reasonable variety (i.e. not all 3 Attack moves). The <<conflict.adoc#conflict>> and <<turns.adoc#turns>> chapters will explain how they work.  
 ====
 
 

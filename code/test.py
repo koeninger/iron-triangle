@@ -56,12 +56,12 @@ class TestIronTriangle(unittest.TestCase):
 
     def testCombatExample(self):
         pay = payoff(
-            Action(GRAPPLE, HIGH, 4, 3),
+            Action(GRAPPLE, HIGH, 4, 2),
             Action(DEFEND, LOW, 1, 1),
-            p1_stance = Stance(GRAPPLE, 2),
+            p1_stance = Stance(GRAPPLE, 3),
             p2_stance = Stance(DEFEND, 1),
             p2_disadvantage = Disadvantage(ATTACK, LOW, 1),
-            p1_combo = Combo(1, Action(GRAPPLE, HIGH, 4, 3), Action(ATTACK, HIGH, 4, 2)))
+            p1_combo = Combo(1, Action(GRAPPLE, HIGH, 4, 2), Action(ATTACK, HIGH, 3, 2)))
         self.assertEqual(pay, 13) 
 
 if __name__ == '__main__':

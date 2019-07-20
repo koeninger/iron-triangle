@@ -1,33 +1,31 @@
 [cols="10", stripes=none, options="noheader"]
 |===
-6+| Character Name: Ada          4.14+| Description:
-6+| Fighting Style: Dirty Boxing
-3+| ☐ Veto 3+| Level:  0
-6+| ☐ Belief: Innocents should be protected
-6+| ☐ Flaw: Haunted by ghosts
-6+| ☐ Goal: Discover Elbow Clan's plan
+6+| Character Name: _Ada_          4.14+| Description:
+6+| Fighting Style: _Dirty Boxing_
+3+| ☐ Veto 3+| Level:  _1_
+6+| ☐ Belief: _Innocents should be protected_
+6+| ☐ Flaw: _Haunted by ghosts_
+6+| ☐ Goal: _Discover Elbow Clan's plan_
 6+^h|   Backgrounds 
-6+| ☐ Disgraced hockey player
-6+| ☐ Detective
+6+| ☐ _Disgraced hockey player_
+6+| ☐ _Detective_
 6+| ☐ 
 ^h|Zero? ^h| Current ^h| Max 3+^h| Energy Type
-|☐ | | 3 3+| Defend ◯
-|☐ | | 2 3+| Grapple ▧  
-|☐ | | 5 3+| Attack ⬟
-^h|Move ^h|Base ^h|Stance 5+^h|Name ^h|Combo ^h|Combo  
-^|◯ ☷ ^|2 ^|x1 5+| | | 
-^|◯ ☵ ^|2 ^|x1 5+| Philly Shell | | 
-^|◯ ☲ ^|2 ^|x1 5+| | | 
-^|▧ ☷ ^|4 ^|x2 5+| Trip | | 
-^|▧ ☵ ^|4 ^|x2 5+|  | | 
-^|▧ ☲ ^|4 ^|x2 5+| | | 
-^|▧ ☰ ^|4 ^|x3 5+| | | 
-^|▧ ☯ ^|4 ^|x4 5+| | | 
-^|⬟ ☷ ^|3 ^|x2 5+| | | 
-^|⬟ ☵ ^|3 ^|x2 5+| | | 
-^|⬟ ☲ ^|3 ^|x2 5+| Overhand Right | | 
-^|⬟ ☰ ^|3 ^|x3 5+| | | 
-^|⬟ ☯ ^|3 ^|x3 5+| | | 
+|☐ | | _5_ 3+| Attack 
+|☐ | | _3_ 3+| Defend 
+|☐ | | _2_ 3+| Grapple  
+2+^h|Move ^h| Stance ^h|Base 4+^h|Name ^h|Combo ^h|Combo  
+2+^| Attack High ^|x2 ^|3 4+| _Overhand Right_ | | 
+2+^| Attack Low  ^|x2 ^|3 4+| | | 
+2+^| Attack Mid  ^|x2 ^|3 4+| _Groin Kick_ | |
+2+^| Defend High ^|x1 ^|2 4+| | | 
+2+^| Defend Low  ^|x1 ^|2 4+| | | 
+2+^| Defend Mid  ^|x1 ^|2 4+| _Philly Shell_ | |
+2+^| Grapple High ^|x2 ^|4 4+| | | 
+2+^| Grapple Low  ^|x2 ^|4 4+| _Trip_ | | 
+2+^| Grapple Mid  ^|x2 ^|4 4+|  | | 
+2+^| {nbsp} ^| ^| 4+| | | 
+2+^| {nbsp} ^| ^| 4+| | | 
 5+|☐ Special: 5+|☐
 5+|☐ 5+|☐
 5+|☐ 5+|☐ 

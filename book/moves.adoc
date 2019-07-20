@@ -1,18 +1,14 @@
 .Moves
 [%autowidth]
 |===
-|    |Base |Stance Multiplier
-|◯ ☷ |2 |x1
-|◯ ☵ |2 |x1
-|◯ ☲ |2 |x1
-|▧ ☷ |4 |x2
-|▧ ☵ |4 |x2
-|▧ ☲ |4 |x2
-|▧ ☰ |4 |x3
-|▧ ☯ |4 |x4
-|⬟ ☷ |3 |x2
-|⬟ ☵ |3 |x2
-|⬟ ☲ |3 |x2
-|⬟ ☰ |3 |x3
-|⬟ ☯ |3 |x3
+|    |Stance Multiplier | Base
+| Attack   High  |x2 |3
+| Attack   Low   |x2 |3
+| Attack   Mid   |x2 |3
+| Defend   High  |x1 |2
+| Defend   Low   |x1 |2
+| Defend   Mid   |x1 |2
+| Grapple  High  |x2 |4
+| Grapple  Low   |x2 |4
+| Grapple  Mid   |x2 |4
 |===

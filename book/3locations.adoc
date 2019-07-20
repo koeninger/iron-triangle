@@ -1,0 +1,8 @@
+.Locations
+[%autowidth]
+|===
+| | Beats
+| High  | Mid
+| Low   | High 
+| Mid   | Low 
+|===

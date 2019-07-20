@@ -10,24 +10,22 @@
 6+| ☐ 
 6+| ☐ 
 6+| ☐ 
-^h|Zero? ^h| Current ^h| Max 3+^h| Energy Type
-|☐ | | 3+| Defend ◯
-|☐ | | 3+| Grapple ▧  
-|☐ | | 3+| Attack ⬟
-^h|Move ^h|Base ^h|Stance 5+^h|Name ^h|Combo ^h|Combo  
-^|◯ ☷ ^|2 ^|x1 5+| | | 
-^|◯ ☵ ^|2 ^|x1 5+| | | 
-^|◯ ☲ ^|2 ^|x1 5+| | | 
-^|▧ ☷ ^|4 ^|x2 5+| | | 
-^|▧ ☵ ^|4 ^|x2 5+| | | 
-^|▧ ☲ ^|4 ^|x2 5+| | | 
-^|▧ ☰ ^|4 ^|x3 5+| | | 
-^|▧ ☯ ^|4 ^|x4 5+| | | 
-^|⬟ ☷ ^|3 ^|x2 5+| | | 
-^|⬟ ☵ ^|3 ^|x2 5+| | | 
-^|⬟ ☲ ^|3 ^|x2 5+| | | 
-^|⬟ ☰ ^|3 ^|x3 5+| | | 
-^|⬟ ☯ ^|3 ^|x3 5+| | | 
+^h|Zero? 2+^h| Current ^h| Max 2+^h| Energy Type
+|☐ 2+| |  2+| Attack 
+|☐ 2+| |  2+| Defend 
+|☐ 2+| |  2+| Grapple  
+2+^h|Move ^h| Stance ^h|Base 4+^h|Name ^h|Combo ^h|Combo  
+2+^| Attack High ^|x2 ^|3 4+| | | 
+2+^| Attack Low  ^|x2 ^|3 4+| | | 
+2+^| Attack Mid  ^|x2 ^|3 4+| | |
+2+^| Defend High ^|x1 ^|2 4+| | | 
+2+^| Defend Low  ^|x1 ^|2 4+| | | 
+2+^| Defend Mid  ^|x1 ^|2 4+| | |
+2+^| Grapple High ^|x2 ^|4 4+| | | 
+2+^| Grapple Low  ^|x2 ^|4 4+| | | 
+2+^| Grapple Mid  ^|x2 ^|4 4+|  | | 
+2+^| {nbsp} ^| ^| 4+| | | 
+2+^| {nbsp} ^| ^| 4+| | | 
 5+|☐ Special: 5+|☐
 5+|☐ 5+|☐
 5+|☐ 5+|☐ 

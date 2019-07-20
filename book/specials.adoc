@@ -14,7 +14,7 @@ If a special should be revealed at a time different from when it is used, the de
 Some specials have requirements that must be met before learning, either in terms of character level reached, or specials learned first. 
 
 Some specials have multiple variations, each specific to a particular action type.
-For instance, Wax On ⬟ is different from Wax On ◯ .
+For instance, Wax On  Attack  is different from Wax On  Defend  .
 Each variation must be learned separately and counts as a separate special.
 
 If specials clash in regards to timing or effect, the player of the special closer to the bottom of the list below decides the outcome.
@@ -53,12 +53,12 @@ You are welcome to re-theme specials to be more appropriate for your character. 
 * Reveal before resolving the turn.
 * You choose where your opponent's losses are distributed this turn.
 
-== Wax On ◯  / ▧  / ⬟
+== Wax On  (Defend / Grapple / Attack)
 * Use before choosing a move.
 * Reveal before resolving the turn.
 * If the type of your opponent's action matches this special, you lose no energy from their stance this turn.
 
-== Santa Carla  ◯  / ▧  / ⬟
+== Santa Carla   (Defend / Grapple / Attack)
 * Requires: Level 5
 * Use before choosing a move.
 * Reveal before resolving the turn
@@ -66,13 +66,13 @@ You are welcome to re-theme specials to be more appropriate for your character. 
 * Do not multiply the gain by your move's stance multiplier.
 * You choose where to distribute the gain, but you cannot regain more than your maximum.
 
-== Dig Two Graves ◯  / ▧  / ⬟
+== Dig Two Graves  (Defend / Grapple / Attack)
 * Requires: Level 5 and Wax On of the matching type.
 * Use before choosing a move.
 * Reveal before resolving the turn.
 * If the type of your opponent's action matches this special, they lose energy equal to the amount you lose this turn.
 
-== I Already Know ◯  / ▧  / ⬟
+== I Already Know  (Defend / Grapple / Attack)
 * Requires: Level 10
 * Use before choosing a stance.
 * For this turn your opponent cannot choose a move with an action matching this special.
@@ -80,8 +80,9 @@ You are welcome to re-theme specials to be more appropriate for your character. 
 == Yojimbo
 * Requires: Level 5
 * Use before resolving a different character's turn.
+* This turn you lose the amount of energy they would have lost, and they lose 0.
 * Does not count against your limit of one special per turn.
-* Choose a character. This turn you lose energy equal to the amount they would have lost, while they lose zero.
+
 
 == Liquid Metal
 * Requires: Level 10
@@ -92,14 +93,15 @@ You are welcome to re-theme specials to be more appropriate for your character. 
 == Drunken Monkey
 * Requires: Level 10
 * Use before choosing a move.
-* Until this conflict ends, once per turn after revealing a move, you can replace your move with one chosen randomly by your opponent from your remaining moves.
+* Until this conflict ends, once per turn after revealing your move, you can choose to replace it.
+* Your opponent selects the replacement randomly from your remaining moves.
 * You cannot participate in the next conflict, even if you rest first. 
 
 == The Way of the Samurai
 * Requires: Level 10
 * Use before choosing a stance.
 * Regain energy up to your maximum in all types.
-* You cannot be removed from this conflict until it ends, even if you reach zero total energy.
+* You cannot be removed from this conflict until it ends, even if you reach 0 total energy.
 * At the end of the conflict, you die irrevocably.
 * Play out the conflict; even if the outcome is inevitable, the fate of your allies is not.
 * NPCs cannot use this special, for obvious reasons.

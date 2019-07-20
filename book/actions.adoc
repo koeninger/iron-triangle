@@ -1,8 +1,8 @@
 .Actions
 [%autowidth]
 |===
-|Meaning | Symbol|Beats
-| Defend |◯ | ⬟
-| Grapple|▧ | ◯
-| Attack |⬟ | ▧
+|        | Beats
+| Attack | Grapple 
+| Defend | Attack 
+| Grapple| Defend 
 |===

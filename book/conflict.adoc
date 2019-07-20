@@ -23,7 +23,7 @@ Negotiate as necessary until the players agree with the potential consequences.
 
 Entering a lethal conflict requires consensus from all players, and involves all player characters.
 In a lesser conflict, some PCs can sit it out, but will suffer any consequences.
-Characters with zero total energy cannot enter a conflict.
+Characters with zero total energy cannot participate in a conflict, but will suffer any consequences.
 The GM controls whether NPCs enter a conflict; this means players cannot force a conflict.
 
 If the players cannot make a choice in a reasonable time or choose not to enter the conflict, the GM decides the outcome. In that case, the consequence should be limited to a significant setback to reaching their goal, or a mark on a countdown, not death.
@@ -42,6 +42,7 @@ Players: Yeah, let's go.
 == Reveal energy
 
 Once a conflict begins, remaining energy for NPCs and PCs is public information.
+Use tokens of 3 different colors, sizes, and/or shapes to track your energy, e.g. light for Defend, dark for Attack, and contrasting for Grapple.
 NPC available moves and specials are not usually public information, but PC moves and specials are (since the GM could memorize them anyway).
 
 [NOTE]
@@ -86,8 +87,8 @@ Simply resting and trying again is not meaningful change.
 
 After a conflict, players can collectively choose one of the following:
 
-* Take a breather to regain 1 point of energy. You cannot take another breather until after a full rest.
-* Take a short rest to regain up to your maximum for the type with the *lowest* maximum (your choice if there's a tie). You cannot take another short rest until after a full rest.
+* Take a breather to regain 1 point of energy in the type of your choice. You cannot take another breather until after a full rest.
+* Take a short rest to regain up to your maximum for the type of energy with the *lowest* maximum (your choice if there's a tie). You cannot take another short rest until after a full rest.
 * Take a full rest to regain all of your energy. The GM can mark a countdown.
 
 The effects apply to all players equally, it is not possible for some to take a full rest while others take a short rest or breather.

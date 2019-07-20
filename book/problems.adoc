@@ -14,7 +14,7 @@ Problems typically involve inanimate circumstances or neutral NPCs; if an NPC is
 * "The door to the library is blocked by the Elbow Clan who are out for blood" is a conflict.
 ****
 
-To decide the outcome of a problem, any interested players simultaneously choose one of the following options:
+To decide the outcome of a problem, any interested players simultaneously choose one of the following options by showing 1-4 fingers:
 
 . Succeed with a good idea
 . Succeed by spending a background point
@@ -24,7 +24,6 @@ To decide the outcome of a problem, any interested players simultaneously choose
 Higher numbered choices beat lower numbered choices.
 For instance, if one player chooses "Succeed with a significant complication" and the other chooses "Fail", the player choosing Fail gets to decide and narrate the outcome. Ties are broken in favor of the player who least recently decided the outcome of a problem, otherwise by the GM.
 
-Rather than cards, another option is for players to hold up 1-4 fingers to indicate their choice. Just make sure they can be relied on to do it simultaneously.
 
 == Succeed with a good idea
 Describe a good idea for how you overcome the problem, building on the prior established facts of the story and setting.

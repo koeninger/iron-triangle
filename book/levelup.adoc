@@ -14,7 +14,7 @@ Yes marks in all three categories mean you can level up. Increment your level by
 When you level up, choose *one* of:
 
 * Learn a move.
-* Once you have learned all the moves, you can learn a copy of an existing move. Choose either +1 multiplier and -1 base or -1 multiplier and +1 base compared to the existing move. You can learn up to two moves this way, and they cannot copy the same move. You may spend a level up to replace one of the copies with a different move.
+* Once you have learned all the moves, you can learn a copy of an existing move. Choose either +1 multiplier and -1 base or -1 multiplier and +1 base compared to the existing move. You can learn up to two moves this way, and they cannot copy the same move. You may spend a level up to replace one of the copies with a different move. Copies are considered the same as the original move for combos.
 * Learn or make changes to two combo followups. You're limited to two followups per starting move. You must already know the followup moves. You don't need to know the starting move as long as one of your allies does.
 * Add one to your maximum energy for one type of action. It must be a type that reached zero during a conflict.
 * Learn a special. You cannot learn multiple copies of the exact same special, e.g. if you know Wax On (Defend) you can learn Wax On (Attack), but not another copy of Wax On (Defend).

@@ -85,10 +85,10 @@ The next turn, you play Attack High, which does not match Defend Low, so it is n
 
 == Combos
 
-Combos are relationships between moves, that are learned separately from moves.
-Combos consist of a starting move and up to two options for followup moves.
-If the immediately prior turn was a loss for your opponent, you can play any combo you know that follows from the move that won.
-If you play a move that combos and win, your opponent will lose additional energy.
+Combos are relationships between moves that are learned separately from moves.
+If the immediately prior turn was a loss for your opponent, check if the move that won is related to a combo followup that you know.
+The relation is based solely on the action and location of the moves.
+If you chose a move that is a combo followup and win, your opponent will lose additional energy.
 Combos do not affect ties.
 
 Combo bonuses are cumulative with consecutive combo turns, at one point of energy per prior turn.

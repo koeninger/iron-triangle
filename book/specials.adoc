@@ -36,7 +36,7 @@ You are welcome to re-theme specials to be more appropriate for your character. 
 <<<
 == Scouter
 * Use before choosing an opponent, or before choosing a stance.
-* Learn the moves, combos, and specials available to your opponent.
+* One opponent's moves, combos, and specials are public knowledge for the rest of the conflict.
 
 == To Blave
 * Use at any time matching another special you know.

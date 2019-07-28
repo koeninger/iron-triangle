@@ -1,4 +1,4 @@
-cards = 30
+cards = 36
 border = rectangle
 font = arial, 28, B, #000000
 text = "1-3", "Attack", 0, 1, 6, 2, center
@@ -10,25 +10,105 @@ text = "3,6,9", "Mid", 0, 3, 6, 2, center
 text = "1-3", "x2  +3", 0, 5, 6, 2, center
 text = "4-6", "x1  +2", 0, 5, 6, 2, center
 text = "7-9", "x2  +4", 0, 5, 6, 2, center
-text = "10", "Surrender", 0, 1, 6, 2, center
+text = "10-16", "Surrender", 0, 1, 6, 2, center
+
 font = arial, 20, B, #000000
-text = "11", "Scouter", 0, 0, 1, 9, center, center, 270
-text = "12", "To Blave", 0, 0, 1, 9, center, center, 270
-text = "13", "There Can Be Only One", 0, 0, 1, 9, center, center, 270
-text = "14", "Pressure Point", 0, 0, 1, 9, center, center, 270
-text = "15", "Wax On (Attack)", 0, 0, 1, 9, center, center, 270
-text = "16", "Wax On (Defend)", 0, 0, 1, 9, center, center, 270
-text = "17", "Wax On (Grapple)", 0, 0, 1, 9, center, center, 270
-text = "18", "Santa Carla (Attack)", 0, 0, 1, 9, center, center, 270
-text = "19", "Santa Carla (Defend)", 0, 0, 1, 9, center, center, 270
-text = "20", "Santa Carla (Grapple)", 0, 0, 1, 9, center, center, 270
-text = "21", "Dig Two Graves (Attack)", 0, 0, 1, 9, center, center, 270
-text = "22", "Dig Two Graves (Defend)", 0, 0, 1, 9, center, center, 270
-text = "23", "Dig Two Graves (Grapple)", 0, 0, 1, 9, center, center, 270
-text = "24", "I Already Know (Attack)", 0, 0, 1, 9, center, center, 270
-text = "25", "I Already Know (Defend)", 0, 0, 1, 9, center, center, 270
-text = "26", "I Already Know (Grapple)", 0, 0, 1, 9, center, center, 270
-text = "27", "Yojimbo", 0, 0, 1, 9, center, center, 270
-text = "28", "Liquid Metal", 0, 0, 1, 9, center, center, 270
-text = "29", "Drunken Monkey", 0, 0, 1, 9, center, center, 270
-text = "30", "The Way of the Samurai", 0, 0, 1, 9, center, center, 270
+text = "17", "Scouter", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "17", "* Use before choosing an opponent, or before choosing a stance.\13\* One opponent's moves, combos, and specials are public knowledge for the rest of the conflict.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "18", "To Blave", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "18", "* Use at any time matching another special you know.\13\* Can be used twice per conflict instead of once per full rest.\13\* Has no other effect.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "19", "There Can Be Only One", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "19", "* Use before choosing an opponent, or before choosing a stance.\13\* Choose a character. You and that character cannot choose a different opponent until one of you is out of the conflict.\13\* Either of you can respond to opponents choosing you as normal.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "20", "Pressure Point", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "20", "* Use before choosing a move.\13\* Reveal before resolving the turn.\13\* You choose where your opponent's losses are distributed this turn.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "21", "Wax On (Attack)", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "21", "* Use before choosing a move.\13\* Reveal before resolving the turn.\13\* If the type of your opponent's action matches this special, you lose no energy from their stance this turn.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "22", "Wax On (Defend)", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "22", "* Use before choosing a move.\13\* Reveal before resolving the turn.\13\* If the type of your opponent's action matches this special, you lose no energy from their stance this turn.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "23", "Wax On (Grapple)", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "23", "* Use before choosing a move.\13\* Reveal before resolving the turn.\13\* If the type of your opponent's action matches this special, you lose no energy from their stance this turn.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "24", "Santa Carla (Attack)", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "24", "* Use before choosing a move.\13\* Reveal before resolving the turn\13\* If the type of your stance and action matches this special and you win, regain energy equal to the amount you committed to the stance this turn.\13\* Do not multiply the gain by your move's stance multiplier.\13\* You choose where to distribute the gain, but you cannot regain more than your maximum.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "25", "Santa Carla (Defend)", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "25", "* Use before choosing a move.\13\* Reveal before resolving the turn\13\* If the type of your stance and action matches this special and you win, regain energy equal to the amount you committed to the stance this turn.\13\* Do not multiply the gain by your move's stance multiplier.\13\* You choose where to distribute the gain, but you cannot regain more than your maximum.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "26", "Santa Carla (Grapple)", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "26", "* Use before choosing a move.\13\* Reveal before resolving the turn\13\* If the type of your stance and action matches this special and you win, regain energy equal to the amount you committed to the stance this turn.\13\* Do not multiply the gain by your move's stance multiplier.\13\* You choose where to distribute the gain, but you cannot regain more than your maximum.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "27", "Dig Two Graves (Attack)", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "27", "* Use before choosing a move.\13\* Reveal before resolving the turn.\13\* If the type of your opponent's action matches this special, they lose energy equal to the amount you lose this turn.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "28", "Dig Two Graves (Defend)", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "28", "* Use before choosing a move.\13\* Reveal before resolving the turn.\13\* If the type of your opponent's action matches this special, they lose energy equal to the amount you lose this turn.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "29", "Dig Two Graves (Grapple)", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "29", "* Use before choosing a move.\13\* Reveal before resolving the turn.\13\* If the type of your opponent's action matches this special, they lose energy equal to the amount you lose this turn.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "30", "I Already Know (Attack)", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "30", "* Use before choosing a stance.\13\* For this turn your opponent cannot choose a move with an action matching this special.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "31", "I Already Know (Defend)", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "31", "* Use before choosing a stance.\13\* For this turn your opponent cannot choose a move with an action matching this special.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "32", "I Already Know (Grapple)", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "32", "* Use before choosing a stance.\13\* For this turn your opponent cannot choose a move with an action matching this special.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "33", "Yojimbo", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "33", "* Use before resolving a different character's turn.\13\* This turn you lose the amount of energy they would have lost, and they lose 0.\13\* Does not count against your limit of one special per turn.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "34", "Liquid Metal", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "34", "* Duplicate the effect of a special that has been used by a different character in this conflict.\13\* Use and reveal at the time appropriate for the duplicated special.\13\* Cannot duplicate specials after it on the list.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "35", "Drunken Monkey", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "35", "* Use before choosing a move.\13\* Until this conflict ends, once per turn after revealing your move, you can choose to replace it.\13\* Your opponent selects the replacement randomly from your remaining moves.\13\* You cannot participate in the next conflict, even if you rest first.", 1, 0.5, 8, 8, left, wordwrap, 270
+
+font = arial, 20, B, #000000
+text = "36", "The Way of the Samurai", 0, 0, 1, 9, center, center, 270
+font = arial, 10, B, #000000
+text = "36", "* Regain energy up to your maximum in all types.\13\* You cannot be removed from this conflict until it ends, even if you reach 0 total energy.\13\* At the end of the conflict, you die irrevocably.\13\* Play out the conflict; even if the outcome is inevitable, the fate of your allies is not.\13\* NPCs cannot use this special, for obvious reasons.", 1, 0.5, 8, 8, left, wordwrap, 270
+

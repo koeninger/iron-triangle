@@ -1,3 +1,8 @@
+Read the book at book/iron_triangle.pdf,  book/iron_triangle.epub or book/iron_triangle.html 
+
+Printable card deck at book/deck.pdf
+
+
 running code
 ```
 install http://www.gambit-project.org/

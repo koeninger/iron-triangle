@@ -33,3 +33,7 @@ building the deck
 http://www.nand.it/nandeck/
 
 see book/deck.txt
+
+Copyright 2019 Loren Cody Koeninger.
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).

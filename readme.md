@@ -22,3 +22,9 @@ gem install asciidoctor-pdf-cjk  # may not actually be needed after the switch t
 
 NOKOGIRI_USE_SYSTEM_LIBRARIES=1 gem install asciidoctor-epub3 --pre
 ```
+
+building the deck
+
+http://www.nand.it/nandeck/
+
+see book/deck.txt

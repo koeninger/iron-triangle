@@ -1,5 +1,5 @@
 cards = 36
-cardsize = 6.5,9
+cardsize = 6.4,8.9
 page=21.5,29,portrait
 border = rectangle
 font = arial, 28, B, #000000

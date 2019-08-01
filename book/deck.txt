@@ -1,4 +1,4 @@
-cards = 36
+﻿cards = 36
 cardsize = 6.3,8.8
 page=21.5,29,portrait
 border = rectangle
@@ -107,7 +107,7 @@ text = "34", "* Duplicate the effect of a special that has been used by a differ
 font = arial, 20, B, #000000
 text = "35", "Drunken Monkey", 0, 0, 1, 9, center, center, 270
 font = arial, 10, B, #000000
-text = "35", "* Use before choosing a move.\13\* Until this conflict ends, once per turn after revealing your move, you can choose to replace it.\13\* Your opponent selects the replacement randomly from your remaining moves.\13\* You cannot participate in the next conflict, even if you rest first.", 1, 0.5, 8, 8, left, wordwrap, 270
+text = "35", "* Use before choosing a move.\13\* Until this conflict ends, once per turn after revealing your move, you can choose to replace it.\13\* Your opponent selects the replacement randomly from your remaining moves (not including surrender).\13\* You cannot participate in the next conflict, even if you rest first.", 1, 0.5, 8, 8, left, wordwrap, 270
 
 font = arial, 20, B, #000000
 text = "36", "The Way of the Samurai", 0, 0, 1, 9, center, center, 270

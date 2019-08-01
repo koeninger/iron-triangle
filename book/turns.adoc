@@ -85,7 +85,7 @@ The next turn, you play Attack High, which does not match Defend Low, so it is n
 
 == Combos
 
-Combos are relationships between moves that are learned separately from moves.
+Combos are relationships between moves that are learned separately from moves. For example, a jab might be followed up with either an uppercut or a right cross.
 If the immediately prior turn was a loss for your opponent, check if the move that won is related to a combo followup that you know.
 The relation is based solely on the action and location of the moves.
 If you chose a move that is a combo followup and win, your opponent will lose additional energy.
@@ -124,20 +124,12 @@ Check in order:
 
 .Example winner
 ****
-* You play Attack High, your opponent plays Grapple Low . Attack beats Grapple, you win.
-* You play Attack High, your opponent plays Attack Low . Low beats High, you lose.
+* You play Attack High, your opponent plays Grapple Low. Attack beats Grapple, you win.
+* You play Attack High, your opponent plays Attack Low. Low beats High, you lose.
 * You lost your prior turn with Defend High, your opponent won their prior turn. You play Attack High at disadvantage, your opponent plays Attack High, you lose.
 ****
 
 == Resolve the consequences
-
-In a tie, each character loses energy equal to the base amount for the other character's move, but no additional losses.
-Ties end combos and disadvantage.
-
-.Example consequences of tie
-****
-You play Attack High, your opponent plays Attack High . Neither of you were at disadvantage, so it's a tie. You each lose 3 energy. No cards remain face up to indicate combo or disadvantage.
-****
 
 If you played the winning move, the opponent loses energy equal to the sum of:
 
@@ -152,7 +144,7 @@ When you commit stance energy and lose, that portion of the loss comes from the 
 .Example consequences of a win
 ****
 
-* The prior turn your opponent played Attack Low and lost.
+* There has been one prior turn, in which your opponent played Attack Low and lost.
 * This turn, your possible combo followups are Grapple High or Attack High.
 * You choose 3 Grapple for your stance, your opponent chooses 1 Defend.
 * You choose Grapple High for your move, your opponent chooses Defend Low.
@@ -167,6 +159,15 @@ Since Grapple beats Defend, you win. Your opponent loses a total of 13 energy:
 
 At least 1 point of those losses is applied to Defend and the remainder according to your opponent's choice.
 ****
+
+In a tie, each character loses energy equal to the base amount for the other character's move, but no additional losses.
+Ties end combos and disadvantage.
+
+.Example consequences of tie
+****
+You play Attack High, your opponent plays Attack High . Neither of you were at disadvantage, so it's a tie. You each lose 3 energy. No cards remain face up to indicate combo or disadvantage.
+****
+
 
 You can keep track of energy losses during a conflict by removing the corresponding tokens. Make sure to write down your current energy on your character sheet after the conflict ends.
 

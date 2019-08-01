@@ -16,7 +16,7 @@ I highly recommend you draw a picture, even if you think your drawing skills are
 
 == Level
 Level represents how much your character has learned and advanced.
-You start at level one. As you <<levelup.adoc#levelup>> you can learn specials and combos, but you do not start with any at level one.
+You start at level one. As you <<levelup.adoc#levelup>> you can learn specials (secret techniques that bend the rules) and combos (like a boxer following a jab with an uppercut), but you do not start with any at level one.
 
 [NOTE]
 ====
@@ -54,7 +54,7 @@ Put at least one point in each.
 
 [NOTE]
 ====
-Don't worry about optimizing, just go with what fits your concept of your character's fighting style.
+Don't worry about optimizing, just go with what fits your concept of your character's fighting style. Defend represents things like blocking, dodging, and parrying. Grapple represents wrestling, throwing, joint locks, and chokes. Attack represents punching, kicking, stabbing, and slashing.
 If you want a balanced approach, put 4 in Attack, 3 in Defend, 2 in Grapple, and the last point wherever.
 ====
 

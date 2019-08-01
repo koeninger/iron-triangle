@@ -90,7 +90,7 @@ The story should be meaningfully different after a problem, succeed or fail, so 
 
 == Using a veto
 You can use a veto after another player has narrated an outcome and before play has moved on, to substitute your own choice.
-The vetoed choice doesn't take effect; the other player doesn't spend the background point or mark the flaw.
+The vetoed choice doesn't take effect; the other player doesn't mark the background point, flaw or belief on their character sheet.
 You can veto any of the possible outcomes, but you must substitute it with a success, either via a good idea or spending a background point.
 You cannot threaten to veto; if you say the word veto, you've used it.
 You cannot veto a veto; the first player to say veto wins. If there's disagreement on a tie, the GM decides.

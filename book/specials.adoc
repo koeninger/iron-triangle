@@ -94,7 +94,7 @@ You are welcome to re-theme specials to be more appropriate for your character. 
 * Requires: Level 10
 * Use before choosing a move.
 * Until this conflict ends, once per turn after revealing your move, you can choose to replace it.
-* Your opponent selects the replacement randomly from your remaining moves.
+* Your opponent selects the replacement randomly from your remaining moves (not including surrender).
 * You cannot participate in the next conflict, even if you rest first. 
 
 == The Way of the Samurai

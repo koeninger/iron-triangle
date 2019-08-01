@@ -2,13 +2,13 @@
 [%autowidth]
 |===
 |    |Stance Multiplier | Base
-| Attack   High  |x2 |3
-| Attack   Low   |x2 |3
-| Attack   Mid   |x2 |3
-| Defend   High  |x1 |2
-| Defend   Low   |x1 |2
-| Defend   Mid   |x1 |2
-| Grapple  High  |x2 |4
-| Grapple  Low   |x2 |4
-| Grapple  Mid   |x2 |4
+| Attack   High  ^|x2 ^|3
+| Attack   Low   ^|x2 ^|3
+| Attack   Mid   ^|x2 ^|3
+| Defend   High  ^|x1 ^|2
+| Defend   Low   ^|x1 ^|2
+| Defend   Mid   ^|x1 ^|2
+| Grapple  High  ^|x2 ^|4
+| Grapple  Low   ^|x2 ^|4
+| Grapple  Mid   ^|x2 ^|4
 |===

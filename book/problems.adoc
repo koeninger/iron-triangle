@@ -14,16 +14,26 @@ Problems typically involve inanimate circumstances or neutral NPCs; if an NPC is
 * "The door to the library is blocked by the Elbow Clan who are out for blood" is a conflict.
 ****
 
-To decide the outcome of a problem, any interested players simultaneously choose one of the following options by showing 1-4 fingers:
+To decide the outcome of a problem, players simultaneously choose one of the following options by showing 1-4 fingers:
 
 . Succeed with a good idea
 . Succeed by spending a background point
 . Succeed with a significant complication
 . Fail in an interesting way
 
-Higher numbered choices beat lower numbered choices.
-For instance, if one player chooses "Succeed with a significant complication" and the other chooses "Fail", the player choosing Fail gets to decide and narrate the outcome. Ties are broken in favor of the player who least recently decided the outcome of a problem, otherwise by the GM.
+Higher numbered choices beat lower numbered choices, with one exception: if players only choose 1 and 4, 1 beats 4. Ties are broken in favor of the player who least recently decided the outcome of a problem, otherwise by the GM.
 
+****
+GM: The door is locked, this is a problem, what do you do?  On the count of 3, ready...
+
+If player A chooses "3. Succeed with a significant complication" and player B chooses "4. Fail", player B gets to decide and narrate the outcome.
+
+If player A chooses "1. Succeed with a good idea" and the only other player chooses "4. Fail", player A gets to decide and narrate the outcome.
+
+If player A chooses 1, player B chooses 2, and player C chooses 4, player C gets to decide.
+
+If player A chooses 1, player B chooses 1, and player C chooses 4, it's a tie between A and B.
+****
 
 == Succeed with a good idea
 Describe a good idea for how you overcome the problem, building on the prior established facts of the story and setting.

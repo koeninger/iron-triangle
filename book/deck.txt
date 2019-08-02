@@ -80,17 +80,17 @@ font = arial, 10, B, #000000
 text = "29", "* Use before choosing a move.\13\* Reveal before resolving the turn.\13\* If the type of your opponent's action matches this special, they lose energy equal to the amount you lose this turn.", 1, 0.5, 8, 8, left, wordwrap, 270
 
 font = arial, 20, B, #000000
-text = "30", "I Already Know (Attack)", 0, 0, 1, 9, center, center, 270
+text = "30", "Predictabo! (Attack)", 0, 0, 1, 9, center, center, 270
 font = arial, 10, B, #000000
 text = "30", "* Use before choosing a stance.\13\* For this turn your opponent cannot choose a move with an action matching this special.", 1, 0.5, 8, 8, left, wordwrap, 270
 
 font = arial, 20, B, #000000
-text = "31", "I Already Know (Defend)", 0, 0, 1, 9, center, center, 270
+text = "31", "Predictabo! (Defend)", 0, 0, 1, 9, center, center, 270
 font = arial, 10, B, #000000
 text = "31", "* Use before choosing a stance.\13\* For this turn your opponent cannot choose a move with an action matching this special.", 1, 0.5, 8, 8, left, wordwrap, 270
 
 font = arial, 20, B, #000000
-text = "32", "I Already Know (Grapple)", 0, 0, 1, 9, center, center, 270
+text = "32", "Predictabo! (Grapple)", 0, 0, 1, 9, center, center, 270
 font = arial, 10, B, #000000
 text = "32", "* Use before choosing a stance.\13\* For this turn your opponent cannot choose a move with an action matching this special.", 1, 0.5, 8, 8, left, wordwrap, 270
 

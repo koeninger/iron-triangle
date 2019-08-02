@@ -66,13 +66,13 @@ You are welcome to re-theme specials to be more appropriate for your character. 
 * Do not multiply the gain by your move's stance multiplier.
 * You choose where to distribute the gain, but you cannot regain more than your maximum.
 
-== Dig Two Graves  (Defend / Grapple / Attack)
+== Dig Two Graves (Defend / Grapple / Attack)
 * Requires: Level 5 and Wax On of the matching type.
 * Use before choosing a move.
 * Reveal before resolving the turn.
 * If the type of your opponent's action matches this special, they lose energy equal to the amount you lose this turn.
 
-== I Already Know  (Defend / Grapple / Attack)
+== Predictabo! (Defend / Grapple / Attack)
 * Requires: Level 10
 * Use before choosing a stance.
 * For this turn your opponent cannot choose a move with an action matching this special.

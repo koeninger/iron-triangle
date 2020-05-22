@@ -39,7 +39,7 @@ NOKOGIRI_USE_SYSTEM_LIBRARIES=1 gem install asciidoctor-epub3 --pre
 cd book
 ./build_book.sh
 
-asciidoctor
+asciidoctor may spit out errors, but as long as it builds the pdf it worked...
 ```
 
 building the deck

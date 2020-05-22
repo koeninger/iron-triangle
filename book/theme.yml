@@ -188,7 +188,7 @@ table:
   border_color: dddddd
   border_width: $base_border_width
   # HACK accounting for line-height
-  cell_padding: [3, 3, 6, 3]
+  cell_padding: [2, 3, 2, 3]
 toc:
   indent: $horizontal_rhythm
   dot_leader_color: dddddd

@@ -13,8 +13,18 @@ pip install -r requirements.txt
 
 building the book
 ```
-uses ruby >= 2.30
-http://rvm.io/ or brew install ruby
+install ruby >= 2.4
+
+(for osx)
+brew install ruby or
+http://rvm.io/
+rvm install 2.6
+source ~/.rvm/scripts/rvm
+rvm use --default 2.6
+
+brew install libxml2 libxslt libiconv
+NOKOGIRI_USE_SYSTEM_LIBRARIES=1 gem install nokogiri -- --use-system-libraries --with-iconv-dir="$(brew --prefix libiconv)" --with-xml2-config="$(brew --prefix libxml2)/bin/xml2-config" --with-xslt-config="$(brew --prefix libxslt)/bin/xslt-config"
+
 (for ubuntu)
 sudo apt-get install ruby ruby-dev pkg-config libxslt-dev libxml2-dev
 
@@ -24,8 +34,12 @@ install https://asciidoctor.org
 gem install asciidoctor
 gem install asciidoctor-pdf --pre
 gem install asciidoctor-pdf-cjk  # may not actually be needed after the switch to DejaVu
-
 NOKOGIRI_USE_SYSTEM_LIBRARIES=1 gem install asciidoctor-epub3 --pre
+
+cd book
+./build_book.sh
+
+asciidoctor
 ```
 
 building the deck

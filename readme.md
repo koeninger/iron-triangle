@@ -3,21 +3,6 @@ Read the book at book/unroll.pdf,  book/unroll.epub or book/unroll.html
 Printable card deck at book/deck.pdf
 
 
-running code
-```
-install http://www.gambit-project.org/
-build the python extension, e.g. http://www.gambit-project.org/gambit15/build.html#build-python
-
-uses python 2
-pip install -r requirements.txt
-cd code
-
-(assumes osx with gambit in /Applications)
-gambit.sh
-
-```
-
-
 building the book
 ```
 install ruby >= 2.4
@@ -54,6 +39,22 @@ building the deck
 http://www.nand.it/nandeck/
 
 see book/deck.txt
+
+
+running code (for game theory, this is a tabletop game not a video game)
+```
+install http://www.gambit-project.org/
+build the python extension, e.g. http://www.gambit-project.org/gambit15/build.html#build-python
+
+uses python 2
+pip install -r requirements.txt
+cd code
+
+(assumes osx with gambit in /Applications)
+gambit.sh
+python graph.py
+```
+
 
 Copyright 2019 Loren Cody Koeninger.
 

@@ -1,4 +1,4 @@
-Roleplaying game based on simultaneous choice, not random die rolls.
+Unroll is a tabletop roleplaying game based on simultaneous choice, not random die rolls.
 
 Read the book at [book/unroll.pdf](book/unroll.pdf),  [book/unroll.epub](book/unroll.epub) or [book/unroll.html](book/unroll.html)
 

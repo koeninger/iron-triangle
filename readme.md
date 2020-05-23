@@ -1,6 +1,8 @@
-Read the book at book/unroll.pdf,  book/unroll.epub or book/unroll.html
+Roleplaying game based on simultaneous choice, not random die rolls.
 
-Printable card deck at book/deck.pdf
+Read the book at [book/unroll.pdf](book/unroll.pdf),  [book/unroll.epub](book/unroll.epub) or [book/unroll.html](book/unroll.html)
+
+Printable card deck at [book/deck.pdf](book/deck.pdf)
 
 
 building the book

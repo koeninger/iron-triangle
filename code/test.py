@@ -1,7 +1,7 @@
 import unittest
-from iron_triangle import *
+from unroll import *
 
-class TestIronTriangle(unittest.TestCase):    
+class TestUnroll(unittest.TestCase):    
     def testBasicActions(self):
         """basic triangle of defense beats attack beats grapple beats defense"""
         atk = attacks[0]

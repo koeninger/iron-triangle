@@ -166,7 +166,7 @@ def nfg_payoffs(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_d
 def print_nfg(p1_stance = None, p2_stance = None, p1_disadvantage = None, p2_disadvantage = None, actions = all_actions):
     """format for gambit project files .nfg"""
     payoffs = nfg_payoffs(p1_stance, p2_stance, p1_disadvantage, p2_disadvantage, actions)
-    print("""NFG 1 R "iron triangle" """)
+    print("""NFG 1 R "unroll" """)
     print("""{"Player 1" "Player 2" } { %s %s }""" %(len(actions), len(actions)))
     for line in payoffs:
         for p in line:

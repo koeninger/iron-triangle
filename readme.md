@@ -1,4 +1,4 @@
-Read the book at book/iron_triangle.pdf,  book/iron_triangle.epub or book/iron_triangle.html 
+Read the book at book/unroll.pdf,  book/unroll.epub or book/unroll.html
 
 Printable card deck at book/deck.pdf
 
@@ -6,8 +6,15 @@ Printable card deck at book/deck.pdf
 running code
 ```
 install http://www.gambit-project.org/
+build the python extension, e.g. http://www.gambit-project.org/gambit15/build.html#build-python
+
 uses python 2
 pip install -r requirements.txt
+cd code
+
+(assumes osx with gambit in /Applications)
+gambit.sh
+
 ```
 
 
